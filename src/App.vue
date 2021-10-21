@@ -1,32 +1,45 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+    <v-app>
+        <TheHeader />
+        <v-main>
+            <v-container>
+                <v-tabs>
+                    <v-tab to="/">
+                        <v-icon class="pr-1"> mdi-pot-mix </v-icon>
+                        Рецепты
+                    </v-tab>
+                    <v-tab to="/cheatsheets">
+                        <v-icon class="pr-1"> mdi-lightbulb-outline </v-icon>
+                        Cheatsheets
+                    </v-tab>
+                    <v-tab to="/about">
+                        <v-icon class="pr-1"> mdi-information-outline </v-icon>
+                        About
+                    </v-tab>
+                </v-tabs>
+                <router-view />
+            </v-container>
+        </v-main>
+        <TheFooter />
+    </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import TheHeader from "@/components/Layout/TheHeader.vue";
+import TheFooter from "@/components/Layout/TheFooter.vue";
 
-#nav {
-  padding: 30px;
+export default {
+    name: "App",
+    components: {
+        TheHeader,
+        TheFooter,
+    },
+};
+</script>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+<style lang='scss'>
+a {
+    text-decoration: none;
 }
 </style>
