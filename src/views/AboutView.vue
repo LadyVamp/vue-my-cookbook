@@ -19,6 +19,11 @@
                     >favicon</a
                 >
             </li>
+            <li>
+                <a href="https://alfilatov.com/cyrillic-to-translit-js/" target="_blank"
+                    >кириллица в транслит для id</a
+                >
+            </li>
         </ul>
     </div>
 </template>

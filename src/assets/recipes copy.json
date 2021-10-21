@@ -1,7 +1,7 @@
 {
 	"recipes": [
 		{
-			"id": "Grecheskii-salat-s-bazilikom",
+			"id": 1,
 			"title": "Греческий салат с базиликом",
 			"ingredients": "ingredients",
 			"steps": "steps",
@@ -13,7 +13,7 @@
 			]
 		},
 		{
-			"id": "Svinina-s-kartoshkoi-v-pakete-v-dukhovke",
+			"id": 2,
 			"title": "Свинина с картошкой в пакете в духовке",
 			"ingredients": "ingredients",
 			"steps": "steps",
@@ -26,7 +26,7 @@
 			]
 		},
 		{
-			"id": "Kuritsa-v-slivochnom-souse-karri-s-ananasom",
+			"id": 3,
 			"title": "Курица в сливочном соусе карри с ананасом",
 			"ingredients": "ingredients",
 			"steps": "steps",
