@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>Список рецептов</h3>
+        <h2 class="secondary--text">Список рецептов</h2>
         <v-container fluid>
             <v-row>
                 <v-col v-for="item in recipeList" :key="item.id">
@@ -45,11 +45,11 @@ import IconFeature from "@/components/IconFeature";
 export default {
     name: "RecipesList",
     mounted() {
-        this.$store.dispatch("GET_RECIPE");
+        this.$store.dispatch("getRecipeList");
     },
     computed: {
         recipeList() {
-            return this.$store.getters.RECIPES;
+            return this.$store.getters.getRecipeList;
         },
     },
     components: {

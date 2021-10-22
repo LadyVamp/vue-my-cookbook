@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-        <h1>This is an about page</h1>
+        <h2 class="secondary--text">About</h2>
         <ul>
             <li>
                 <a
@@ -20,7 +20,9 @@
                 >
             </li>
             <li>
-                <a href="https://alfilatov.com/cyrillic-to-translit-js/" target="_blank"
+                <a
+                    href="https://alfilatov.com/cyrillic-to-translit-js/"
+                    target="_blank"
                     >кириллица в транслит для id</a
                 >
             </li>

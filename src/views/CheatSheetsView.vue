@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1>This is an CheatSheets page</h1>
+		<h2 class="secondary--text">CheatSheets</h2>
     </div>
 </template>

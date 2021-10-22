@@ -1,29 +1,33 @@
 <template>
-    <div>
-        <div v-if="item" class="d-flex flex-column">
-            <h2>{{ item.title }}</h2>
+    <div class="recipe">
+        <div v-if="loading" class="loading">Загрузка...</div>
+        <div v-if="error" class="error">
+            {{ error }}
+        </div>
+        <div v-if="recipe" class="d-flex flex-column">
+            <h2 class="primary--text">{{ recipe.title }}</h2>
             <v-img
-                v-if="item.imageLink"
-                :src="item.imageLink"
+                v-if="recipe.imageLink"
+                :src="recipe.imageLink"
                 height="300px"
                 width="300px"
             >
             </v-img>
             <p>
                 Ингредиенты: <br />
-                {{ item.ingredients }}
+                {{ recipe.ingredients }}
             </p>
             <p>
                 Шаги: <br />
-                {{ item.steps }}
+                {{ recipe.steps }}
             </p>
             <p>
-                <a :href="item.originalLink" target="_blank"
+                <a :href="recipe.originalLink" target="_blank"
                     >Оригинальный рецепт</a
                 >
             </p>
-            <IconLabel :label="item.label" />
-            <IconFeature :feature="item.feature" />
+            <IconLabel :label="recipe.label" />
+            <IconFeature :feature="recipe.feature" />
         </div>
     </div>
 </template>
@@ -31,19 +35,54 @@
 <script>
 import IconLabel from "@/components/IconLabel";
 import IconFeature from "@/components/IconFeature";
+import axios from "axios";
 
 export default {
     name: "RecipeDetails",
-    mounted() {
-        this.$store.dispatch("GET_RECIPE");
+    data() {
+        return {
+            loading: false,
+            recipe: null,
+            error: null,
+        };
     },
-    computed: {
-        item() {
-            const item = this.$store.getters.RECIPES.find(
-                (item) => item.id === this.$route.params.id
-            );
-            console.log('item', item);
-            return item;
+    created() {
+        // загружаем данные, когда представление создано
+        // и данные реактивно отслеживаются
+        this.fetchData();
+    },
+    watch: {
+        // при изменениях маршрута запрашиваем данные снова
+        $route: "fetchData",
+    },
+    methods: {
+        fetchData() {
+            this.error = this.recipe = null;
+            this.loading = true;
+            // замените `getPost` используемым методом получения данных / доступа к API
+            this.getRecipe(this.$route.params.id, (err, recipe) => {
+                this.loading = false;
+                if (err) {
+                    this.error = err.toString();
+                } else {
+                    this.recipe = recipe;
+                }
+            });
+        },
+        getRecipe(id) {
+            axios
+                .get(
+                    "https://gist.githubusercontent.com/LadyVamp/628c9e7aa0d9d26971bf9d512cef6bbe/raw/7d1e3a140e09a179c41df5103ceff39904088fb4/recipes-10-19.json"
+                )
+                .then((response) => {
+                    this.recipe = response.data.recipes.find(
+                        (item) => item.id === id
+                    );
+                    this.loading = false;
+                })
+                .catch((error) => {
+                    console.error(error.message);
+                });
         },
     },
     components: {

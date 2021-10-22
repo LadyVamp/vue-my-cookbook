@@ -3,8 +3,31 @@
 		{
 			"id": "Grecheskii-salat-s-bazilikom",
 			"title": "Греческий салат с базиликом",
-			"ingredients": "ingredients",
-			"steps": "steps",
+			"ingredients": 
+			{
+				"Фета": "250г",  
+				"Помидоры": "5-6 шт",  
+				"Огурцы": "2-3 шт",  
+				"Лук репчатый": "250г",  
+				"Перец сладкий": "1-2 шт",  
+				"Небольшой пучок базилика": "1 шт",  
+				"Маслины": "1банка",  
+				"Масло оливковое": "5-6 Ст. ложек",  
+				"Соль": "По вкусу",  
+				"Перец черный молотый": "По вкусу",  
+				"Орегано сушеный": "По вкусу"
+			}
+			,
+			"steps": {
+				"1": "Огурцы вымыть, обсушить и крупно нарезать",
+				"2": "У перца удалить плодоножку и семена. Нарезать полосками или квадратиками",
+				"3": "Помидоры нарезать дольками или кусочками среднего размера",
+				"4": "Лук нашинковать полукольцами",
+				"5": "Измельчить вымытый и обсушенный базилик. Также поступить с другой зеленью.",
+				"6": "Выдавить сок из половинки лимона",
+				"7": "Нарезать кубиками фету",
+				"8": "Сложить все ингредиенты для салат в миску, заправить лимонным соком и маслом. Добавить маслины, соль, перец и орегано. Перемешать. Подавать на стол сразу!"
+			},
 			"imageLink": "https://img.povar.ru/main/f3/e1/da/f0/grecheskii_salat_s_bazilikom-81848.jpg",
 			"originalLink": "https://povar.ru/recipes/grecheskii_salat_s_bazilikom-14818.html",
 			"label": "vegetable",
@@ -33,6 +56,28 @@
 			"imageLink": "https://eda.ru/img/eda/c620x415/s1.eda.ru/StaticContent/Photos/120131085121/120213175547/p_O.jpg",
 			"originalLink": "https://eda.ru/recepty/osnovnye-blyuda/kurica-v-slivochnom-souse-karri-s-ananasom-16642",
 			"label": "bird",
+			"feature": [
+				"fast"
+			]
+		},
+		{
+			"id": "template id",
+			"title": "template title",
+			"ingredients": 
+			{
+				"item1": "",  
+				"item2": "",  
+				"item3": "",  
+				"item4": ""  
+			},
+			"steps": {
+				"step1": "",  
+				"step2": "",  
+				"step3": "" 
+			},
+			"imageLink": "https://cdn.vuetifyjs.com/images/cards/cooking.png",
+			"originalLink": "",
+			"label": "fish",
 			"feature": [
 				"fast"
 			]
