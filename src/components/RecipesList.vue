@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2 class="secondary--text">Список рецептов</h2>
-        <v-container fluid>
+        <v-container fluid >
             <v-row>
                 <v-col
                     v-for="item in this.$store.getters.getAllRecipes"
@@ -19,6 +19,7 @@
                             v-else
                             src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
                             class="white--text align-end"
+							max-height="200px"
                         >
                         </v-img>
                         <v-card-title>
@@ -31,7 +32,7 @@
                             </router-link>
                         </v-card-title>
                         <v-card-text>
-                            <IconLabel :label="item.label" />
+                            <IconStaple :staple="item.staple" />
                             <IconFeature :feature="item.feature" />
                         </v-card-text>
                     </v-card>
@@ -42,7 +43,7 @@
 </template>
 
 <script>
-import IconLabel from "@/components/IconLabel";
+import IconStaple from "@/components/IconStaple";
 import IconFeature from "@/components/IconFeature";
 import { mapActions } from "vuex";
 
@@ -55,7 +56,7 @@ export default {
         ...mapActions(["fetchRecipes"]),
     },
     components: {
-        IconLabel,
+        IconStaple,
         IconFeature,
     },
 };

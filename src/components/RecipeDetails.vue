@@ -1,35 +1,56 @@
 <template>
-    <div class="recipe">
-        <div v-if="recipe" class="d-flex flex-column">
-            <h2 class="primary--text">{{ recipe.title }}</h2>
+    <div v-if="recipe" class="d-flex flex-column">
+        <h2 class="primary--text">{{ recipe.title }}</h2>
+        <div>
             <v-img
                 v-if="recipe.imageLink"
                 :src="recipe.imageLink"
                 height="300px"
-                width="300px"
             >
             </v-img>
-            <p>
-                Ингредиенты: <br />
-                {{ recipe.ingredients }}
-            </p>
-            <p>
-                Шаги: <br />
-                {{ recipe.steps }}
-            </p>
-            <p>
-                <a :href="recipe.originalLink" target="_blank"
-                    >Оригинальный рецепт</a
-                >
-            </p>
-            <IconLabel :label="recipe.label" />
+            <v-img
+                v-else
+                src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+                class="white--text align-end"
+                height="300px"
+            >
+            </v-img>
+        </div>
+        <div>
+            <a :href="recipe.originalLink" target="_blank"
+                >Оригинальный рецепт</a
+            >
+            <IconStaple :staple="recipe.staple" />
             <IconFeature :feature="recipe.feature" />
+            <router-link
+                v-if="recipe.feature.includes('combo')"
+                :to="{
+                    name: 'RecipeDetails',
+                    params: { id: recipe.comboId },
+                }"
+				title="Открыть комбо-рецепт"
+                >Комбо-рецепт
+            </router-link>
+        </div>
+        <div class="my-4">
+            <h3 class="secondary--text">Ингредиенты</h3>
+            <div v-for="(value, name) in recipe.ingredients" :key="name">
+                {{ name }} – {{ value }}
+            </div>
+        </div>
+        <div class="my-4">
+            <h3 class="secondary--text">Шаги</h3>
+            <ol>
+                <li v-for="item in recipe.steps" :key="item.key">
+                    {{ item }}
+                </li>
+            </ol>
         </div>
     </div>
 </template>
 
 <script>
-import IconLabel from "@/components/IconLabel";
+import IconStaple from "@/components/IconStaple";
 import IconFeature from "@/components/IconFeature";
 import { mapActions } from "vuex";
 
@@ -49,8 +70,13 @@ export default {
             this.fetchRecipes(this.$route.params.id);
         },
     },
+    watch: {
+        $route() {
+            this.fetchData();
+        },
+    },
     components: {
-        IconLabel,
+        IconStaple,
         IconFeature,
     },
 };

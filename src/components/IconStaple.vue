@@ -1,20 +1,23 @@
 <template>
     <div>
-        <v-icon :color="getIconColor(label)" :title="label">{{
-            getIcon(label)
-        }}</v-icon>
+        <v-icon :color="getIconColor(staple)" :title="staple">
+            {{ getIcon(staple) }}
+        </v-icon>
     </div>
 </template>
 
 <script>
 export default {
     props: {
-        label: String,
+        staple: {
+            type: String,
+            required: true,
+        },
     },
 
     methods: {
-        getIcon(label) {
-            switch (label) {
+        getIcon(staple) {
+            switch (staple) {
                 case "vegetable":
                     return "mdi-leaf";
                 case "bird":
@@ -25,8 +28,8 @@ export default {
                     return "mdi-fish";
             }
         },
-        getIconColor(label) {
-            switch (label) {
+        getIconColor(staple) {
+            switch (staple) {
                 case "vegetable":
                     return "light-green darken-1";
                 case "bird":
