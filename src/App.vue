@@ -1,22 +1,9 @@
 <template>
     <v-app>
-        <TheHeader />
+        <TheHeader :menuItems="menuItems" />
         <v-main>
             <v-container>
-                <v-tabs>
-                    <v-tab to="/">
-                        <v-icon class="pr-1"> mdi-pot-mix </v-icon>
-                        Рецепты
-                    </v-tab>
-                    <v-tab to="/cheatsheets">
-                        <v-icon class="pr-1"> mdi-lightbulb-outline </v-icon>
-                        Cheatsheets
-                    </v-tab>
-                    <v-tab to="/about">
-                        <v-icon class="pr-1"> mdi-information-outline </v-icon>
-                        About
-                    </v-tab>
-                </v-tabs>
+                <TheTabs :menuItems="menuItems" />
                 <router-view />
             </v-container>
         </v-main>
@@ -27,12 +14,35 @@
 <script>
 import TheHeader from "@/components/Layout/TheHeader.vue";
 import TheFooter from "@/components/Layout/TheFooter.vue";
+import TheTabs from "@/components/Layout/TheTabs.vue";
 
 export default {
     name: "App",
     components: {
         TheHeader,
         TheFooter,
+        TheTabs,
+    },
+    data() {
+        return {
+            menuItems: [
+                {
+                    name: "Рецепты",
+                    path: "/",
+                    icon: "mdi-pot-mix",
+                },
+                {
+                    name: "Cheatsheets",
+                    path: "/cheatsheets",
+                    icon: "mdi-lightbulb-outline",
+                },
+                {
+                    name: "About",
+                    path: "/about",
+                    icon: "mdi-information-outline",
+                },
+            ],
+        };
     },
 };
 </script>

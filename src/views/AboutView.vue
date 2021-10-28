@@ -27,9 +27,7 @@
                 >
             </li>
             <li>
-                <a
-                    href="https://gist.github.com/LadyVamp/"
-                    target="_blank"
+                <a href="https://gist.github.com/LadyVamp/" target="_blank"
                     >gist</a
                 >
             </li>
