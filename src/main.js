@@ -4,13 +4,24 @@ import router from './router';
 import vuetify from './plugins/vuetify';
 import axios from 'axios';
 import { store } from './store';
+import VueYandexMetrika from 'vue-yandex-metrika';
 
 Vue.config.productionTip = false;
 
+Vue.use(VueYandexMetrika, {
+	id: 86162667,
+	router: router,
+	env: process.env.NODE_ENV,
+	clickmap: true,
+	trackLinks: true,
+	accurateTrackBounce: true,
+	webvisor: true
+})
+
 new Vue({
-    router,
-    store,
-    vuetify,
+	router,
+	store,
+	vuetify,
 	axios,
-    render: (h) => h(App),
+	render: (h) => h(App),
 }).$mount('#app');
