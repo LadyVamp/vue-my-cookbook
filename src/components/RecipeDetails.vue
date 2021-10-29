@@ -1,5 +1,6 @@
 <template>
     <div v-if="recipe" class="d-flex flex-column">
+        <BackButton />
         <h2 class="primary--text">{{ recipe.title }}</h2>
         <div>
             <v-img
@@ -17,9 +18,11 @@
             </v-img>
         </div>
         <div>
-            <a :href="recipe.originalLink" target="_blank"
-                >Оригинальный рецепт</a
-            >
+            <LinkButton
+                :label="'Оригинальный рецепт'"
+                :link="recipe.originalLink"
+                :icon="'mdi-open-in-new'"
+            />
             <IconStaple :staple="recipe.staple" />
             <IconFeature :feature="recipe.feature" />
             <router-link
@@ -28,7 +31,7 @@
                     name: 'RecipeDetails',
                     params: { id: recipe.comboId },
                 }"
-				title="Открыть комбо-рецепт"
+                title="Открыть комбо-рецепт"
                 >Комбо-рецепт
             </router-link>
         </div>
@@ -52,6 +55,8 @@
 <script>
 import IconStaple from "@/components/IconStaple";
 import IconFeature from "@/components/IconFeature";
+import LinkButton from "@/components/Buttons/LinkButton";
+import BackButton from "@/components/Buttons/BackButton";
 import { mapActions } from "vuex";
 
 export default {
@@ -78,6 +83,8 @@ export default {
     components: {
         IconStaple,
         IconFeature,
+        LinkButton,
+        BackButton,
     },
 };
 </script>

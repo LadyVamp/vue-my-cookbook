@@ -1,36 +1,41 @@
 <template>
     <div class="about">
         <h2 class="secondary--text">About</h2>
-        <ul>
-            <li>
-                <a
-                    href="https://materialdesignicons.com/tag/food-drink"
-                    target="_blank"
-                    >иконки</a
-                >
-            </li>
-            <li>
-                <a href="https://colorscheme.ru/#3i31Tw0qMw0w0" target="_blank"
-                    >цвета</a
-                >
-            </li>
-            <li>
-                <a href="https://icons8.ru/icon/set/emoji/emoji" target="_blank"
-                    >favicon</a
-                >
-            </li>
-            <li>
-                <a
-                    href="https://alfilatov.com/cyrillic-to-translit-js/"
-                    target="_blank"
-                    >кириллица в транслит для id</a
-                >
-            </li>
-            <li>
-                <a href="https://gist.github.com/LadyVamp/" target="_blank"
-                    >gist</a
-                >
-            </li>
-        </ul>
+        <LinkButton
+            :label="'цвета'"
+            :link="'https://colorscheme.ru/#3i31Tw0qMw0w0'"
+            :icon="'mdi-palette'"
+        />
+        <LinkButton
+            :label="'иконки'"
+            :link="'https://materialdesignicons.com/'"
+            :color="'secondary'"
+        />
+        <LinkButton
+            :label="'favicon'"
+            :link="'https://icons8.ru/icon/set/watermelon/emoji'"
+            :color="'accent'"
+        />
+        <LinkButton
+            :label="'кириллица в транслит для id'"
+            :link="'https://alfilatov.com/cyrillic-to-translit-js/'"
+            :color="'error'"
+			:icon="'mdi-arrow-left-right'"
+        />
+        <LinkButton
+            :label="'gist'"
+            :link="'https://alfilatov.com/cyrillic-to-translit-js/'"
+            :color="'#bebebe'"
+        />
     </div>
 </template>
+
+<script>
+import LinkButton from "@/components/Buttons/LinkButton";
+
+export default {
+    components: {
+        LinkButton,
+    },
+};
+</script>
