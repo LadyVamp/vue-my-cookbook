@@ -24,8 +24,8 @@
         />
         <LinkButton
             :label="'gist'"
-            :link="'https://alfilatov.com/cyrillic-to-translit-js/'"
-            :color="'#bebebe'"
+            :link="'https://gist.github.com/LadyVamp/'"
+            :color="'#f5f5f5'"
         />
     </div>
 </template>

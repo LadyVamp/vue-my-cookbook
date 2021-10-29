@@ -235,8 +235,8 @@
 				"4": "",
 				"5": ""
 			},
-			"imageLink": "",
-			"originalLink": "",
+			"imageLink": null,
+			"originalLink": null,
 			"staple": "fish",
 			"feature": [
 				"fast",

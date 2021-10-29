@@ -11,8 +11,11 @@
                         }"
                     >
                         <v-img
-                            v-if="item.imageLink"
-                            :src="item.imageLink"
+                            :src="
+                                item.imageLink
+                                    ? item.imageLink
+                                    : 'https://cdn.vuetifyjs.com/images/cards/cooking.png'
+                            "
                             class="white--text align-end"
                             max-height="200px"
                         >

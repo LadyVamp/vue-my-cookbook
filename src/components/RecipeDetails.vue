@@ -4,14 +4,11 @@
         <h2 class="primary--text">{{ recipe.title }}</h2>
         <div>
             <v-img
-                v-if="recipe.imageLink"
-                :src="recipe.imageLink"
-                height="300px"
-            >
-            </v-img>
-            <v-img
-                v-else
-                src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+                :src="
+                    recipe.imageLink
+                        ? recipe.imageLink
+                        : 'https://cdn.vuetifyjs.com/images/cards/cooking.png'
+                "
                 class="white--text align-end"
                 height="300px"
             >
@@ -22,18 +19,17 @@
                 :label="'Оригинальный рецепт'"
                 :link="recipe.originalLink"
                 :icon="'mdi-open-in-new'"
+                :color="'#f5f5f5'"
             />
             <IconStaple :staple="recipe.staple" />
             <IconFeature :feature="recipe.feature" />
-            <router-link
+            <v-btn
                 v-if="recipe.feature.includes('combo')"
-                :to="{
-                    name: 'RecipeDetails',
-                    params: { id: recipe.comboId },
-                }"
-                title="Открыть комбо-рецепт"
-                >Комбо-рецепт
-            </router-link>
+                :to="{ name: 'RecipeDetails', params: { id: recipe.comboId } }"
+                color="primary"
+            >
+                Открыть комбо-рецепт
+            </v-btn>
         </div>
         <div class="my-4">
             <h3 class="secondary--text">Ингредиенты</h3>
