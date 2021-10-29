@@ -8,6 +8,7 @@
 
 <script>
 export default {
+    name: "IconStaple",
     props: {
         staple: {
             type: String,

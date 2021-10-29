@@ -13,7 +13,11 @@
         >
             mdi-numeric-6-box-multiple-outline
         </v-icon>
-        <v-icon v-if="feature.includes('combo')" color="accent" :title="feature">
+        <v-icon
+            v-if="feature.includes('combo')"
+            color="accent"
+            :title="feature"
+        >
             mdi-puzzle
         </v-icon>
     </div>
@@ -21,6 +25,7 @@
 
 <script>
 export default {
+    name: "IconFeature",
     props: {
         feature: {
             type: Array,
