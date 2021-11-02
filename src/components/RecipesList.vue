@@ -2,7 +2,7 @@
   <v-container fluid>
     <h2 class="secondary--text">Список рецептов</h2>
     <v-row>
-      <v-col v-for="item in recipes" :key="item.id">
+      <v-col v-for="item in recipes" :key="item.id" cols="12" sm="6" md="4" xl="3">
         <v-card width="360px" height="360px">
           <router-link
             :to="{
@@ -17,7 +17,7 @@
                   : 'https://cdn.vuetifyjs.com/images/cards/cooking.png'
               "
               class="white--text align-end"
-              max-height="200px"
+              height="200px"
             >
             </v-img>
             <v-card-title>{{ item.title }}</v-card-title>
