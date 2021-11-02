@@ -46,7 +46,7 @@ export default {
   },
   mounted() {
     if (this.recipes.length === 0) {
-      this.fetchRecipes()
+      this.fetchRecipes();
     }
   },
   methods: {
@@ -64,5 +64,6 @@ export default {
 <style lang='scss' scoped>
 .v-card__title {
   line-height: 1.5rem;
+  word-break: normal;
 }
 </style>
