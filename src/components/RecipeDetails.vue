@@ -33,7 +33,7 @@
     </div>
     <div class="my-4">
       <h3 class="secondary--text">Ингредиенты</h3>
-      <p>На {{ recipe.servings }} порции</p>
+      <p>{{ declinationNumberOfServings }}</p>
       <div v-for="(value, name) in recipe.ingredients" :key="name">
         {{ name }} – {{ value }}
       </div>
@@ -61,6 +61,14 @@ export default {
   computed: {
     recipe() {
       return this.$store.getters.getCurrentRecipe;
+    },
+    declinationNumberOfServings() {
+      let servings = this.recipe.servings;
+      if (servings <= 6) {
+        return servings <= 4 ? servings + " порции" : servings + " порций";
+      } else {
+        return "Неожиданное количество порций!";
+      }
     },
   },
   created() {
