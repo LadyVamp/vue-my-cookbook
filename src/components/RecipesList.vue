@@ -1,8 +1,21 @@
 <template>
   <v-container fluid>
     <h2 class="secondary--text">Список рецептов</h2>
+    <v-text-field
+      v-model="search"
+      append-icon="mdi-magnify"
+      label="Поиск по названию"
+      single-line
+    ></v-text-field>
     <v-row>
-      <v-col v-for="item in recipes" :key="item.id" cols="12" sm="6" md="4" xl="3">
+      <v-col
+        v-for="item in filteredList"
+        :key="item.id"
+        cols="12"
+        sm="6"
+        md="4"
+        xl="3"
+      >
         <v-card width="360px" height="360px">
           <router-link
             :to="{
@@ -39,13 +52,20 @@ import { mapActions, mapGetters } from "vuex";
 
 export default {
   name: "RecipesList",
+  data() {
+    return {
+      search: "",
+    };
+  },
   computed: {
-    recipes() {
-      return this.getAllRecipes();
+    filteredList() {
+      return this.getAllRecipes().filter((recipe) => {
+        return recipe.title.toLowerCase().includes(this.search.toLowerCase());
+      });
     },
   },
   mounted() {
-    if (this.recipes.length === 0) {
+    if (this.filteredList.length === 0) {
       this.fetchRecipes();
     }
   },
