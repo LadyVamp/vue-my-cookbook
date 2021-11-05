@@ -1,34 +1,39 @@
 <template>
   <div>
-    <v-icon v-if="feature.includes('fast')" color="accent" :title="feature">
-      mdi-clock-fast
-    </v-icon>
-    <v-icon v-if="feature.includes('oven')" color="accent" :title="feature">
-      mdi-stove
-    </v-icon>
-    <v-icon
-      v-if="feature.includes('6servings')"
-      color="accent"
-      :title="feature"
-    >
-      mdi-numeric-6-box-multiple-outline
-    </v-icon>
-    <v-icon v-if="feature.includes('combo')" color="accent" :title="feature">
-      mdi-puzzle
-    </v-icon>
-    <v-icon v-if="feature.includes('cauldron')" color="accent" :title="feature">
-      mdi-pot-steam-outline
+    <v-icon color="accent" :title="feature">
+      {{ getIcon(feature) }}
     </v-icon>
   </div>
 </template>
 
 <script>
 export default {
-  name: "IconFeature",
+  name: "Iconfeature",
   props: {
     feature: {
-      type: Array,
+      type: String,
       required: true,
+    },
+  },
+
+  methods: {
+    /**
+     * fast - быстрый
+     * oven - в духовке
+     * cauldron - в утятнице
+     * combo - комбо
+     */
+    getIcon(feature) {
+      switch (feature) {
+        case "fast":
+          return "mdi-clock-fast";
+        case "oven":
+          return "mdi-stove";
+        case "cauldron":
+          return "mdi-pot-steam-outline";
+        case "combo":
+          return "mdi-puzzle";
+      }
     },
   },
 };

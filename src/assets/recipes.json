@@ -30,9 +30,7 @@
 			"imageLink": "https://img.povar.ru/main/f3/e1/da/f0/grecheskii_salat_s_bazilikom-81848.jpg",
 			"originalLink": "https://povar.ru/recipes/grecheskii_salat_s_bazilikom-14818.html",
 			"staple": "vegetable",
-			"feature": [
-				"fast"
-			]
+			"feature": "fast"
 		},
 		{
 			"id": "Svinina-s-kartoshkoi-v-pakete-v-dukhovke",
@@ -56,9 +54,7 @@
 			"imageLink": "https://img.povar.ru/main/95/80/c5/b1/svinina_s_kartoshkoi_v_pakete_v_duhovke-149708.jpeg",
 			"originalLink": "https://povar.ru/recipes/svinina_s_kartoshkoi_v_pakete_v_duhovke-24690.html",
 			"staple": "meat",
-			"feature": [
-				"oven"
-			]
+			"feature": "oven"
 		},
 		{
 			"id": "Kuritsa-v-slivochnom-souse-karri-s-ananasom",
@@ -79,9 +75,7 @@
 			"imageLink": "https://eda.ru/img/eda/c620x415/s1.eda.ru/StaticContent/Photos/120131085121/120213175547/p_O.jpg",
 			"originalLink": "https://eda.ru/recepty/osnovnye-blyuda/kurica-v-slivochnom-souse-karri-s-ananasom-16642",
 			"staple": "bird",
-			"feature": [
-				"fast"
-			]
+			"feature": "fast"
 		},
 		{
 			"id": "Makaroni-po-flotski",
@@ -102,9 +96,7 @@
 			"imageLink": "https://eda.ru/img/eda/c620x415/s1.eda.ru/StaticContent/Photos/120214134655/180928114400/p_O.jpg",
 			"originalLink": "https://eda.ru/recepty/pasta-picca/makarony-po-flotski-s-sochnym-farshem-80740",
 			"staple": "meat",
-			"feature": [
-				"fast"
-			]
+			"feature": "fast"
 		},
 		{
 			"id": "Salat-s-tikvoi-i-sirom-brinza",
@@ -127,9 +119,7 @@
 			"imageLink": "https://sun3-12.userapi.com/impg/DMVVVq_mqml3JaDDseItzXlcP5YS-U_esq87zg/1iutjqnwjpA.jpg?size=1101x1185&quality=96&sign=7566178c3844e26e95e51d6969e708d9&type=album",
 			"originalLink": "https://menunedeli.ru/recipe/salat-s-tykvoj-i-syrom-brynza/",
 			"staple": "vegetable",
-			"feature": [
-				"fast"
-			]
+			"feature": "fast"
 		},
 		{
 			"id": "Salat-s-kuritsei-i-seldereem",
@@ -153,9 +143,7 @@
 			"imageLink": "https://img.iamcook.ru/old/upl/recipes/middle/u-5f10f78b7d836eab566021073f3d06d8.jpg",
 			"originalLink": "https://www.iamcook.ru/showrecipe/7085",
 			"staple": "bird",
-			"feature": [
-				"combo"
-			],
+			"feature": "combo",
 			"comboId": "Gribnoi-sup-pyure"
 		},
 		{
@@ -185,9 +173,7 @@
 			"imageLink": "https://i.ytimg.com/vi/8TfNny1ynzA/maxresdefault.jpg",
 			"originalLink": "https://www.russianfood.com/recipes/recipe.php?rid=139033",
 			"staple": "vegetable",
-			"feature": [
-				"combo"
-			],
+			"feature": "combo",
 			"comboId": "Salat-s-kuritsei-i-seldereem"
 		},
 		{
@@ -222,9 +208,7 @@
 			"imageLink": "https://sun9-44.userapi.com/impg/Pz27skfxeJaBoWgtkFRzDReAvK1w2QtixC5gTQ/BdtPM7WukJ4.jpg?size=2076x1348&quality=96&rotate=180&sign=a5db96ae07878c3d37571af7ca34e9ba&type=album",
 			"originalLink": "https://www.russianfood.com/recipes/recipe.php?rid=148538",
 			"staple": "bird",
-			"feature": [
-				"oven"
-			]
+			"feature": "oven"
 		},
 		{
 			"id": "Lagman",
@@ -256,9 +240,7 @@
 			"imageLink": "https://img.povar.ru/steps/b1/ce/4c/89/lagman_klassicheskii-391544.jpg",
 			"originalLink": "https://povar.ru/recipes/lagman_klassicheskii-54519.html",
 			"staple": "meat",
-			"feature": [
-				"cauldron"
-			]
+			"feature": "cauldron"
 		},
 		{
 			"id": "Kuritsa-v-sirnom-souse",
@@ -282,9 +264,7 @@
 			"imageLink": null,
 			"originalLink": null,
 			"staple": "bird",
-			"feature": [
-				"fast"
-			]
+			"feature": "fast"
 		},
 		{
 			"id": "Ribnii-salat-iz-konservirovannoi-gorbushi",
@@ -307,9 +287,7 @@
 			"imageLink": null,
 			"originalLink": null,
 			"staple": "fish",
-			"feature": [
-				"fast"
-			]
+			"feature": "fast"
 		},
 		{
 			"id": "template_id",
@@ -319,7 +297,8 @@
 				"item1": "",
 				"item2": "",
 				"item3": "",
-				"item4": ""
+				"item4": "",
+				"item5": ""
 			},
 			"steps": {
 				"1": "",
@@ -330,12 +309,8 @@
 			},
 			"imageLink": null,
 			"originalLink": null,
-			"staple": "fish",
-			"feature": [
-				"fast",
-				"oven",
-				"cauldron"
-			]
+			"staple": "vegetable || bird || meat || fish",
+			"feature": "fast || oven || cauldron"
 		}
 	]
 }

@@ -24,7 +24,7 @@ export default {
 	actions: {
 		fetchRecipes(context, recipeId) {
 			axios
-				.get('https://gist.githubusercontent.com/LadyVamp/628c9e7aa0d9d26971bf9d512cef6bbe/raw/2744259a4ca75bd4d5cd0c67ee6eb0eb7d0a48c1/recipes-10-19.json')
+				.get('https://gist.githubusercontent.com/LadyVamp/628c9e7aa0d9d26971bf9d512cef6bbe/raw/1a2b648d38c25a5ebb8c1a930bda6dbaa1be054c/recipes-10-19.json')
 				.then(response => {
 					// console.log('fetchRecipes', response.data.recipes);
 					context.commit('setRecipes', response.data.recipes);
