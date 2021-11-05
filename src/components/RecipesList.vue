@@ -9,12 +9,12 @@
     ></v-text-field>
     <v-chip-group mandatory active-class="primary--text">
       <v-chip
-        v-for="tag in mainIngredients"
-        :key="tag"
-        @click="mainIngredient = tag"
+        v-for="(label, key) in mainIngredients"
+        :key="key"
+        @click="mainIngredient = key"
         outlined
       >
-        <IconStaple :staple="tag" /> {{ tag }}
+        <IconStaple :staple="key" />{{ label }}
       </v-chip>
     </v-chip-group>
     <v-row>
@@ -66,7 +66,13 @@ export default {
     return {
       search: "",
       mainIngredient: "all",
-      mainIngredients: ["all", "vegetable", "bird", "meat", "fish"],
+      mainIngredients: {
+        all: "Все",
+        vegetable: "Овощи и фрукты",
+        bird: "Птица",
+        meat: "Мясо",
+        fish: "Рыба и морепродукты",
+      },
     };
   },
   computed: {
@@ -74,7 +80,9 @@ export default {
       return this.getAllRecipes().filter((recipe) => {
         if (this.mainIngredient === "all") {
           return recipe.title.toLowerCase().includes(this.search.toLowerCase());
-        } else if (this.mainIngredients.includes(this.mainIngredient)) {
+        } else if (
+          Object.keys(this.mainIngredients).includes(this.mainIngredient)
+        ) {
           return recipe.staple === this.mainIngredient;
         }
       });
@@ -89,13 +97,9 @@ export default {
     ...mapActions(["fetchRecipes"]),
     ...mapGetters(["getAllRecipes"]),
   },
-  components: {
-    IconStaple,
-    IconFeature,
-  },
+  components: { IconStaple, IconFeature },
 };
 </script>
-
 
 <style lang='scss' scoped>
 .v-card__title {
