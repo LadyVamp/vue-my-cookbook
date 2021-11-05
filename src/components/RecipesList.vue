@@ -7,6 +7,16 @@
       label="Поиск по названию"
       single-line
     ></v-text-field>
+    <v-chip-group mandatory active-class="primary--text">
+      <v-chip
+        v-for="tag in mainIngredients"
+        :key="tag"
+        @click="mainIngredient = tag"
+        outlined
+      >
+        <IconStaple :staple="tag" /> {{ tag }}
+      </v-chip>
+    </v-chip-group>
     <v-row>
       <v-col
         v-for="item in filteredList"
@@ -55,12 +65,18 @@ export default {
   data() {
     return {
       search: "",
+      mainIngredient: "all",
+      mainIngredients: ["all", "vegetable", "bird", "meat", "fish"],
     };
   },
   computed: {
     filteredList() {
       return this.getAllRecipes().filter((recipe) => {
-        return recipe.title.toLowerCase().includes(this.search.toLowerCase());
+        if (this.mainIngredient === "all") {
+          return recipe.title.toLowerCase().includes(this.search.toLowerCase());
+        } else if (this.mainIngredients.includes(this.mainIngredient)) {
+          return recipe.staple === this.mainIngredient;
+        }
       });
     },
   },
