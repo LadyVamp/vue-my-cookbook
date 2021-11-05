@@ -1,5 +1,5 @@
 <template>
-    <v-footer padless>
+    <v-footer padless class="mt-4">
         <v-col class="text-center text-body-2 py-1" cols="12">
             © {{ new Date().getFullYear() }}
             <a

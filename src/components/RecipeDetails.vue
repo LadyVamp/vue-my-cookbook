@@ -16,6 +16,7 @@
     </div>
     <div>
       <LinkButton
+        v-if="recipe.originalLink"
         :label="'Оригинальный рецепт'"
         :link="recipe.originalLink"
         :icon="'mdi-open-in-new'"
@@ -34,6 +35,7 @@
     <div class="my-4">
       <h3 class="secondary--text">Ингредиенты</h3>
       <p>{{ declinationNumberOfServings }}</p>
+      <p v-if="recipe.note" class="secondary--text">{{ recipe.note }}</p>
       <div v-for="(value, name) in recipe.ingredients" :key="name">
         {{ name }} – {{ value }}
       </div>
@@ -63,7 +65,7 @@ export default {
       return this.$store.getters.getCurrentRecipe;
     },
     declinationNumberOfServings() {
-      let servings = this.recipe.servings;
+      const servings = this.recipe.servings;
       if (servings <= 6) {
         return servings <= 4 ? servings + " порции" : servings + " порций";
       } else {

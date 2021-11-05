@@ -63,7 +63,7 @@ export default {
 
 <style lang='scss' scoped>
 .v-card__title {
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   word-break: normal;
 }
 </style>
