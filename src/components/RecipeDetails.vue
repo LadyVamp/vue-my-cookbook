@@ -15,13 +15,21 @@
       </v-img>
     </div>
     <div>
-      <LinkButton
-        v-if="recipe.originalLink"
-        :label="'Оригинальный рецепт'"
-        :link="recipe.originalLink"
-        :icon="'mdi-open-in-new'"
-        :color="'#f5f5f5'"
-      />
+      <div v-if="recipe.originalLink">
+        <LinkButton
+          v-if="recipe.originalLink.includes('youtube')"
+          :label="'Источник (видео)'"
+          :link="recipe.originalLink"
+          :icon="'mdi-youtube'"
+          :color="'#f5f5f5'"
+        />
+        <LinkButton
+          v-else
+          :label="'Источник'"
+          :link="recipe.originalLink"
+          :color="'#f5f5f5'"
+        />
+      </div>
       <IconStaple :staple="recipe.staple" />
       <IconFeature :feature="recipe.feature" />
       <v-btn
@@ -87,12 +95,7 @@ export default {
       this.fetchData();
     },
   },
-  components: {
-    IconStaple,
-    IconFeature,
-    LinkButton,
-    BackButton,
-  },
+  components: { IconStaple, IconFeature, LinkButton, BackButton },
 };
 </script>
 

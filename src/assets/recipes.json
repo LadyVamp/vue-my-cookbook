@@ -72,7 +72,7 @@
 				"2": "Залить все сливками, постепенно, чтобы не было комочков, всыпать карри. Тщательно размешать, чтобы получился однородный соус, и тушить 20–30 минут.",
 				"3": "Нарезать кубиками ананас и добавить к курице. Потушить еще 5 минут. На гарнир лучше приготовить рис."
 			},
-			"imageLink": "https://eda.ru/img/eda/c620x415/s1.eda.ru/StaticContent/Photos/120131085121/120213175547/p_O.jpg",
+			"imageLink": "https://img1.russianfood.com/dycontent/images_upl/355/big_354646.jpg",
 			"originalLink": "https://eda.ru/recepty/osnovnye-blyuda/kurica-v-slivochnom-souse-karri-s-ananasom-16642",
 			"staple": "bird",
 			"feature": "fast"
@@ -140,7 +140,7 @@
 				"5": "Соединить все ингредиенты",
 				"6": "Добавить перец и йогурт, перемешать"
 			},
-			"imageLink": "https://img.iamcook.ru/old/upl/recipes/middle/u-5f10f78b7d836eab566021073f3d06d8.jpg",
+			"imageLink": "https://s1.eda.ru/StaticContent/Photos/110816122025/141101151423/p_O.jpg",
 			"originalLink": "https://www.iamcook.ru/showrecipe/7085",
 			"staple": "bird",
 			"feature": "combo",
@@ -237,7 +237,7 @@
 				"11": "Сварить лапшу в соответствии с инструкцией на упаковке",
 				"12": "Выложить лапшу по порциям, а сверху — овощи с мясом в подливе"
 			},
-			"imageLink": "https://img.povar.ru/steps/b1/ce/4c/89/lagman_klassicheskii-391544.jpg",
+			"imageLink": "https://toprecepty.ru/wp-content/uploads/2020/01/lagman-uzbekskij.jpg",
 			"originalLink": "https://povar.ru/recipes/lagman_klassicheskii-54519.html",
 			"staple": "meat",
 			"feature": "cauldron"
@@ -272,7 +272,7 @@
 			"servings": 4,
 			"ingredients": {
 				"Горбуша натуральная": "1-2 банки",
-				"Яйцо": "4 шт",
+				"Яйцо куриное": "4 шт",
 				"Рис": "1/4 ст",
 				"Лук репчатый": "1 шт",
 				"Майонез": "По вкусу"
@@ -288,6 +288,33 @@
 			"originalLink": null,
 			"staple": "fish",
 			"feature": "fast"
+		},
+		{
+			"id": "Shashlik-na-shpazhkakh-v-dukhovke",
+			"title": "Шашлык на шпажках в духовке",
+			"servings": 4,
+			"ingredients": {
+				"Шея свиная": "1 кг",
+				"Лук репчатый ": "2 шт",
+				"Приправа для шашлыка": "По вкусу"
+			},
+			"note": "Если нет приправы для шашлыка, заменить на смесь перцев и хмели-сунели.",
+			"steps": {
+				"1": "Нарезать свинину на кусочки. Размером меньше, чем на обычный шашлык",
+				"2": "Нарезать лук",
+				"3": "Свинину и лук поместить в миску",
+				"4": "Добавить специи и соль, перемешать",
+				"5": "Накрыть тарелкой и отправить в холодильник минимум на 2 часа, лучше на ночь",
+				"6": "После того, как шашлык замариновался. Включить духовку. Замочить шпажки в воде на 20 минут",
+				"7": "Постелить фольгу на противень",
+				"8": "Насадить мясо на шпажки. Установить шпажки на бортик жаропрочной формы и поставить в раскаленную до максимума духовку",
+				"9": "Через 20 минут перевернуть шашлык на другую сторону и продолжать готовить еще 30 минут",
+				"10": "Переложить горячее сочное мясо на тарелку и пожать со свежим хлебом, зеленью и легким овощным салатиком"
+			},
+			"imageLink": "https://www.photorecept.ru/wp-content/uploads/2019/07/7-28-1300x864.jpg",
+			"originalLink": "https://www.youtube.com/watch?v=pmmWFOZCIww",
+			"staple": "meat",
+			"feature": "oven"
 		},
 		{
 			"id": "template_id",
