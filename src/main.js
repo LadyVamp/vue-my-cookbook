@@ -5,9 +5,10 @@ import vuetify from './plugins/vuetify';
 import axios from 'axios';
 import { store } from './store';
 import VueYandexMetrika from 'vue-yandex-metrika';
+import VueMeta from 'vue-meta';
 
 Vue.config.productionTip = false;
-
+Vue.use(VueMeta);
 Vue.use(VueYandexMetrika, {
 	id: 86162667,
 	router: router,

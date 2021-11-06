@@ -68,6 +68,12 @@ import { mapActions } from "vuex";
 
 export default {
   name: "RecipeDetails",
+  components: { IconStaple, IconFeature, LinkButton, BackButton },
+  metaInfo() {
+    return {
+      title: this.recipe.title,
+    };
+  },
   computed: {
     recipe() {
       return this.$store.getters.getCurrentRecipe;
@@ -95,7 +101,6 @@ export default {
       this.fetchData();
     },
   },
-  components: { IconStaple, IconFeature, LinkButton, BackButton },
 };
 </script>
 

@@ -62,6 +62,7 @@ import { mapActions, mapGetters } from "vuex";
 
 export default {
   name: "RecipesList",
+  components: { IconStaple, IconFeature },
   data() {
     return {
       search: "",
@@ -97,7 +98,6 @@ export default {
     ...mapActions(["fetchRecipes"]),
     ...mapGetters(["getAllRecipes"]),
   },
-  components: { IconStaple, IconFeature },
 };
 </script>
 
