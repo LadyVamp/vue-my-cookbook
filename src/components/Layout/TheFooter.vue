@@ -10,7 +10,7 @@
             >
         </v-col>
         <v-col class="text-right pt-0 pb-1 caption" cols="12">
-            <a href="" class="grey--text text--darken-3" target="_blank">
+            <a href="https://ladyvamp.github.io/vue-my-cookbook/" class="grey--text text--darken-3" target="_blank">
                 {{ version }}
             </a>
         </v-col>
