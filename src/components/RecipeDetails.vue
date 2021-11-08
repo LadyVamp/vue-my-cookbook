@@ -15,21 +15,6 @@
       </v-img>
     </div>
     <div>
-      <div v-if="recipe.originalLink">
-        <LinkButton
-          v-if="recipe.originalLink.includes('youtube')"
-          :label="'Источник (видео)'"
-          :link="recipe.originalLink"
-          :icon="'mdi-youtube'"
-          :color="'#f5f5f5'"
-        />
-        <LinkButton
-          v-else
-          :label="'Источник'"
-          :link="recipe.originalLink"
-          :color="'#f5f5f5'"
-        />
-      </div>
       <IconStaple :staple="recipe.staple" />
       <IconFeature :feature="recipe.feature" />
       <v-btn
@@ -62,13 +47,12 @@
 <script>
 import IconStaple from "@/components/IconStaple";
 import IconFeature from "@/components/IconFeature";
-import LinkButton from "@/components/Buttons/LinkButton";
 import BackButton from "@/components/Buttons/BackButton";
 import { mapActions } from "vuex";
 
 export default {
   name: "RecipeDetails",
-  components: { IconStaple, IconFeature, LinkButton, BackButton },
+  components: { IconStaple, IconFeature, BackButton },
   metaInfo() {
     return {
       title: this.recipe.title,
