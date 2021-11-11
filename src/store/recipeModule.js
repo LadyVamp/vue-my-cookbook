@@ -3,7 +3,8 @@ import axios from 'axios';
 export default {
 	state: {
 		recipes: [],
-		currentRecipe: null
+		currentRecipe: null,
+		recipesCount: 0
 	},
 	mutations: {
 		setRecipes(state, payload) {
@@ -12,6 +13,9 @@ export default {
 		setCurrentRecipe(state, payload) {
 			state.currentRecipe = payload
 		},
+		setRecipesCount(state, payload) {
+			state.recipesCount = payload
+		},
 	},
 	getters: {
 		getAllRecipes(state) {
@@ -19,7 +23,10 @@ export default {
 		},
 		getCurrentRecipe(state) {
 			return state.currentRecipe
-		}
+		},
+		getRecipesCount(state) {
+			return state.recipesCount
+		},
 	},
 	actions: {
 		fetchRecipes(context, recipeId) {
@@ -29,6 +36,7 @@ export default {
 					// console.log('fetchRecipes', response.data.recipes);
 					const recipes = response.data.recipes.filter(item => item.title !== 'template_title');
 					context.commit('setRecipes', recipes);
+					context.commit('setRecipesCount', recipes.length);
 					if (recipeId) {
 						context.commit('setCurrentRecipe', response.data.recipes.find(
 							item => item.id === recipeId

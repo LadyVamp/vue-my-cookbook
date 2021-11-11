@@ -11,15 +11,14 @@
                         item-value="id"
                         item-text="name"
                         return-object
-                        @change="onChange(selected)"
                     >
-                    </v-select>
+                    </v-select>					
                 </div>
-                <div>
+                <div class="search-input">
                     <v-text-field
                         v-model="search"
                         append-icon="mdi-magnify"
-                        label="Поиск"
+						:label="'Поиск по ' + getRecipesCount() + ' рецептам'"
                         single-line
                     ></v-text-field>
                 </div>
@@ -126,9 +125,9 @@ export default {
                 return this.getAllRecipes().filter(
                     (recipe) => recipe.staple === this.selectedStaple
                 );
-            } else {
-                return this.getAllRecipes();
             }
+
+            return this.getAllRecipes();
         },
     },
     mounted() {
@@ -138,11 +137,7 @@ export default {
     },
     methods: {
         ...mapActions(["fetchRecipes"]),
-        ...mapGetters(["getAllRecipes"]),
-
-        onChange(selected) {
-            console.log(selected.id);
-        },
+        ...mapGetters(["getAllRecipes", "getRecipesCount"]),
     },
 };
 </script>
@@ -156,5 +151,8 @@ export default {
     display: block;
     margin-right: 5px;
     width: 200px;
+}
+.search-input {
+    width: 250px;
 }
 </style>
