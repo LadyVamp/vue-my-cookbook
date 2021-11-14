@@ -8,7 +8,7 @@
         />
         <LinkButton
             :label="'иконки'"
-            :link="'https://materialdesignicons.com/'"
+            :link="'https://materialdesignicons.com/tag/food-drink'"
             :color="'secondary'"
         />
         <LinkButton

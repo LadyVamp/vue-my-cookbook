@@ -31,7 +31,7 @@ export default {
 	actions: {
 		fetchRecipes(context, recipeId) {
 			axios
-				.get('https://gist.githubusercontent.com/LadyVamp/628c9e7aa0d9d26971bf9d512cef6bbe/raw/fac0bf769267176b1eb953a52097ac9611bbe1ed/recipes-11-06.json')
+				.get('https://gist.githubusercontent.com/LadyVamp/628c9e7aa0d9d26971bf9d512cef6bbe/raw/f12ea78e1254f1629c53961622a42562d8b22a33/recipes-11-06.json')
 				.then(response => {
 					// console.log('fetchRecipes', response.data.recipes);
 					const recipes = response.data.recipes.filter(item => item.title !== 'template_title');

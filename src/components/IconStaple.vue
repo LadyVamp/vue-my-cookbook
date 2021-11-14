@@ -27,6 +27,10 @@ export default {
                     return "mdi-food-steak";
                 case "fish":
                     return "mdi-fish";
+                case "dairy":
+                    return "mdi-cheese";
+                default: 
+                    return "mdi-star";
             }
         },
         getIconColor(staple) {
@@ -39,6 +43,10 @@ export default {
                     return "red darken-2";
                 case "fish":
                     return "blue lighten-2";
+                case "dairy":
+                    return "amber lighten-2";
+                default: 
+                    return "accent lighten-2";
             }
         },
     },

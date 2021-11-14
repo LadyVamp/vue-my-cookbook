@@ -95,6 +95,7 @@ export default {
                 bird: "Птица",
                 meat: "Мясо",
                 fish: "Рыба и морепродукты",
+                dairy: "Молочные продукты",
             },
             options: [
                 { id: "title", name: "По названию" },

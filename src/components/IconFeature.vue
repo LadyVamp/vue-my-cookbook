@@ -21,6 +21,7 @@ export default {
      * fast - быстрый
      * oven - в духовке
      * cauldron - в утятнице
+     * pot - в кастрюле
      * combo - комбо
      */
     getIcon(feature) {
@@ -31,8 +32,12 @@ export default {
           return "mdi-stove";
         case "cauldron":
           return "mdi-pot-steam-outline";
+        case "pot":
+          return "mdi-pot-mix-outline";
         case "combo":
           return "mdi-puzzle";
+        default: 
+          return "mdi-star";
       }
     },
   },
