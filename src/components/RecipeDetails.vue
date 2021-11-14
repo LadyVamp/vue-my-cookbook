@@ -53,9 +53,14 @@ import { mapActions } from "vuex";
 export default {
   name: "RecipeDetails",
   components: { IconStaple, IconFeature, BackButton },
+  data() {
+    return {
+      title: "Default Title",
+    };
+  },
   metaInfo() {
     return {
-      title: this.recipe.title,
+      title: this.title,
     };
   },
   computed: {
@@ -73,6 +78,9 @@ export default {
   },
   created() {
     this.fetchData();
+  },
+  updated() {
+    this.title = this.recipe.title;
   },
   methods: {
     ...mapActions(["fetchRecipes"]),
