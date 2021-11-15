@@ -12,13 +12,13 @@
                         item-text="name"
                         return-object
                     >
-                    </v-select>					
+                    </v-select>
                 </div>
                 <div class="search-input">
                     <v-text-field
                         v-model="search"
                         append-icon="mdi-magnify"
-						:label="'Поиск по ' + getRecipesCount() + ' рецептам'"
+                        :label="'Поиск по ' + getRecipesCount() + ' рецептам'"
                         single-line
                     ></v-text-field>
                 </div>
@@ -120,8 +120,18 @@ export default {
                 this.selected.id === "ingredients"
             ) {
                 // поиск по ингредиентам
-                console.log("TODO", this.search, this.selected.id);
-                return this.getAllRecipes();
+                const searchIngredient = this.search.toLowerCase();
+                const set = new Set();
+                this.getAllRecipes().forEach((recipe) => {
+                    if (recipe.ingredients) {
+                        Object.keys(recipe.ingredients).forEach((item) => {
+                            if (item.toLowerCase().includes(searchIngredient)) {
+                                set.add(recipe);
+                            }
+                        });
+                    }
+                });
+                return set;
             } else if (this.staples !== "all") {
                 return this.getAllRecipes().filter(
                     (recipe) => recipe.staple === this.selectedStaple
