@@ -29,7 +29,7 @@ export default {
                     return "mdi-fish";
                 case "dairy":
                     return "mdi-cheese";
-                default: 
+                default:
                     return "mdi-star";
             }
         },
@@ -45,7 +45,7 @@ export default {
                     return "blue lighten-2";
                 case "dairy":
                     return "amber lighten-2";
-                default: 
+                default:
                     return "accent lighten-2";
             }
         },

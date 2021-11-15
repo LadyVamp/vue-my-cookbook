@@ -26,14 +26,32 @@
         </v-row>
         <v-row>
             <v-col>
-                <v-chip-group mandatory active-class="primary--text">
+                <v-chip-group active-class="primary--text">
                     <v-chip
                         v-for="(label, key) in staples"
                         :key="key"
                         @click="selectedStaple = key"
+                        :disabled="selectedFeature !== 'all'"
                         outlined
+                        class="text-caption"
                     >
                         <IconStaple :staple="key" />{{ label }}
+                    </v-chip>
+                </v-chip-group>
+            </v-col>
+        </v-row>
+        <v-row>
+            <v-col>
+                <v-chip-group active-class="primary--text">
+                    <v-chip
+                        v-for="(label, key) in features"
+                        :key="key"
+                        @click="selectedFeature = key"
+                        :disabled="selectedStaple !== 'all'"
+                        outlined
+                        class="text-caption"
+                    >
+                        <IconFeature :feature="key" />{{ label }}
                     </v-chip>
                 </v-chip-group>
             </v-col>
@@ -102,39 +120,48 @@ export default {
                 { id: "ingredients", name: "По ингредиентам" },
             ],
             selected: { id: "title", name: "По названию" },
+            selectedFeature: "all",
+            features: {
+                all: "Все",
+                fast: "Быстрый",
+                oven: "Духовка",
+                cauldron: "Утятница",
+                pot: "Кастрюля",
+                combo: "Комбо",
+            },
         };
     },
     computed: {
         filteredList() {
-            if (this.search === "" && this.selectedStaple === "all") {
-                return this.getAllRecipes();
-            } else if (this.search !== "" && this.selected.id === "title") {
+            const searchInput = this.search.toLowerCase();
+            if (this.search !== "" && this.selected.id === "title") {
                 // поиск по названию
                 return this.getAllRecipes().filter((recipe) =>
-                    recipe.title
-                        .toLowerCase()
-                        .includes(this.search.toLowerCase())
+                    recipe.title.toLowerCase().includes(searchInput)
                 );
-            } else if (
-                this.search !== "" &&
-                this.selected.id === "ingredients"
-            ) {
+            }
+            if (this.search !== "" && this.selected.id === "ingredients") {
                 // поиск по ингредиентам
-                const searchIngredient = this.search.toLowerCase();
                 const set = new Set();
                 this.getAllRecipes().forEach((recipe) => {
                     if (recipe.ingredients) {
                         Object.keys(recipe.ingredients).forEach((item) => {
-                            if (item.toLowerCase().includes(searchIngredient)) {
+                            if (item.toLowerCase().includes(searchInput)) {
                                 set.add(recipe);
                             }
                         });
                     }
                 });
                 return set;
-            } else if (this.staples !== "all") {
+            }
+            if (this.selectedStaple !== "all") {
                 return this.getAllRecipes().filter(
                     (recipe) => recipe.staple === this.selectedStaple
+                );
+            }
+            if (this.selectedFeature !== "all") {
+                return this.getAllRecipes().filter(
+                    (recipe) => recipe.feature === this.selectedFeature
                 );
             }
 
