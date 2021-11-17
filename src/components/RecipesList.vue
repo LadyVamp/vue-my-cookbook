@@ -24,22 +24,7 @@
                 </div>
             </v-col>
         </v-row>
-        <v-row>
-            <v-col>
-                <v-chip-group active-class="primary--text">
-                    <v-chip
-                        v-for="(label, key) in staples"
-                        :key="key"
-                        @click="selectedStaple = key"
-                        :disabled="selectedFeature !== 'all'"
-                        outlined
-                        class="text-caption"
-                    >
-                        <IconStaple :staple="key" />
-                    </v-chip>
-                </v-chip-group>
-            </v-col>
-        </v-row>
+        <FilterByStaple @filterByStaple="onFilterByStaple" />
         <v-row>
             <v-col>
                 <v-chip-group active-class="primary--text">
@@ -47,7 +32,6 @@
                         v-for="(label, key) in features"
                         :key="key"
                         @click="selectedFeature = key"
-                        :disabled="selectedStaple !== 'all'"
                         outlined
                         class="text-caption"
                     >
@@ -57,7 +41,7 @@
             </v-col>
         </v-row>
 
-        <v-row>
+        <v-row v-if="getLoading() === false">
             <v-col
                 v-for="item in filteredList"
                 :key="item.id"
@@ -92,6 +76,13 @@
                 </v-card>
             </v-col>
         </v-row>
+        <div v-else>
+            <v-progress-circular
+                :size="50"
+                color="primary"
+                indeterminate
+            ></v-progress-circular>
+        </div>
     </v-container>
 </template>
 
@@ -99,22 +90,14 @@
 import IconStaple from "@/components/IconStaple";
 import IconFeature from "@/components/IconFeature";
 import { mapActions, mapGetters } from "vuex";
+import FilterByStaple from "@/components/FilterByStaple";
 
 export default {
     name: "RecipesList",
-    components: { IconStaple, IconFeature },
+    components: { IconStaple, IconFeature, FilterByStaple },
     data() {
         return {
             search: "",
-            selectedStaple: "all",
-            staples: {
-                all: "Все",
-                vegetable: "Овощи и фрукты",
-                bird: "Птица",
-                meat: "Мясо",
-                fish: "Рыба и морепродукты",
-                dairy: "Молочные продукты",
-            },
             options: [
                 { id: "title", name: "По названию" },
                 { id: "ingredients", name: "По ингредиентам" },
@@ -129,9 +112,10 @@ export default {
                 pot: "Кастрюля",
                 combo: "Комбо",
             },
+            filteredList: [],
         };
     },
-    computed: {
+    /* computed: {
         filteredList() {
             const searchInput = this.search.toLowerCase();
             if (this.search !== "" && this.selected.id === "title") {
@@ -154,11 +138,11 @@ export default {
                 });
                 return set;
             }
-            if (this.selectedStaple !== "all") {
-                return this.getAllRecipes().filter(
-                    (recipe) => recipe.staple === this.selectedStaple
-                );
-            }
+            // if (this.selectedStaple !== "all") {
+            //     return this.getAllRecipes().filter(
+            //         (recipe) => recipe.staple === this.selectedStaple
+            //     );
+            // }
             if (this.selectedFeature !== "all") {
                 return this.getAllRecipes().filter(
                     (recipe) => recipe.feature === this.selectedFeature
@@ -168,14 +152,35 @@ export default {
             return this.getAllRecipes();
         },
     },
+	*/
+
     mounted() {
         if (this.filteredList.length === 0) {
             this.fetchRecipes();
         }
     },
+    updated() {
+        if (this.filteredList.length === 0) {
+            this.showAllRecipes();
+        }
+    },
     methods: {
         ...mapActions(["fetchRecipes"]),
-        ...mapGetters(["getAllRecipes", "getRecipesCount"]),
+        ...mapGetters(["getAllRecipes", "getRecipesCount", "getLoading"]),
+
+        showAllRecipes() {
+            this.filteredList = this.getAllRecipes();
+        },
+        onFilterByStaple(selectedStaple) {
+            console.log("onFilterByStaple", selectedStaple);
+            if (selectedStaple === "all") {
+                this.showAllRecipes();
+            } else {
+                this.filteredList = this.getAllRecipes().filter(
+                    (recipe) => recipe.staple === selectedStaple
+                );
+            }
+        },
     },
 };
 </script>
