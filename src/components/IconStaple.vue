@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-icon :color="getIconColor(staple)" :title="staple">
+        <v-icon :color="getIconColor(staple)" :title="getIconLabel(staple)">
             {{ getIcon(staple) }}
         </v-icon>
     </div>
@@ -15,39 +15,57 @@ export default {
             required: true,
         },
     },
-
+    data() {
+        return {
+            iconStaples: [
+                {
+                    key: "all",
+                    label: "Все",
+                    icon: "mdi-star",
+                    color: "accent lighten-2",
+                },
+                {
+                    key: "vegetable",
+                    label: "Овощи и фрукты",
+                    icon: "mdi-food-apple",
+                    color: "light-green darken-1",
+                },
+                {
+                    key: "bird",
+                    label: "Птица",
+                    icon: "mdi-food-drumstick",
+                    color: "red lighten-3",
+                },
+                {
+                    key: "meat",
+                    label: "Мясо",
+                    icon: "mdi-food-steak",
+                    color: "red darken-",
+                },
+                {
+                    key: "fish",
+                    label: "Рыба и морепродукты",
+                    icon: "mdi-fish",
+                    color: "blue lighten-2",
+                },
+                {
+                    key: "dairy",
+                    label: "Молочные продукты",
+                    icon: "mdi-cheese",
+                    color: "amber lighten-2",
+                },
+            ],
+        };
+    },
     methods: {
         getIcon(staple) {
-            switch (staple) {
-                case "vegetable":
-                    return "mdi-leaf";
-                case "bird":
-                    return "mdi-food-drumstick";
-                case "meat":
-                    return "mdi-food-steak";
-                case "fish":
-                    return "mdi-fish";
-                case "dairy":
-                    return "mdi-cheese";
-                default:
-                    return "mdi-star";
-            }
+            return this.iconStaples.find((item) => item.key === staple).icon;
+        },
+        getIconLabel(staple) {
+            return this.iconStaples.find((item) => item.key === staple).label;
         },
         getIconColor(staple) {
-            switch (staple) {
-                case "vegetable":
-                    return "light-green darken-1";
-                case "bird":
-                    return "red lighten-3";
-                case "meat":
-                    return "red darken-2";
-                case "fish":
-                    return "blue lighten-2";
-                case "dairy":
-                    return "amber lighten-2";
-                default:
-                    return "accent lighten-2";
-            }
+            return this.iconStaples.find((item) => item.key === staple).color;
         },
     },
 };

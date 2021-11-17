@@ -35,7 +35,7 @@
                         outlined
                         class="text-caption"
                     >
-                        <IconStaple :staple="key" />{{ label }}
+                        <IconStaple :staple="key" />
                     </v-chip>
                 </v-chip-group>
             </v-col>
@@ -51,7 +51,7 @@
                         outlined
                         class="text-caption"
                     >
-                        <IconFeature :feature="key" />{{ label }}
+                        <IconFeature :feature="key" />
                     </v-chip>
                 </v-chip-group>
             </v-col>
