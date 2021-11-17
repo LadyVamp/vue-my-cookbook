@@ -1,45 +1,64 @@
 <template>
-  <div>
-    <v-icon color="accent" :title="feature">
-      {{ getIcon(feature) }}
-    </v-icon>
-  </div>
+    <div>
+        <v-icon color="accent" :title="feature">
+            {{ getIcon(feature) }}
+        </v-icon>
+    </div>
 </template>
 
 <script>
 export default {
-  name: "Iconfeature",
-  props: {
-    feature: {
-      type: String,
-      required: true,
+    name: "Iconfeature",
+    props: {
+        feature: {
+            type: String,
+            required: true,
+        },
     },
-  },
+    data() {
+        return {
+            iconFeatures: [
+                {
+                    key: "all",
+                    label: "Все",
+                    icon: "mdi-star",
+                },
+                {
+                    key: "fast",
+                    label: "Быстрый",
+                    icon: "mdi-clock-fast",
+                },
+                {
+                    key: "oven",
+                    label: "Духовка",
+                    icon: "mdi-stove",
+                },
+                {
+                    key: "cauldron",
+                    label: "Утятница",
+                    icon: "mdi-pot-steam-outline",
+                },
+                {
+                    key: "pot",
+                    label: "Кастрюля",
+                    icon: "mdi-pot-mix-outline",
+                },
+                {
+                    key: "combo",
+                    label: "Комбо",
+                    icon: "mdi-puzzle",
+                },
+            ],
+        };
+    },
 
-  methods: {
-    /**
-     * fast - быстрый
-     * oven - в духовке
-     * cauldron - в утятнице
-     * pot - в кастрюле
-     * combo - комбо
-     */
-    getIcon(feature) {
-      switch (feature) {
-        case "fast":
-          return "mdi-clock-fast";
-        case "oven":
-          return "mdi-stove";
-        case "cauldron":
-          return "mdi-pot-steam-outline";
-        case "pot":
-          return "mdi-pot-mix-outline";
-        case "combo":
-          return "mdi-puzzle";
-        default: 
-          return "mdi-star";
-      }
+    methods: {
+        getIcon(feature) {
+            return this.iconFeatures.find((item) => item.key === feature).icon;
+        },
+        getIconLabel(feature) {
+            return this.iconFeatures.find((item) => item.key === feature).label;
+        },
     },
-  },
 };
 </script>
