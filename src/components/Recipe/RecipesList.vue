@@ -73,11 +73,11 @@
 </template>
 
 <script>
-import IconStaple from "@/components/IconStaple";
-import IconFeature from "@/components/IconFeature";
+import IconStaple from "@/components/Recipe/Icons/IconStaple";
+import IconFeature from "@/components/Recipe/Icons/IconFeature";
 import { mapActions, mapGetters } from "vuex";
-import FilterByStaple from "@/components/FilterByStaple";
-import FilterByFeature from "@/components/FilterByFeature";
+import FilterByStaple from "@/components/Recipe/Filters/FilterByStaple";
+import FilterByFeature from "@/components/Recipe/Filters/FilterByFeature";
 
 export default {
     name: "RecipesList",

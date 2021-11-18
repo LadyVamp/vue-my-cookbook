@@ -5,7 +5,7 @@
 <script>
 export default {
     components: {
-        RecipesList: () => import("@/components/RecipesList.vue"),
+        RecipesList: () => import("@/components/Recipe/RecipesList.vue"),
     },
 };
 </script>

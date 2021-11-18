@@ -3,13 +3,13 @@
         <v-col>
             <v-chip-group active-class="primary--text">
                 <v-chip
-                    v-for="item in staples"
+                    v-for="item in features"
                     :key="item"
                     outlined
                     class="text-caption"
-                    @click="filterByStaple(item)"
+                    @click="filterByFeature(item)"
                 >
-                    <IconStaple :staple="item" />
+                    <IconFeature :feature="item" />
                 </v-chip>
             </v-chip-group>
         </v-col>
@@ -17,19 +17,20 @@
 </template>
 
 <script>
-import IconStaple from "@/components/IconStaple";
+import IconFeature from "@/components/Recipe/Icons/IconFeature";
 
 export default {
-    name: "FilterByStaple",
-    components: { IconStaple },
+    name: "FilterByFeature",
+    components: { IconFeature },
     data() {
         return {
-            staples: ["all", "vegetable", "bird", "meat", "fish", "dairy"],
+            features: ["all", "fast", "oven", "cauldron", "pot", "combo"],
         };
     },
+
     methods: {
-        filterByStaple(selectedStaple) {
-            this.$emit("filterByStaple", selectedStaple);
+        filterByFeature(selectedFeature) {
+            this.$emit("filterByFeature", selectedFeature);
         },
     },
 };

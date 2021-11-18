@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import RecipeDetails from '@/components/RecipeDetails';
+import RecipeDetails from '@/components/Recipe/RecipeDetails';
 Vue.use(VueRouter);
 
 const routes = [
