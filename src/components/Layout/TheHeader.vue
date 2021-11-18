@@ -39,7 +39,7 @@
                     title="На главную"
                 />
             </router-link>
-            <v-app-bar-title class="text-no-wrap hidden-xs-only">
+            <v-app-bar-title class="hidden-xs-only">
                 {{ title }}
             </v-app-bar-title>
         </v-app-bar>
@@ -56,7 +56,7 @@ export default {
         },
     },
     data: () => ({
-        title: "My cookbook",
+        title: "My recipes",
         subtitle: "Проверенные рецепты",
         isShowDrawer: false,
     }),

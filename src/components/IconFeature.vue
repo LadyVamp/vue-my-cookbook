@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-icon color="accent" :title="feature">
+        <v-icon color="accent" :title="getIconLabel(feature)">
             {{ getIcon(feature) }}
         </v-icon>
     </div>
@@ -36,12 +36,12 @@ export default {
                 {
                     key: "cauldron",
                     label: "Утятница",
-                    icon: "mdi-pot-steam-outline",
+                    icon: "mdi-bowl",
                 },
                 {
                     key: "pot",
                     label: "Кастрюля",
-                    icon: "mdi-pot-mix-outline",
+                    icon: "mdi-pot-outline",
                 },
                 {
                     key: "combo",
