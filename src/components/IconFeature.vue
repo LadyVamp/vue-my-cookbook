@@ -20,8 +20,8 @@ export default {
             iconFeatures: [
                 {
                     key: "all",
-                    label: "Все",
-                    icon: "mdi-star",
+                    label: "Все особенности",
+                    icon: "mdi-layers-outline",
                 },
                 {
                     key: "fast",
@@ -36,17 +36,17 @@ export default {
                 {
                     key: "cauldron",
                     label: "Утятница",
-                    icon: "mdi-bowl",
+                    icon: "mdi-dome-light",
                 },
                 {
                     key: "pot",
                     label: "Кастрюля",
-                    icon: "mdi-pot-outline",
+                    icon: "mdi-pot-steam-outline",
                 },
                 {
                     key: "combo",
                     label: "Комбо",
-                    icon: "mdi-puzzle",
+                    icon: "mdi-hexagon-multiple-outline",
                 },
             ],
         };

@@ -20,8 +20,8 @@ export default {
             iconStaples: [
                 {
                     key: "all",
-                    label: "Все",
-                    icon: "mdi-star",
+                    label: "Все категории продуктов",
+                    icon: "mdi-layers-outline",
                     color: "accent lighten-2",
                 },
                 {

@@ -8,8 +8,8 @@
                         label="Поиск"
                         v-model="selected"
                         :items="options"
-                        item-value="id"
-                        item-text="name"
+                        item-value="value"
+                        item-text="text"
                         return-object
                     >
                     </v-select>
@@ -20,6 +20,7 @@
                         append-icon="mdi-magnify"
                         :label="'Поиск по ' + getRecipesCount() + ' рецептам'"
                         single-line
+                        @input="onSearchInput()"
                     ></v-text-field>
                 </div>
             </v-col>
@@ -85,59 +86,20 @@ export default {
         return {
             search: "",
             options: [
-                { id: "title", name: "По названию" },
-                { id: "ingredients", name: "По ингредиентам" },
+                { value: "title", text: "По названию" },
+                { value: "ingredients", text: "По ингредиентам" },
             ],
-            selected: { id: "title", name: "По названию" },
+            selected: { value: "title", text: "По названию" },
             filteredList: [],
         };
     },
-    /* computed: {
-        filteredList() {
-            const searchInput = this.search.toLowerCase();
-            if (this.search !== "" && this.selected.id === "title") {
-                // поиск по названию
-                return this.getAllRecipes().filter((recipe) =>
-                    recipe.title.toLowerCase().includes(searchInput)
-                );
-            }
-            if (this.search !== "" && this.selected.id === "ingredients") {
-                // поиск по ингредиентам
-                const set = new Set();
-                this.getAllRecipes().forEach((recipe) => {
-                    if (recipe.ingredients) {
-                        Object.keys(recipe.ingredients).forEach((item) => {
-                            if (item.toLowerCase().includes(searchInput)) {
-                                set.add(recipe);
-                            }
-                        });
-                    }
-                });
-                return set;
-            }
-            // if (this.selectedStaple !== "all") {
-            //     return this.getAllRecipes().filter(
-            //         (recipe) => recipe.staple === this.selectedStaple
-            //     );
-            // }
-            if (this.selectedFeature !== "all") {
-                return this.getAllRecipes().filter(
-                    (recipe) => recipe.feature === this.selectedFeature
-                );
-            }
-
-            return this.getAllRecipes();
-        },
-    },
-	*/
-
     mounted() {
         if (this.filteredList.length === 0) {
             this.fetchRecipes();
         }
     },
     updated() {
-        if (this.filteredList.length === 0) {
+        if (this.filteredList.length === 0 && this.search === "") {
             this.showAllRecipes();
         }
     },
@@ -149,7 +111,6 @@ export default {
             this.filteredList = this.getAllRecipes();
         },
         onFilterByStaple(selectedStaple) {
-            console.log("onFilterByStaple", selectedStaple);
             if (selectedStaple === "all") {
                 this.showAllRecipes();
             } else {
@@ -159,7 +120,6 @@ export default {
             }
         },
         onFilterByFeature(selectedFeature) {
-            console.log("onFilterByFeature", selectedFeature);
             if (selectedFeature === "all") {
                 this.showAllRecipes();
             } else {
@@ -167,6 +127,33 @@ export default {
                     (recipe) => recipe.feature === selectedFeature
                 );
             }
+        },
+        onSearchInput() {
+            const searchInput = this.search.toLowerCase();
+            if (searchInput !== "" && this.selected.value === "title") {
+                this.filteredList = this.searchByTitle(searchInput);
+            }
+            if (searchInput !== "" && this.selected.value === "ingredients") {
+                this.filteredList = this.searchByIngredients(searchInput);
+            }
+        },
+        searchByTitle(searchInput) {
+            return this.getAllRecipes().filter((recipe) =>
+                recipe.title.toLowerCase().includes(searchInput)
+            );
+        },
+        searchByIngredients(searchInput) {
+            const set = new Set();
+            this.getAllRecipes().forEach((recipe) => {
+                if (recipe.ingredients) {
+                    Object.keys(recipe.ingredients).forEach((item) => {
+                        if (item.toLowerCase().includes(searchInput)) {
+                            set.add(recipe);
+                        }
+                    });
+                }
+            });
+            return set;
         },
     },
 };
