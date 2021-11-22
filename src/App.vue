@@ -52,4 +52,7 @@ export default {
 a {
   text-decoration: none;
 }
+li {
+    list-style-type: none;
+}
 </style>

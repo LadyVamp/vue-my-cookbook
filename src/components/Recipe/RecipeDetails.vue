@@ -3,7 +3,7 @@
         <BackButton />
         <h2 class="primary--text">{{ recipe.title }}</h2>
         <v-row>
-            <v-col cols="12" sm="6">
+            <v-col cols="12" sm="6" md="4">
                 <v-img
                     :src="
                         recipe.imageLink
@@ -14,10 +14,6 @@
                     height="300px"
                 >
                 </v-img>
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col cols="12" sm="6">
                 <IconStaple :staple="recipe.staple" />
                 <IconFeature :feature="recipe.feature" />
                 <v-btn
@@ -31,22 +27,13 @@
                     Открыть комбо-рецепт
                 </v-btn>
             </v-col>
-        </v-row>
-        <v-row>
-            <v-col cols="12" sm="6" class="my-4">
-                <h3 class="secondary--text">Ингредиенты</h3>
-                <p>{{ declinationNumberOfServings }}</p>
-                <p v-if="recipe.note" class="secondary--text">
-                    {{ recipe.note }}
-                </p>
+            <v-col sm="6" md="8" class="hidden-sm-and-down">
                 <v-row>
-                    <v-col cols="8">
+                    <v-col cols="4">
                         <v-switch
                             v-model="isShowLinks"
                             label="Показать ссылки на продукты в Сбермаркете"
                         ></v-switch>
-                    </v-col>
-                    <v-col>
                         <div v-if="isShowLinks">
                             <v-select
                                 v-if="isShowLinks"
@@ -60,36 +47,67 @@
                             </v-select>
                         </div>
                     </v-col>
+                    <v-col cols="8">
+                        <v-switch
+                            v-model="isShowPrintVersion"
+                            label="Версия для печати"
+                        ></v-switch>
+                        <div class="text-caption" v-if="isShowPrintVersion">
+                            <h3>{{ recipe.title }}</h3>
+                            <ul
+                                v-for="(value, name) in recipe.ingredients"
+                                :key="name"
+                            >
+                                <li>{{ name }} – {{ value }}</li>
+                            </ul>
+                            <h4 class="mt-2">Приготовление</h4>
+                            <ul>
+                                <li
+                                    v-for="(item, index) in recipe.steps"
+                                    :key="item.key"
+                                >
+                                    {{ index }}. {{ item }}
+                                </li>
+                            </ul>
+                        </div>
+                    </v-col>
                 </v-row>
+            </v-col>
+        </v-row>
+        <v-row>
+            <v-col cols="12" sm="6" class="my-4">
+                <h3 class="secondary--text">Ингредиенты</h3>
+                <p>{{ declinationNumberOfServings }}</p>
+                <p v-if="recipe.note" class="secondary--text">
+                    {{ recipe.note }}
+                </p>
                 <div v-if="isShowLinks">
-                    <div
-                        v-for="(value, name) in recipe.ingredients"
-                        :key="name"
-                    >
-                        <a :href="linkToProductInStore(name)" target="_blank">{{
-                            name
-                        }}</a>
-                        – {{ value }}
-                    </div>
+                    <ul v-for="(value, name) in recipe.ingredients" :key="name">
+                        <li>
+                            <a
+                                :href="linkToProductInStore(name)"
+                                target="_blank"
+                                >{{ name }}</a
+                            >
+                            – {{ value }}
+                        </li>
+                    </ul>
                 </div>
                 <div v-if="!isShowLinks">
-                    <div
-                        v-for="(value, name) in recipe.ingredients"
-                        :key="name"
-                    >
-                        {{ name }} – {{ value }}
-                    </div>
+                    <ul v-for="(value, name) in recipe.ingredients" :key="name">
+                        <li>{{ name }} – {{ value }}</li>
+                    </ul>
                 </div>
             </v-col>
         </v-row>
         <v-row>
             <v-col cols="12" sm="6" class="my-4">
-                <h3 class="secondary--text">Шаги</h3>
-                <ol>
-                    <li v-for="item in recipe.steps" :key="item.key">
-                        {{ item }}
+                <h3 class="secondary--text">Приготовление</h3>
+                <ul>
+                    <li v-for="(item, index) in recipe.steps" :key="item.key">
+                        {{ index }}. {{ item }}
                     </li>
-                </ol>
+                </ul>
             </v-col>
         </v-row>
     </div>
@@ -116,6 +134,7 @@ export default {
                 { value: "vkusvill", text: "Вкусвилл" },
             ],
             selected: { value: "auchan", text: "Ашан" },
+            isShowPrintVersion: false,
         };
     },
     metaInfo() {
