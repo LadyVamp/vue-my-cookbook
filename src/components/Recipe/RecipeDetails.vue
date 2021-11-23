@@ -52,30 +52,10 @@
                             v-model="isShowPrintVersion"
                             label="Версия для печати"
                         ></v-switch>
-                        <div
-                            class="text-caption print_version pb-4"
+                        <RecipePrintVersion
                             v-if="isShowPrintVersion"
-                        >
-                            <h3
-                                class="mt-4"
-                                :class="getColorByStaple(recipe.staple)"
-                            >
-                                {{ recipe.title }}
-                            </h3>
-                            <div
-                                v-for="(value, name) in recipe.ingredients"
-                                :key="name"
-                            >
-                                <p>{{ name }} – {{ value }}</p>
-                            </div>
-                            <h4 class="mt-2 ml-4">Приготовление</h4>
-                            <div
-                                v-for="(item, index) in recipe.steps"
-                                :key="item.key"
-                            >
-                                <p>{{ index }}. {{ item }}</p>
-                            </div>
-                        </div>
+                            :recipe="recipe"
+                        />
                     </v-col>
                 </v-row>
             </v-col>
@@ -124,10 +104,11 @@ import IconStaple from "@/components/Recipe/Icons/IconStaple";
 import IconFeature from "@/components/Recipe/Icons/IconFeature";
 import BackButton from "@/components/Buttons/BackButton";
 import { mapActions } from "vuex";
+import RecipePrintVersion from "@/components/Recipe/RecipePrintVersion";
 
 export default {
     name: "RecipeDetails",
-    components: { IconStaple, IconFeature, BackButton },
+    components: { IconStaple, IconFeature, BackButton, RecipePrintVersion },
     data() {
         return {
             title: "Default Title",
@@ -182,20 +163,6 @@ export default {
                 `${ingredient}`;
             return url;
         },
-        getColorByStaple(staple) {
-            switch (staple) {
-                case "vegetable":
-                    return "green lighten-4";
-                case "bird":
-                    return "pink lighten-4";
-                case "meat":
-                    return "red lighten-4";
-                case "fish":
-                    return "blue lighten-4";
-                case "dairy":
-                    return "yellow lighten-4";
-            }
-        },
     },
     watch: {
         $route() {
@@ -205,17 +172,5 @@ export default {
 };
 </script>
 
-
 <style lang='scss'>
-.print_version {
-    border: dashed 1px;
-    padding: 5px;
-    width: 350px;
-    p {
-        margin: 0 0 0 16px;
-    }
-    h3 {
-        text-align: center;
-    }
-}
 </style>
