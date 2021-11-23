@@ -3,7 +3,7 @@
         <h2 class="secondary--text">Список рецептов</h2>
         <v-row>
             <v-col class="d-flex justify-end">
-                <div class="search-select">
+                <div class="search_select">
                     <v-select
                         label="Поиск"
                         v-model="selected"
@@ -14,7 +14,7 @@
                     >
                     </v-select>
                 </div>
-                <div class="search-input">
+                <div class="search_input">
                     <v-text-field
                         v-model="search"
                         append-icon="mdi-magnify"
@@ -164,12 +164,12 @@ export default {
     line-height: 1.25rem;
     word-break: normal;
 }
-.search-select {
+.search_select {
     display: block;
     margin-right: 5px;
     width: 200px;
 }
-.search-input {
+.search_input {
     width: 250px;
 }
 </style>

@@ -40,7 +40,7 @@ export default {
                     key: "meat",
                     label: "Мясо",
                     icon: "mdi-food-steak",
-                    color: "red darken-",
+                    color: "red darken-2",
                 },
                 {
                     key: "fish",

@@ -67,23 +67,18 @@
                 <p v-if="recipe.note" class="secondary--text">
                     {{ recipe.note }}
                 </p>
-                <div v-if="isShowLinks">
-                    <ul v-for="(value, name) in recipe.ingredients" :key="name">
-                        <li>
-                            <a
-                                :href="linkToProductInStore(name)"
-                                target="_blank"
-                                >{{ name }}</a
-                            >
-                            – {{ value }}
-                        </li>
-                    </ul>
-                </div>
-                <div v-if="!isShowLinks">
-                    <ul v-for="(value, name) in recipe.ingredients" :key="name">
-                        <li>{{ name }} – {{ value }}</li>
-                    </ul>
-                </div>
+                <ul v-for="(value, name) in recipe.ingredients" :key="name">
+                    <li>
+                        <span v-if="!isShowLinks">{{ name }}</span>
+                        <a
+                            v-else
+                            :href="linkToProductInStore(name)"
+                            target="_blank"
+                            >{{ name }}
+                        </a>
+                        – {{ value }}
+                    </li>
+                </ul>
             </v-col>
         </v-row>
         <v-row>

@@ -1,5 +1,5 @@
 <template>
-    <div class="text-caption print_version pb-4">
+    <div class="text-caption print_version">
         <h3 class="mt-4" :class="getColorByStaple(recipe.staple)">
             {{ recipe.title }}
         </h3>
@@ -45,7 +45,7 @@ export default {
 <style lang='scss'>
 .print_version {
     border: dashed 1px;
-    padding: 5px;
+    padding: 16px 5px;
     width: 350px;
     p {
         margin: 0 0 0 16px;
