@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-navigation-drawer app left absolute temporary v-model="isShowDrawer">
+        <v-navigation-drawer app left temporary v-model="isShowDrawer">
             <v-list-item-group>
                 <v-list-item>
                     <v-list-item-content>
