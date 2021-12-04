@@ -586,7 +586,7 @@
 				"6": "Курицу обратно закинуть, нашинковав ее помельче",
 				"7": "Добавить нарезанный кубиками плавленый сыр и специи"
 			},
-			"imageLink": null,
+			"imageLink": "https://sun1-22.userapi.com/impg/iIuJF0OrXADNAVGQMLc5oPSnSItGtZE_edniOg/sHtd8L8NyEI.jpg?size=893x840&quality=96&sign=8fab24d343ecc68bda8848c511daf18b&type=album",
 			"originalLink": null,
 			"staple": "bird",
 			"feature": "pot"
@@ -624,11 +624,11 @@
 			"title": "Гречка с шампиньонами",
 			"servings": 4,
 			"ingredients": {
-				"Гречка": "2 чашки",
+				"Гречка": "1,5 чашки",
 				"Шампиньоны": "600 г",
 				"Лук репчатый": "1 шт",
 				"Молотый черный перец": "По вкусу",
-				"Прованские травы": "По вкусу"
+				"Приправа Vegeta": "По вкусу"
 			},
 			"note": "",
 			"steps": {
@@ -639,21 +639,20 @@
 				"5": "Добавить соль, перец и специи",
 				"6": "Закинуть обжаренные лук и грибы в кастрюлю с гречкой, перемешать"
 			},
-			"imageLink": null,
+			"imageLink": "https://sun9-67.userapi.com/impg/jWRabAZx0F33BURj8hDGw9U68TbizAyUZAQxzw/HLAxEEiBGdM.jpg?size=831x1080&quality=96&sign=672318361d77c90631898a9b4cebd4c0&type=album",
 			"originalLink": null,
 			"staple": "vegetable",
 			"feature": "fast"
 		},
 		{
 			"id": "Tabule-s-olivkami-i-marinovannimi-ogurtsami",
-			"title": "Табуле с оливками и маринованными огурцами",
+			"title": "Табуле с оливками",
 			"servings": 4,
 			"ingredients": {
-				"Булгур": "2 чашки",
-				"Огурцы маринованные": "6 шт",
+				"Булгур": "1 чашка",
+				"Огурцы": "2 шт",
 				"Перец сладкий": "2 шт",
 				"Оливки без косточек": "1 банка",
-				"Чили": "1 шт",
 				"Петрушка": "1 пучок",
 				"Лимон": "1/2 шт",
 				"Оливковое масло": "5 ст.л."
@@ -664,7 +663,7 @@
 				"2": "Все овощи измельчить на мелкие кубики",
 				"3": "Смешать овощи с крупой, заправить маслом, соком лимона, посолить и поперчить по вкусу"
 			},
-			"imageLink": null,
+			"imageLink": "https://sun9-79.userapi.com/impg/ALm6avWQkf-JXuH_nQDGOi3PTtnQDHFoOvbfiA/YimO3-xgiow.jpg?size=890x836&quality=96&sign=213e94178a8e926d8fce5d89f8f88a6d&type=album",
 			"originalLink": null,
 			"staple": "vegetable",
 			"feature": "fast"
