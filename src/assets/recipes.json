@@ -94,7 +94,7 @@
 				"3": "Готовые макароны откинуть на дуршлаг",
 				"4": "Смешать макароны с жареным фаршем и луком"
 			},
-			"imageLink": "https://eda.ru/img/eda/c620x415/s1.eda.ru/StaticContent/Photos/120214134655/180928114400/p_O.jpg",
+			"imageLink": "https://sun9-73.userapi.com/impg/bLlwBPRXSaJGrTOBXdy-vg0GT89lzoi_LoHnLw/b8aoNoq9yV8.jpg?size=802x846&quality=96&sign=a39be6ce01c9a7f4d3417bc81bb83f62&type=album",
 			"originalLink": "https://eda.ru/recepty/pasta-picca/makarony-po-flotski-s-sochnym-farshem-80740",
 			"staple": "meat",
 			"feature": "fast"
@@ -818,7 +818,7 @@
 				"7": "Засыпать сыром",
 				"8": "Залить кефиром",
 				"9": "Выкладывать слоями, в конце завернуть борта, накрыть сверху остатками лаваша, можно помазать сливочным маслом (чтобы был румяный)",
-				"10": "Выпекать до разрумянивания верхнего слоя",
+				"10": "Выпекать 30 минут (до разрумянивания верхнего слоя)",
 				"11": "Есть горячим или холодным"
 			},
 			"imageLink": "https://sun9-45.userapi.com/impg/UCWHYlErtPrQ4bpVdIRkoHYKrBioRf_Q-B7kHA/_WCWnB5zzX0.jpg?size=1597x888&quality=96&sign=5811f08ed432a068932c306db1abc07d&type=album",
@@ -893,6 +893,31 @@
 			"originalLink": null,
 			"staple": "vegetable || bird || meat || fish || dairy",
 			"feature": "fast || oven || cauldron || pot || combo"
+		},
+		{
+			"id": "Свинина со стручковой фасолью",
+			"title": "Свинина со стручковой фасолью",
+			"servings": 2,
+			"ingredients": {
+				"Вырезка свиная": "600 г",
+				"Фасоль стручковая": "400 г",
+				"Лук репчатый": "1 шт",
+				"Хмели-сунели": "По вкусу"
+			},
+			"note": "",
+			"steps": {
+				"1": "Стручковую фасоль варить после закиная 7 минут",
+				"2": "Мясо порезать на кусочки толщиной 0,5 см",
+				"3": "Лук мелко нарезать",
+				"4": "Жарить мясо и лук около 10 минут на среднем огне, помешивая",
+				"5": "Слить воду с фасоли",
+				"6": "Смешать фасоль и мясо с луком",
+				"7": "Подавать с соевым соусом"
+			},
+			"imageLink": "https://sun9-45.userapi.com/impg/6CJW6UqASPtjEZfVwBUuJ98Gu1uiDAP56-S6Bg/iElb9rwdmlk.jpg?size=884x915&quality=96&sign=3ff6192101ff4bca457b6cc4cf3d4ae8&type=album",
+			"originalLink": null,
+			"staple": "meat",
+			"feature": "fast"
 		}
 	]
 }
