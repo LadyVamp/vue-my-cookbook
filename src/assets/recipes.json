@@ -871,30 +871,6 @@
 			"feature": "fast"
 		},
 		{
-			"id": "template_id",
-			"title": "template_title",
-			"servings": 4,
-			"ingredients": {
-				"item1": "",
-				"item2": "",
-				"item3": "",
-				"item4": "",
-				"item5": ""
-			},
-			"note": "",
-			"steps": {
-				"1": "",
-				"2": "",
-				"3": "",
-				"4": "",
-				"5": ""
-			},
-			"imageLink": null,
-			"originalLink": null,
-			"staple": "vegetable || bird || meat || fish || dairy",
-			"feature": "fast || oven || cauldron || pot || combo"
-		},
-		{
 			"id": "Свинина со стручковой фасолью",
 			"title": "Свинина со стручковой фасолью",
 			"servings": 2,
@@ -918,6 +894,78 @@
 			"originalLink": null,
 			"staple": "meat",
 			"feature": "fast"
+		},
+		{
+			"id": "Zapechennaya-svinina-s-chesnokom",
+			"title": "Запеченная свинина с чесноком",
+			"servings": 4,
+			"ingredients": {
+				"Шея свиная без кости": "1 кг",
+				"Чеснок": "4 зубчика",
+				"Хмели-сунели": "По вкусу",
+				"Паприка копченая": "По вкусу"
+			},
+			"note": "Мясо: шея, корейка, лопатка. Окорок слишком жирный",
+			"steps": {
+				"1": "Включить духовку",
+				"2": "Помыть мясо",
+				"3": "Нанести мясу несколько ножевых ранений, воткнуть в каждое из них по зубчику чеснока",
+				"4": "Застелить форму для запекания фольгой",
+				"5": "Мясо посолить, натереть специями, завернуть в фольгу в 2 слоя",
+				"6": "Запекать в духовке 1 час 20 минут"
+			},
+			"imageLink": "https://sun9-4.userapi.com/impg/_vBQR_AUCobmL6rzgeFQE_1TL75qp4qQ2o3dZQ/QpiqlTs_Ez8.jpg?size=894x853&quality=96&sign=f9bec55738c65d58cd4d1b0a4bc12ae2&type=album",
+			"originalLink": null,
+			"staple": "meat",
+			"feature": "oven"
+		},
+		{
+			"id": "Varenaya-kartoshka-s-seldyu",
+			"title": "Вареная картошка с сельдью",
+			"servings": 4,
+			"ingredients": {
+				"Картофель": "12 шт",
+				"Сельдь Исландка атлантическая филе кусочки": "2 банки",
+				"Сливочное масло": "20 г",
+				"Укроп": "1 средний пучок"
+			},
+			"note": "Укроп по желанию",
+			"steps": {
+				"1": "Вскипятить чайник",
+				"2": "Почистить картофель, нарезать кубиками, залить картофель водой из чайника",
+				"3": "Варить картофель 25 минут после закипания, снимая белую пену",
+				"4": "Слить воду, поставить кастрюлю обратно на выключенную плиту, посолить, добавить сливочное масло",
+				"5": "Открыть банки с сельдью, слить масло",
+				"6": "Выложить картофель с укропом на тарелку и подать к столу горячим"
+			},
+			"imageLink": "https://sun9-60.userapi.com/impg/tlYjF99Ujh5kyvZewfSFcaOhCd64myex2a8LlQ/3p7JneQOJmg.jpg?size=895x903&quality=96&sign=e5b48ed8a8b6b0213867dafd8cd6cbef&type=album",
+			"originalLink": null,
+			"staple": "fish",
+			"feature": "fast"
+		},
+		{
+			"id": "template_id",
+			"title": "template_title",
+			"servings": 4,
+			"ingredients": {
+				"item1": "",
+				"item2": "",
+				"item3": "",
+				"item4": "",
+				"item5": ""
+			},
+			"note": "",
+			"steps": {
+				"1": "",
+				"2": "",
+				"3": "",
+				"4": "",
+				"5": ""
+			},
+			"imageLink": null,
+			"originalLink": null,
+			"staple": "vegetable || bird || meat || fish || dairy",
+			"feature": "fast || oven || cauldron || pot || combo"
 		}
 	]
 }
