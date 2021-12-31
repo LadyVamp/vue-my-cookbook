@@ -24,7 +24,7 @@ export default {
     components: { IconStaple },
     data() {
         return {
-            staples: ["all", "vegetable", "bird", "meat", "fish", "dairy"],
+            staples: ["all", "vegetable", "bird", "meat", "fish", "dairy", "dessert"],
         };
     },
     methods: {

@@ -54,6 +54,12 @@ export default {
                     icon: "mdi-cheese",
                     color: "amber lighten-2",
                 },
+                {
+                    key: "dessert",
+                    label: "Десерт",
+                    icon: "mdi-candy",
+                    color: "lime darken-1",
+                },
             ],
         };
     },
