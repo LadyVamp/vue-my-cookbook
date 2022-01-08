@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name: "RecipePrintVersion",
+    name: 'RecipePrintVersion',
     props: {
         recipe: {
             type: Object,
@@ -25,8 +25,7 @@ export default {
 };
 </script>
 
-
-<style lang='scss'>
+<style lang="scss">
 .print_version {
     border: dashed 1px;
     width: 350px;
@@ -51,6 +50,9 @@ export default {
     }
     .dairy {
         background-color: Khaki;
-    }    
+    }
+    .dessert {
+        background-color: YellowGreen;
+    }
 }
 </style>

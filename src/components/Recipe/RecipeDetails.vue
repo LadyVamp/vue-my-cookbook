@@ -38,8 +38,17 @@
                             <v-select
                                 v-if="isShowLinks"
                                 label="Магазин"
-                                v-model="selected"
-                                :items="options"
+                                v-model="selectedShop"
+                                :items="shopOptions"
+                                item-value="value"
+                                item-text="text"
+                                return-object
+                            >
+                            </v-select>
+                            <v-select
+                                label="Сортировка"
+                                v-model="selectedSort"
+                                :items="sortOptions"
                                 item-value="value"
                                 item-text="text"
                                 return-object
@@ -48,14 +57,8 @@
                         </div>
                     </v-col>
                     <v-col cols="8">
-                        <v-switch
-                            v-model="isShowPrintVersion"
-                            label="Версия для печати"
-                        ></v-switch>
-                        <RecipePrintVersion
-                            v-if="isShowPrintVersion"
-                            :recipe="recipe"
-                        />
+                        <v-switch v-model="isShowPrintVersion" label="Версия для печати"></v-switch>
+                        <RecipePrintVersion v-if="isShowPrintVersion" :recipe="recipe" />
                     </v-col>
                 </v-row>
             </v-col>
@@ -70,12 +73,7 @@
                 <ul v-for="(value, name) in recipe.ingredients" :key="name">
                     <li>
                         <span v-if="!isShowLinks">{{ name }}</span>
-                        <a
-                            v-else
-                            :href="linkToProductInStore(name)"
-                            target="_blank"
-                            >{{ name }}
-                        </a>
+                        <a v-else :href="linkToProductInShop(name)" target="_blank">{{ name }} </a>
                         – {{ value }}
                     </li>
                 </ul>
@@ -95,28 +93,35 @@
 </template>
 
 <script>
-import IconStaple from "@/components/Recipe/Icons/IconStaple";
-import IconFeature from "@/components/Recipe/Icons/IconFeature";
-import BackButton from "@/components/Buttons/BackButton";
-import { mapActions } from "vuex";
-import RecipePrintVersion from "@/components/Recipe/RecipePrintVersion";
+import IconStaple from '@/components/Recipe/Icons/IconStaple';
+import IconFeature from '@/components/Recipe/Icons/IconFeature';
+import BackButton from '@/components/Buttons/BackButton';
+import { mapActions } from 'vuex';
+import RecipePrintVersion from '@/components/Recipe/RecipePrintVersion';
 
 export default {
-    name: "RecipeDetails",
+    name: 'RecipeDetails',
     components: { IconStaple, IconFeature, BackButton, RecipePrintVersion },
     data() {
         return {
-            title: "Default Title",
+            title: 'Default Title',
             isShowLinks: false,
-            options: [
-                { value: "auchan", text: "Ашан" },
-                { value: "lenta", text: "Лента" },
-                { value: "globus", text: "Глобус" },
-                { value: "okey", text: "Окей" },
-                { value: "vkusvill", text: "Вкусвилл" },
-            ],
-            selected: { value: "auchan", text: "Ашан" },
             isShowPrintVersion: false,
+            shopOptions: [
+                { value: 'auchan', text: 'Ашан' },
+                { value: 'globus', text: 'Глобус' },
+                { value: 'lenta', text: 'Лента' },
+                { value: 'okey', text: 'Окей' },
+                { value: 'vkusvill', text: 'Вкусвилл' },
+            ],
+            selectedShop: { value: 'auchan', text: 'Ашан' },
+            sortOptions: [
+                { value: 'popularity', text: 'По популярности' },
+                { value: 'price_asc', text: 'Сначала дешевые' },
+                { value: 'price_desc', text: 'Сначала дорогие' },
+                { value: 'unit_price_asc', text: 'Выгоднее по весу' },
+            ],
+            selectedSort: { value: 'unit_price_asc', text: 'Выгоднее по весу' },
         };
     },
     metaInfo() {
@@ -131,31 +136,31 @@ export default {
         declinationNumberOfServings() {
             const servings = this.recipe.servings;
             if (servings <= 6) {
-                return servings <= 4
-                    ? servings + " порции"
-                    : servings + " порций";
+                return servings <= 4 ? servings + ' порции' : servings + ' порций';
             } else {
-                return "Неожиданное количество порций!";
+                return 'Неожиданное количество порций!';
             }
         },
     },
-    created() {
+    mounted() {
         this.fetchData();
     },
     updated() {
         this.title = this.recipe.title;
     },
     methods: {
-        ...mapActions(["fetchRecipes"]),
+        ...mapActions(['fetchRecipes']),
         fetchData() {
             this.fetchRecipes(this.$route.params.id);
         },
-        linkToProductInStore(ingredient) {
+        linkToProductInShop(ingredient) {
             const url =
-                "https://sbermarket.ru/" +
-                `${this.selected.value}` +
-                "/search?keywords=" +
-                `${ingredient}`;
+                'https://sbermarket.ru/' +
+                `${this.selectedShop.value}` +
+                '/search?keywords=' +
+                `${ingredient}` +
+                `&sort=` +
+                `${this.selectedSort.value}`;
             return url;
         },
     },
@@ -167,5 +172,4 @@ export default {
 };
 </script>
 
-<style lang='scss'>
-</style>
+<style lang="scss"></style>
