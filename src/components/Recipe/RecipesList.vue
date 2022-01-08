@@ -28,14 +28,7 @@
         <FilterByStaple @filterByStaple="onFilterByStaple" />
         <FilterByFeature @filterByFeature="onFilterByFeature" />
         <v-row v-if="getLoading() === false">
-            <v-col
-                v-for="item in filteredList"
-                :key="item.id"
-                cols="12"
-                sm="6"
-                md="4"
-                xl="3"
-            >
+            <v-col v-for="item in filteredList" :key="item.id" cols="12" sm="6" md="4" xl="3">
                 <v-card width="360px" height="360px">
                     <router-link
                         :to="{
@@ -63,33 +56,29 @@
             </v-col>
         </v-row>
         <div v-else>
-            <v-progress-circular
-                :size="50"
-                color="primary"
-                indeterminate
-            ></v-progress-circular>
+            <v-progress-circular :size="50" color="primary" indeterminate></v-progress-circular>
         </div>
     </v-container>
 </template>
 
 <script>
-import IconStaple from "@/components/Recipe/Icons/IconStaple";
-import IconFeature from "@/components/Recipe/Icons/IconFeature";
-import { mapActions, mapGetters } from "vuex";
-import FilterByStaple from "@/components/Recipe/Filters/FilterByStaple";
-import FilterByFeature from "@/components/Recipe/Filters/FilterByFeature";
+import IconStaple from '@/components/Recipe/Icons/IconStaple';
+import IconFeature from '@/components/Recipe/Icons/IconFeature';
+import { mapActions, mapGetters } from 'vuex';
+import FilterByStaple from '@/components/Recipe/Filters/FilterByStaple';
+import FilterByFeature from '@/components/Recipe/Filters/FilterByFeature';
 
 export default {
-    name: "RecipesList",
+    name: 'RecipesList',
     components: { IconStaple, IconFeature, FilterByStaple, FilterByFeature },
     data() {
         return {
-            search: "",
+            search: '',
             options: [
-                { value: "title", text: "По названию" },
-                { value: "ingredients", text: "По ингредиентам" },
+                { value: 'title', text: 'По названию' },
+                { value: 'ingredients', text: 'По ингредиентам' },
             ],
-            selected: { value: "title", text: "По названию" },
+            selected: { value: 'title', text: 'По названию' },
             filteredList: [],
         };
     },
@@ -99,47 +88,47 @@ export default {
         }
     },
     updated() {
-        if (this.filteredList.length === 0 && this.search === "") {
+        if (this.filteredList.length === 0 && this.search === '') {
             this.showAllRecipes();
         }
     },
     methods: {
-        ...mapActions(["fetchRecipes"]),
-        ...mapGetters(["getAllRecipes", "getRecipesCount", "getLoading"]),
+        ...mapActions(['fetchRecipes']),
+        ...mapGetters(['getAllRecipes', 'getRecipesCount', 'getLoading']),
 
         showAllRecipes() {
             this.filteredList = this.getAllRecipes();
         },
         onFilterByStaple(selectedStaple) {
-            if (selectedStaple === "all") {
+            if (selectedStaple === 'all') {
                 this.showAllRecipes();
             } else {
                 this.filteredList = this.getAllRecipes().filter(
-                    (recipe) => recipe.staple === selectedStaple
+                    (recipe) => recipe.staple === selectedStaple,
                 );
             }
         },
         onFilterByFeature(selectedFeature) {
-            if (selectedFeature === "all") {
+            if (selectedFeature === 'all') {
                 this.showAllRecipes();
             } else {
                 this.filteredList = this.getAllRecipes().filter(
-                    (recipe) => recipe.feature === selectedFeature
+                    (recipe) => recipe.feature === selectedFeature,
                 );
             }
         },
         onSearchInput() {
             const searchInput = this.search.toLowerCase();
-            if (searchInput !== "" && this.selected.value === "title") {
+            if (searchInput !== '' && this.selected.value === 'title') {
                 this.filteredList = this.searchByTitle(searchInput);
             }
-            if (searchInput !== "" && this.selected.value === "ingredients") {
+            if (searchInput !== '' && this.selected.value === 'ingredients') {
                 this.filteredList = this.searchByIngredients(searchInput);
             }
         },
         searchByTitle(searchInput) {
             return this.getAllRecipes().filter((recipe) =>
-                recipe.title.toLowerCase().includes(searchInput)
+                recipe.title.toLowerCase().includes(searchInput),
             );
         },
         searchByIngredients(searchInput) {
@@ -159,7 +148,7 @@ export default {
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .v-card__title {
     line-height: 1.25rem;
     word-break: normal;
