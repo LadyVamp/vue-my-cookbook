@@ -41,6 +41,11 @@ export default {
           path: "/about",
           icon: "mdi-information-outline",
         },
+        {
+          name: "Generator",
+          path: "/generator",
+          icon: "mdi-auto-fix",
+        },
       ],
     };
   },
