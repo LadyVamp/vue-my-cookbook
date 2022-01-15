@@ -305,7 +305,7 @@
         "Грудинка копченая": "300 г",
         "Морковь": "1 шт",
         "Лук репчатый": "1 шт",
-        "Бульон Maggi кубики с говядиной на косточке": "1 кубик"
+        "Бульон Maggi кубики с говядиной на косточке": "2 кубика"
       },
       "steps": {
         "1": "Поставить вариться горох",
@@ -833,18 +833,18 @@
       "servings": 4,
       "ingredients": {
         "Филе куриное": "700 г",
-        "Ананасы кусочки в сиропе": "2 банки",
+        "Ананасы кусочки в сиропе": "1 банка",
         "Карри": "1 ст.л.",
-        "Майонез": "По вкусу"
+        "Йогурт": "По вкусу"
       },
       "note": "",
       "steps": {
         "1": "Филе помыть, отварить, остудить и порезать кубиками",
         "2": "Ананас консервированный добавить к курице, слив предварительно сироп",
-        "3": "Добавить карри, соль, майонез",
+        "3": "Добавить карри, соль, йогурт",
         "4": "Перемешать"
       },
-      "imageLink": null,
+      "imageLink": "https://sun9-81.userapi.com/impg/m4WxQfZHsPZE_B_bLtI6AcFex5R7XxQVUyClXw/3fFZ6pi_hF4.jpg?size=885x890&quality=96&rotate=270&sign=0d1ac8c5be59e333265289f60d7b8707&type=album",
       "originalLink": null,
       "staple": "bird",
       "feature": "fast"
@@ -1010,7 +1010,7 @@
       "title": "Салат с крабовыми палочками",
       "servings": 4,
       "ingredients": {
-        "Яйцо куриное": "4 шт",
+        "Яйцо куриное": "3 шт",
         "Крабовые палочки": "400 г",
         "Огурец": "1 шт",
         "Кукуруза сладкая": "1 банка",
@@ -1025,7 +1025,7 @@
         "5": "Добавить соль, майонез и перец",
         "6": "Перемешать"
       },
-      "imageLink": null,
+      "imageLink": "https://sun9-73.userapi.com/impg/qhdsEyldAuqWFcy0JZ7Q01KAezvr3N1RR3dO_A/QeCTZsEZEXU.jpg?size=885x834&quality=96&sign=07f106bcbf15efc4a883d8d068f27daf&type=album",
       "originalLink": "https://lifehacker.ru/salaty-s-krabovymi-palochkami-recepty/",
       "staple": "fish",
       "feature": "fast"
@@ -1077,6 +1077,27 @@
       "originalLink": null,
       "staple": "fish",
       "feature": "oven"
+    },
+    {
+      "id": "Salat-iz-kapusti-i-morkovi",
+      "title": "Салат из капусты и моркови",
+      "servings": 2,
+      "ingredients": {
+        "Капуста белокочанная": "1/3 небольшого кочана",
+        "Морковь": "2 шт",
+        "Бальзамический уксус": "1 ст.л."
+      },
+      "note": "",
+      "steps": {
+        "1": "Нашинковать капусту",
+        "2": "Добавить к капусте чайную ложку соли, перемешать и размять капусту руками",
+        "3": "Морковь почистить и натереть на крупной терке",
+        "4": "Сложить все ингредиенты для салата в миску, заправить уксусом. Перемешать."
+      },
+      "imageLink": "https://sun1-90.userapi.com/impg/KD5wSYx45Uq9pzoh_uTrj7Vre3pnZwVGb0ffYw/ILQ4mVk80EI.jpg?size=652x747&quality=96&sign=a2c4f9f19499454fef2e2d277ce9fef2&type=album",
+      "originalLink": "https://art-lunch.ru/recipe/salat-iz-kapusty-i-morkovi_foto/",
+      "staple": "vegetable",
+      "feature": "fast"
     },
     {
       "id": "template_id",
