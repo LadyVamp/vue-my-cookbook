@@ -83,7 +83,7 @@ export default {
     },
     data() {
         return {
-            allRecipes: [],
+            recipesForGenerator: [],
             headers: [
                 { text: 'День недели', value: 'dayOfWeek' },
                 { text: 'Обед/ужин', value: 'meals' },
@@ -157,21 +157,27 @@ export default {
         };
     },
     mounted() {
-        if (this.allRecipes.length === 0) {
+        if (this.recipesForGenerator.length === 0) {
             this.fetchRecipes();
         }
     },
     updated() {
-        if (this.allRecipes.length === 0) {
-            this.showAllRecipes();
+        if (this.recipesForGenerator.length === 0) {
+            this.getRecipesForGenerator();
         }
     },
     methods: {
         ...mapActions(['fetchRecipes']),
         ...mapGetters(['getAllRecipes', 'getLoading']),
 
-        showAllRecipes() {
-            this.allRecipes = this.getAllRecipes();
+        /**
+         * Не пропускать в генератор рецепты с перечисленными id
+         */
+        getRecipesForGenerator() {
+            const notLunchIds = ['Ris-pripusknoi', 'Shokoladnaya-kolbasa', 'Pashtet', 'Satsebeli'];
+            this.recipesForGenerator = this.getAllRecipes().filter(
+                (item) => !notLunchIds.includes(item.id),
+            );
         },
         generate() {
             this.sixServings();
@@ -184,7 +190,7 @@ export default {
          * 6 порций, обед пн-вт-ср
          */
         sixServings() {
-            let filtered = this.allRecipes.filter((item) => item.servings === 6);
+            let filtered = this.recipesForGenerator.filter((item) => item.servings === 6);
             let randomDish = filtered[Math.floor(Math.random() * filtered.length)];
             this.weekMenu[0].lunch = this.weekMenu[1].lunch = this.weekMenu[2].lunch = randomDish;
             return randomDish;
@@ -193,7 +199,7 @@ export default {
          * Не быстрый рецепт, ужин пн-вт
          */
         notFast() {
-            let filtered = this.allRecipes.filter((item) => item.feature !== 'fast');
+            let filtered = this.recipesForGenerator.filter((item) => item.feature !== 'fast');
             let randomDish = filtered[Math.floor(Math.random() * filtered.length)];
             this.weekMenu[0].dinner = this.weekMenu[1].dinner = randomDish;
             return randomDish;
@@ -202,7 +208,7 @@ export default {
          * Быстрый, 4 порции, мясо или овощи, обед чт-пт (готовить в среду)
          */
         fast4ServingsLunch() {
-            let filtered = this.allRecipes
+            let filtered = this.recipesForGenerator
                 .filter((item) => item.feature === 'fast')
                 .filter((item) => item.servings === 4)
                 .filter((item) => item.staple === 'meat' || item.staple === 'vegetable');
@@ -214,7 +220,7 @@ export default {
          * Быстрый, 4 порции, курица или рыба, ужин ср-чт (готовить в среду)
          */
         fast4ServingsDinner() {
-            let filtered = this.allRecipes
+            let filtered = this.recipesForGenerator
                 .filter((item) => item.feature === 'fast')
                 .filter((item) => item.servings === 4)
                 .filter((item) => item.staple === 'bird' || item.staple === 'fish');
@@ -226,7 +232,7 @@ export default {
          * Быстрый, 2 порции, ужин пт
          */
         fast2Servings() {
-            let filtered = this.allRecipes
+            let filtered = this.recipesForGenerator
                 .filter((item) => item.feature === 'fast')
                 .filter((item) => item.servings === 2);
             let randomDish = filtered[Math.floor(Math.random() * filtered.length)];
