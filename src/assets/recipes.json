@@ -86,16 +86,17 @@
         "Брынза": "300 г",
         "Листовой салат": "30 г",
         "Семечки тыквенные очищенные": "1 горсть",
-        "Масло оливковое": "3 cт.л"
+        "Масло кунжутное": "3 cт.л"
       },
+      "note": "Листовой салат или салат китайский",
       "steps": {
         "1": "Листья салата при необходимости промыть и обсушить",
-        "2": "Тыкву помыть, очистить от кожуры, нарезать крупным кубиком. ",
-        "3": "Выложить тыкву на хорошо нагретую сковороду и готовить на оливковом масле под крышкой до мягкости. Но при этом тыква должна хорошо держать форму. 5-7 минут достаточно.",
+        "2": "Тыкву помыть, очистить от кожуры, нарезать крупным кубиком",
+        "3": "Выложить тыкву на хорошо нагретую сковороду и готовить под крышкой до мягкости 5-7 минут",
         "4": "Нарезать брынзу",
-        "5": "Все смешать, посыпать тыквенными семеками и заправить оливковых маслом"
+        "5": "Все смешать, посыпать тыквенными семеками и заправить кунжутным маслом"
       },
-      "imageLink": "https://sun3-12.userapi.com/impg/DMVVVq_mqml3JaDDseItzXlcP5YS-U_esq87zg/1iutjqnwjpA.jpg?size=1101x1185&quality=96&sign=7566178c3844e26e95e51d6969e708d9&type=album",
+      "imageLink": "https://sun9-24.userapi.com/impg/q7li-40_67CYr7UCQL0-Vp7yVYpq-jMoCvcbSg/lOhbB5H6ZFc.jpg?size=892x932&quality=96&sign=202d57cb6e9eaa4ccf2e6b7922b8541c&type=album",
       "originalLink": "https://menunedeli.ru/recipe/salat-s-tykvoj-i-syrom-brynza/",
       "staple": "vegetable",
       "feature": "fast"
@@ -1097,6 +1098,26 @@
       "imageLink": "https://sun1-90.userapi.com/impg/KD5wSYx45Uq9pzoh_uTrj7Vre3pnZwVGb0ffYw/ILQ4mVk80EI.jpg?size=652x747&quality=96&sign=a2c4f9f19499454fef2e2d277ce9fef2&type=album",
       "originalLink": "https://art-lunch.ru/recipe/salat-iz-kapusty-i-morkovi_foto/",
       "staple": "vegetable",
+      "feature": "fast"
+    },
+    {
+      "id": "Meksikanskii-mix-s-myasom",
+      "title": "Мексиканский микс с мясом",
+      "servings": 4,
+      "ingredients": {
+        "Овощная смесь": "2 упаковки (800 г)",
+        "Корейка свиная без кости": "500 г",
+        "Хмели-сунели": "По вкусу"
+      },
+      "note": "Овощи с рисом «Мексиканский микс». 1 кг мяса - это много",
+      "steps": {
+        "1": "В сковороде разогреть масло и обжарить овощи 7-12 минут",
+        "2": "Мясо нарезать на кусочки 1,5-2 см",
+        "3": "Обжарить на растительном масле с двух сторон по 4 минуты. Добавить специи, посолить"
+      },
+      "imageLink": "https://sun9-11.userapi.com/impg/dOoZOeKOQVl91ZpdxNwLEKuls6jOwCnZq6NbdA/LJh-Bp6R1us.jpg?size=891x920&quality=96&sign=9a71ab94eb49a9987cca2c33263b3e90&type=album",
+      "originalLink": "https://bonduelle.ru/recipes/hot/meksikanskiy-miks-s-govyadinoy/",
+      "staple": "meat",
       "feature": "fast"
     },
     {
