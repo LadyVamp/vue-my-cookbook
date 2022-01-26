@@ -1121,6 +1121,52 @@
       "feature": "fast"
     },
     {
+      "id": "Sardelki-s-grechkoi",
+      "title": "Сардельки с гречкой",
+      "servings": 4,
+      "ingredients": {
+        "Сардельки": "460 г",
+        "Крупа гречневая": "2 чашки",
+        "Сливочное масло": "20 г",
+        "Хмели-сунели": "По вкусу"
+      },
+      "note": "",
+      "steps": {
+        "1": "Промыть гречку",
+        "2": "Насыпать гречку в кастрюлю, залить горячей водой, на 2 пальца выше уровня гречки",
+        "3": "Положить сардельки в эту же кастрюлю",
+        "4": "Варить 8 минут после закипания воды",
+        "5": "Добавить сливочное масло, хмели-сунели, посолить",
+        "6": "Перемешать"
+      },
+      "imageLink": "https://sun9-83.userapi.com/impg/JkdEGwaldFGCbsQTkHV_ZMKmkTgEAw-APSFjyw/9U9_9-5pPPc.jpg?size=861x1080&quality=96&rotate=90&sign=71e6ca3c6cd6b6055d8ac019aa91489c&type=album",
+      "originalLink": null,
+      "staple": "meat",
+      "feature": "fast"
+    },
+    {
+      "id": "Morkovnii-salat-s-sirom-i-chesnokom",
+      "title": "Морковный салат с сыром и чесноком",
+      "servings": 4,
+      "ingredients": {
+        "Морковь": "2 шт крупных или 4 средних",
+        "Чеснок": "2 зубчика",
+        "Сыр твердый": "150 г",
+        "Сметана": "По вкусу"
+      },
+      "note": "",
+      "steps": {
+        "1": "Морковь почистить и натереть на мелкой терке",
+        "2": "Сыр натереть на крупной терке",
+        "3": "Чеснок раздавить через давилку",
+        "4": "Все свалить в одну миску, заправить сметаной, перемешать"
+      },
+      "imageLink": "https://sun9-19.userapi.com/impg/DAPcJypYGKnlniYvZamWa7fIZ6N83MJlDgvidg/9Y1j9PiOfTU.jpg?size=890x917&quality=96&sign=483335fad34e702b905b9c15ef0661d0&type=album",
+      "originalLink": "https://eda.ru/recepty/salaty/morkovnij-salat-s-sirom-i-chesnokom-48434",
+      "staple": "vegetable",
+      "feature": "fast"
+    },
+    {
       "id": "template_id",
       "title": "template_title",
       "servings": 4,
