@@ -15,71 +15,80 @@
             <v-progress-circular :size="50" color="primary" indeterminate></v-progress-circular>
         </div>
         <div v-if="weekMenu">
-            <v-data-table :headers="headers" :items="weekMenu" :hide-default-footer="true">
-                <template v-slot:[`item.meals`]="{ item }">
-                    <div v-if="item.lunch">
-                        <router-link
-                            :class="getRecipeBackground(item.lunch.staple)"
-                            v-if="item.lunch.id"
-                            :to="{
-                                name: 'RecipeDetails',
-                                params: { id: item.lunch.id },
-                            }"
-                        >
-                            {{ item.lunch.title }}
-                        </router-link>
-                    </div>
-                    <div v-if="item.dinner">
-                        <router-link
-                            :class="getRecipeBackground(item.dinner.staple)"
-                            v-if="item.dinner.id"
-                            :to="{
-                                name: 'RecipeDetails',
-                                params: { id: item.dinner.id },
-                            }"
-                        >
-                            {{ item.dinner.title }}
-                        </router-link>
-                    </div>
-                </template>
-                <template v-slot:[`item.cook`]="{ item }">
-                    <div v-if="item.cook1">
-                        <router-link
-                            :class="getRecipeBackground(item.cook1.staple)"
-                            v-if="item.cook1.id"
-                            :to="{
-                                name: 'RecipeDetails',
-                                params: { id: item.cook1.id },
-                            }"
-                        >
-                            {{ item.cook1.title }}
-                        </router-link>
-                    </div>
-                    <div v-if="item.cook2">
-                        <router-link
-                            :class="getRecipeBackground(item.cook2.staple)"
-                            v-if="item.cook2.id"
-                            :to="{
-                                name: 'RecipeDetails',
-                                params: { id: item.cook2.id },
-                            }"
-                        >
-                            {{ item.cook2.title }}
-                        </router-link>
-                    </div>
-                </template>
-            </v-data-table>
+            <table class="my-2">
+                <thead>
+                    <th>День недели</th>
+                    <th>Обед/ужин</th>
+                    <th>Готовим вечером</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Пн</td>
+                        <td class="meal">
+                            <RecipeLink v-if="weekMenu[0].lunch" :item="weekMenu[0].lunch" />
+                        </td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>{{ nextMonday() }}</td>
+                        <td><RecipeLink v-if="weekMenu[0].dinner" :item="weekMenu[0].dinner" /></td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Вт</td>
+                        <td><RecipeLink v-if="weekMenu[1].lunch" :item="weekMenu[1].lunch" /></td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>nextTuesday</td>
+                        <td><RecipeLink v-if="weekMenu[1].dinner" :item="weekMenu[1].dinner" /></td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Ср</td>
+                        <td><RecipeLink v-if="weekMenu[2].lunch" :item="weekMenu[2].lunch" /></td>
+                        <td><RecipeLink v-if="weekMenu[2].cook1" :item="weekMenu[2].cook1" /></td>
+                    </tr>
+                    <tr>
+                        <td>nextWednesday</td>
+                        <td><RecipeLink v-if="weekMenu[2].dinner" :item="weekMenu[2].dinner" /></td>
+                        <td><RecipeLink v-if="weekMenu[2].cook2" :item="weekMenu[2].cook2" /></td>
+                    </tr>
+                    <tr>
+                        <td>Чт</td>
+                        <td><RecipeLink v-if="weekMenu[3].lunch" :item="weekMenu[3].lunch" /></td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>nextThursday</td>
+                        <td><RecipeLink v-if="weekMenu[3].dinner" :item="weekMenu[3].dinner" /></td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Пт</td>
+                        <td><RecipeLink v-if="weekMenu[4].lunch" :item="weekMenu[4].lunch" /></td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>nextFriday</td>
+                        <td><RecipeLink v-if="weekMenu[4].dinner" :item="weekMenu[4].dinner" /></td>
+                        <td>---</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </v-container>
 </template>
 
 <script>
-import BaseButton from '@/components/Buttons/BaseButton';
 import { mapActions, mapGetters } from 'vuex';
+import BaseButton from '@/components/Buttons/BaseButton';
+import RecipeLink from '@/components/Recipe/RecipeLink';
 
 export default {
     components: {
         BaseButton,
+        RecipeLink,
     },
     data() {
         return {
@@ -91,67 +100,31 @@ export default {
             ],
             weekMenu: [
                 {
-                    dayOfWeek: 'Mon',
-                    lunch: 'sixServings',
-                    dinner: 'notFast',
+                    dayOfWeek: 'Пн',
+                    lunch: {},
+                    dinner: {},
                 },
                 {
-                    dayOfWeek: 'Tue',
-                    lunch: 'sixServings',
-                    dinner: 'notFast',
+                    dayOfWeek: 'Вт',
+                    lunch: {},
+                    dinner: {},
                 },
                 {
-                    dayOfWeek: 'Wed',
-                    lunch: 'sixServings',
-                    dinner: 'fast4ServingsDinner',
-                    cook1: 'fast4ServingsLunch',
-                    cook2: 'fast4ServingsDinner',
+                    dayOfWeek: 'Ср',
+                    lunch: {},
+                    dinner: {},
+                    cook1: {},
+                    cook2: {},
                 },
                 {
-                    dayOfWeek: 'Thu',
-                    lunch: 'fast4ServingsLunch',
-                    dinner: 'fast4ServingsDinner',
+                    dayOfWeek: 'Чт',
+                    lunch: {},
+                    dinner: {},
                 },
                 {
-                    dayOfWeek: 'Fri',
-                    lunch: 'fast4ServingsLunch',
-                    dinner: 'Пельмени',
-                },
-                {
-                    dayOfWeek: 'Sat',
-                },
-                {
-                    dayOfWeek: 'Sun',
-                },
-            ],
-            bgStaples: [
-                {
-                    key: 'all',
-                    bg: 'accent lighten-2',
-                },
-                {
-                    key: 'vegetable',
-                    bg: 'light-green darken-1',
-                },
-                {
-                    key: 'bird',
-                    bg: 'pink lighten-5',
-                },
-                {
-                    key: 'meat',
-                    bg: 'red lighten-2',
-                },
-                {
-                    key: 'fish',
-                    bg: 'blue lighten-2',
-                },
-                {
-                    key: 'dairy',
-                    bg: 'amber lighten-2',
-                },
-                {
-                    key: 'dessert',
-                    bg: 'lime darken-1',
+                    dayOfWeek: 'Пт',
+                    lunch: {},
+                    dinner: {},
                 },
             ],
         };
@@ -239,8 +212,12 @@ export default {
             this.weekMenu[4].dinner = randomDish;
             return randomDish;
         },
-        getRecipeBackground(staple) {
-            return this.bgStaples.find((item) => item.key === staple).bg;
+        nextMonday() {
+            const d = new Date();
+            d.setDate(d.getDate() + ((((7 - d.getDay()) % 7) + 1) % 7));
+            let formatted = d.toLocaleDateString('ru-RU', { month: 'numeric', day: 'numeric' });
+            // TODO: next остальные дни недели
+            return formatted;
         },
     },
 };
