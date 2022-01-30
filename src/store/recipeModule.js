@@ -40,7 +40,7 @@ export default {
             context.commit('setLoading', true);
             axios
                 .get(
-                    'https://gist.githubusercontent.com/LadyVamp/628c9e7aa0d9d26971bf9d512cef6bbe/raw/aee3422815378a13c1ba39d6a5a314834f573eb8/recipes-01-26.json',
+                    'https://gist.githubusercontent.com/LadyVamp/628c9e7aa0d9d26971bf9d512cef6bbe/raw/c606d35d1b711512752c52dc3cef5d721de8044c/recipes-01-30.json',
                 )
                 .then((response) => {
                     // console.log('fetchRecipes', response.data.recipes);
