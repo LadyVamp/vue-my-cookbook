@@ -27,7 +27,7 @@
                         <td><RecipeLink :item="weekMenu[0].lunch" /></td>
                     </tr>
                     <tr>
-                        <td>{{ nextMonday() }}</td>
+                        <td>{{ nextDay(1) }}</td>
                         <td><RecipeLink :item="weekMenu[0].dinner" /></td>
                     </tr>
                     <tr>
@@ -35,7 +35,7 @@
                         <td><RecipeLink :item="weekMenu[1].lunch" /></td>
                     </tr>
                     <tr>
-                        <td>nextTuesday</td>
+                        <td>{{ nextDay(2) }}</td>
                         <td><RecipeLink :item="weekMenu[1].dinner" /></td>
                     </tr>
                     <tr>
@@ -44,7 +44,7 @@
                         <td><RecipeLink :item="weekMenu[2].cook1" /></td>
                     </tr>
                     <tr>
-                        <td>nextWednesday</td>
+                        <td>{{ nextDay(3) }}</td>
                         <td><RecipeLink :item="weekMenu[2].dinner" /></td>
                         <td><RecipeLink :item="weekMenu[2].cook2" /></td>
                     </tr>
@@ -53,7 +53,7 @@
                         <td><RecipeLink :item="weekMenu[3].lunch" /></td>
                     </tr>
                     <tr>
-                        <td>nextThursday</td>
+                        <td>{{ nextDay(4) }}</td>
                         <td><RecipeLink :item="weekMenu[3].dinner" /></td>
                     </tr>
                     <tr>
@@ -61,7 +61,7 @@
                         <td><RecipeLink :item="weekMenu[4].lunch" /></td>
                     </tr>
                     <tr>
-                        <td>nextFriday</td>
+                        <td>{{ nextDay(5) }}</td>
                         <td><RecipeLink :item="weekMenu[4].dinner" /></td>
                     </tr>
                 </tbody>
@@ -204,11 +204,10 @@ export default {
             this.weekMenu[4].dinner = randomDish;
             return randomDish;
         },
-        nextMonday() {
-            const d = new Date();
-            d.setDate(d.getDate() + ((((7 - d.getDay()) % 7) + 1) % 7));
-            let formatted = d.toLocaleDateString('ru-RU', { month: 'numeric', day: 'numeric' });
-            // TODO: next остальные дни недели
+        nextDay(num) {
+            const today = new Date();
+            today.setDate(today.getDate() + ((num + (7 - today.getDay())) % 7));
+            let formatted = today.toLocaleDateString('ru-RU', { month: 'numeric', day: 'numeric' });
             return formatted;
         },
     },
