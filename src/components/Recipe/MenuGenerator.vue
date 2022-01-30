@@ -18,61 +18,51 @@
             <table class="my-2">
                 <thead>
                     <th>День недели</th>
-                    <th>Обед/ужин</th>
+                    <th class="meal">Обед/ужин</th>
                     <th>Готовим вечером</th>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Пн</td>
-                        <td class="meal">
-                            <RecipeLink v-if="weekMenu[0].lunch" :item="weekMenu[0].lunch" />
-                        </td>
-                        <td>---</td>
+                        <td><RecipeLink :item="weekMenu[0].lunch" /></td>
                     </tr>
                     <tr>
                         <td>{{ nextMonday() }}</td>
-                        <td><RecipeLink v-if="weekMenu[0].dinner" :item="weekMenu[0].dinner" /></td>
-                        <td>---</td>
+                        <td><RecipeLink :item="weekMenu[0].dinner" /></td>
                     </tr>
                     <tr>
                         <td>Вт</td>
-                        <td><RecipeLink v-if="weekMenu[1].lunch" :item="weekMenu[1].lunch" /></td>
-                        <td>---</td>
+                        <td><RecipeLink :item="weekMenu[1].lunch" /></td>
                     </tr>
                     <tr>
                         <td>nextTuesday</td>
-                        <td><RecipeLink v-if="weekMenu[1].dinner" :item="weekMenu[1].dinner" /></td>
-                        <td>---</td>
+                        <td><RecipeLink :item="weekMenu[1].dinner" /></td>
                     </tr>
                     <tr>
                         <td>Ср</td>
-                        <td><RecipeLink v-if="weekMenu[2].lunch" :item="weekMenu[2].lunch" /></td>
-                        <td><RecipeLink v-if="weekMenu[2].cook1" :item="weekMenu[2].cook1" /></td>
+                        <td><RecipeLink :item="weekMenu[2].lunch" /></td>
+                        <td><RecipeLink :item="weekMenu[2].cook1" /></td>
                     </tr>
                     <tr>
                         <td>nextWednesday</td>
-                        <td><RecipeLink v-if="weekMenu[2].dinner" :item="weekMenu[2].dinner" /></td>
-                        <td><RecipeLink v-if="weekMenu[2].cook2" :item="weekMenu[2].cook2" /></td>
+                        <td><RecipeLink :item="weekMenu[2].dinner" /></td>
+                        <td><RecipeLink :item="weekMenu[2].cook2" /></td>
                     </tr>
                     <tr>
                         <td>Чт</td>
-                        <td><RecipeLink v-if="weekMenu[3].lunch" :item="weekMenu[3].lunch" /></td>
-                        <td>---</td>
+                        <td><RecipeLink :item="weekMenu[3].lunch" /></td>
                     </tr>
                     <tr>
                         <td>nextThursday</td>
-                        <td><RecipeLink v-if="weekMenu[3].dinner" :item="weekMenu[3].dinner" /></td>
-                        <td>---</td>
+                        <td><RecipeLink :item="weekMenu[3].dinner" /></td>
                     </tr>
                     <tr>
                         <td>Пт</td>
-                        <td><RecipeLink v-if="weekMenu[4].lunch" :item="weekMenu[4].lunch" /></td>
-                        <td>---</td>
+                        <td><RecipeLink :item="weekMenu[4].lunch" /></td>
                     </tr>
                     <tr>
                         <td>nextFriday</td>
-                        <td><RecipeLink v-if="weekMenu[4].dinner" :item="weekMenu[4].dinner" /></td>
-                        <td>---</td>
+                        <td><RecipeLink :item="weekMenu[4].dinner" /></td>
                     </tr>
                 </tbody>
             </table>
@@ -169,10 +159,12 @@ export default {
             return randomDish;
         },
         /**
-         * Не быстрый рецепт, ужин пн-вт
+         * Не быстрый, 4 порции, ужин пн-вт
          */
         notFast() {
-            let filtered = this.recipesForGenerator.filter((item) => item.feature !== 'fast');
+            let filtered = this.recipesForGenerator
+                .filter((item) => item.feature !== 'fast')
+                .filter((item) => item.servings === 4);
             let randomDish = filtered[Math.floor(Math.random() * filtered.length)];
             this.weekMenu[0].dinner = this.weekMenu[1].dinner = randomDish;
             return randomDish;
@@ -227,5 +219,8 @@ export default {
 a {
     padding: 2px 5px;
     color: black;
+}
+.meal {
+    width: 350px;
 }
 </style>
