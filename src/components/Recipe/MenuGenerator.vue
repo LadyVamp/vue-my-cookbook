@@ -17,51 +17,79 @@
         <div v-if="weekMenu">
             <table class="my-2">
                 <thead>
-                    <th>День недели</th>
+                    <th>День</th>
+                    <th>Icons</th>
                     <th class="meal">Обед/ужин</th>
                     <th>Готовим вечером</th>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Пн</td>
-                        <td><RecipeLink :item="weekMenu[0].lunch" /></td>
+                        <td>
+                            <EmojiFeature :feature="weekMenu[0].lunch.feature" />
+                            <EmojiStaple :staple="weekMenu[0].lunch.staple" />
+                        </td>
+                        <td>
+                            <RecipeLink :item="weekMenu[0].lunch" />
+                        </td>
                     </tr>
                     <tr>
                         <td>{{ nextDay(1) }}</td>
+                        <td>
+                            <EmojiFeature :feature="weekMenu[0].dinner.feature" />
+                            <EmojiStaple :staple="weekMenu[0].dinner.staple" />
+                        </td>
                         <td><RecipeLink :item="weekMenu[0].dinner" /></td>
                     </tr>
                     <tr>
                         <td>Вт</td>
+                        <td></td>
                         <td><RecipeLink :item="weekMenu[1].lunch" /></td>
                     </tr>
                     <tr>
                         <td>{{ nextDay(2) }}</td>
+                        <td></td>
                         <td><RecipeLink :item="weekMenu[1].dinner" /></td>
                     </tr>
                     <tr>
                         <td>Ср</td>
+                        <td></td>
                         <td><RecipeLink :item="weekMenu[2].lunch" /></td>
                         <td><RecipeLink :item="weekMenu[2].cook1" /></td>
                     </tr>
                     <tr>
                         <td>{{ nextDay(3) }}</td>
+                        <td>
+                            <EmojiFeature :feature="weekMenu[2].dinner.feature" />
+                            <EmojiStaple :staple="weekMenu[2].dinner.staple" />
+                        </td>
                         <td><RecipeLink :item="weekMenu[2].dinner" /></td>
                         <td><RecipeLink :item="weekMenu[2].cook2" /></td>
                     </tr>
                     <tr>
                         <td>Чт</td>
+                        <td>
+                            <EmojiFeature :feature="weekMenu[3].lunch.feature" />
+                            <EmojiStaple :staple="weekMenu[3].lunch.staple" />
+                        </td>
                         <td><RecipeLink :item="weekMenu[3].lunch" /></td>
                     </tr>
                     <tr>
                         <td>{{ nextDay(4) }}</td>
+                        <td></td>
                         <td><RecipeLink :item="weekMenu[3].dinner" /></td>
                     </tr>
                     <tr>
                         <td>Пт</td>
+                        <td></td>
                         <td><RecipeLink :item="weekMenu[4].lunch" /></td>
                     </tr>
                     <tr>
                         <td>{{ nextDay(5) }}</td>
+                        <td>
+                            <EmojiFeature :feature="weekMenu[4].dinner.feature" />
+                            <EmojiStaple :staple="weekMenu[4].dinner.staple" />
+                        </td>
                         <td><RecipeLink :item="weekMenu[4].dinner" /></td>
                     </tr>
                 </tbody>
@@ -74,20 +102,19 @@
 import { mapActions, mapGetters } from 'vuex';
 import BaseButton from '@/components/Buttons/BaseButton';
 import RecipeLink from '@/components/Recipe/RecipeLink';
+import EmojiFeature from '@/components/Recipe/Icons/EmojiFeature';
+import EmojiStaple from '@/components/Recipe/Icons/EmojiStaple';
 
 export default {
     components: {
         BaseButton,
         RecipeLink,
+        EmojiFeature,
+        EmojiStaple,
     },
     data() {
         return {
             recipesForGenerator: [],
-            headers: [
-                { text: 'День недели', value: 'dayOfWeek' },
-                { text: 'Обед/ужин', value: 'meals' },
-                { text: 'Готовим вечером', value: 'cook' },
-            ],
             weekMenu: [
                 {
                     dayOfWeek: 'Пн',
@@ -215,11 +242,7 @@ export default {
 </script>
 
 <style scoped>
-a {
-    padding: 2px 5px;
-    color: black;
-}
 .meal {
-    width: 350px;
+    width: 400px;
 }
 </style>

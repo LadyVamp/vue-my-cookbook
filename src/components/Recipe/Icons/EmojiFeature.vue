@@ -1,14 +1,15 @@
 <template>
-    <div>
-        <v-icon color="accent" :title="getIconLabel(feature)">
-            {{ getIcon(feature) }}
-        </v-icon>
-    </div>
+    <span :title="getIconLabel(feature)">
+        {{ getIcon(feature) }}
+    </span>
 </template>
 
 <script>
+/**
+ * https://emojipedia.org/search/
+ */
 export default {
-    name: 'Iconfeature',
+    name: 'EmojiFeature',
     props: {
         feature: {
             type: String,
@@ -22,32 +23,32 @@ export default {
                 {
                     key: 'all',
                     label: 'Все особенности',
-                    icon: 'mdi-layers-outline',
+                    icon: '🎲',
                 },
                 {
                     key: 'fast',
                     label: 'Быстрый',
-                    icon: 'mdi-clock-fast',
+                    icon: '⏱',
                 },
                 {
                     key: 'oven',
                     label: 'Духовка',
-                    icon: 'mdi-stove',
+                    icon: '🎛️',
                 },
                 {
                     key: 'cauldron',
                     label: 'Утятница',
-                    icon: 'mdi-dome-light',
+                    icon: '🦆',
                 },
                 {
                     key: 'pot',
                     label: 'Кастрюля',
-                    icon: 'mdi-pot-steam-outline',
+                    icon: '🍲',
                 },
                 {
                     key: 'combo',
                     label: 'Комбо',
-                    icon: 'mdi-hexagon-multiple-outline',
+                    icon: '🧩',
                 },
             ],
         };

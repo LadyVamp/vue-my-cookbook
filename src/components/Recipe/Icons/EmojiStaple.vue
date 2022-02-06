@@ -1,19 +1,17 @@
 <template>
-    <div>
-        <v-icon :color="getIconColor(staple)" :title="getIconLabel(staple)">
-            {{ getIcon(staple) }}
-        </v-icon>
-    </div>
+    <span :title="getIconLabel(staple)">
+        {{ getIcon(staple) }}
+    </span>
 </template>
 
 <script>
 export default {
-    name: 'IconStaple',
+    name: 'EmojiStaple',
     props: {
         staple: {
             type: String,
             required: true,
-            default: 'all'
+            default: 'all',
         },
     },
     data() {
@@ -22,44 +20,37 @@ export default {
                 {
                     key: 'all',
                     label: 'Все категории продуктов',
-                    icon: 'mdi-layers-outline',
-                    color: 'accent lighten-2',
+                    icon: '🎲',
                 },
                 {
                     key: 'vegetable',
                     label: 'Овощи и фрукты',
-                    icon: 'mdi-food-apple',
-                    color: 'light-green darken-1',
+                    icon: '🍏',
                 },
                 {
                     key: 'bird',
                     label: 'Птица',
-                    icon: 'mdi-food-drumstick',
-                    color: 'red lighten-3',
+                    icon: '🍗',
                 },
                 {
                     key: 'meat',
                     label: 'Мясо',
-                    icon: 'mdi-food-steak',
-                    color: 'red darken-2',
+                    icon: '🥩',
                 },
                 {
                     key: 'fish',
                     label: 'Рыба и морепродукты',
-                    icon: 'mdi-fish',
-                    color: 'blue lighten-2',
+                    icon: '🦐',
                 },
                 {
                     key: 'dairy',
                     label: 'Молочные продукты',
-                    icon: 'mdi-cheese',
-                    color: 'amber lighten-2',
+                    icon: '🧀',
                 },
                 {
                     key: 'dessert',
                     label: 'Десерт',
-                    icon: 'mdi-candy',
-                    color: 'lime darken-1',
+                    icon: '🍰',
                 },
             ],
         };
@@ -69,10 +60,7 @@ export default {
             return this.iconStaples.find((item) => item.key === staple).icon;
         },
         getIconLabel(staple) {
-           return this.iconStaples.find((item) => item.key === staple).label;
-        },
-        getIconColor(staple) {
-           return this.iconStaples.find((item) => item.key === staple).color;
+            return this.iconStaples.find((item) => item.key === staple).label;
         },
     },
 };

@@ -57,4 +57,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 2px 5px;
+}
+</style>
