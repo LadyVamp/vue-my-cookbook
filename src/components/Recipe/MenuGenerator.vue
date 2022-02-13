@@ -15,12 +15,12 @@
             <v-progress-circular :size="50" color="primary" indeterminate></v-progress-circular>
         </div>
         <div v-if="weekMenu">
-            <table class="my-2">
+            <table class="my-2 bordered">
                 <thead>
-                    <th>День</th>
-                    <th>Icons</th>
-                    <th class="meal">Обед/ужин</th>
-                    <th>Готовим вечером</th>
+                    <th class="w-50">День</th>
+                    <th class="w-50">Тип</th>
+                    <th class="w-350">Обед/ужин</th>
+                    <th class="w-350">Готовим вечером</th>
                 </thead>
                 <tbody>
                     <tr>
@@ -32,6 +32,7 @@
                         <td>
                             <RecipeLink :item="weekMenu[0].lunch" />
                         </td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>{{ nextDay(1) }}</td>
@@ -40,16 +41,19 @@
                             <EmojiStaple :staple="weekMenu[0].dinner.staple" />
                         </td>
                         <td><RecipeLink :item="weekMenu[0].dinner" /></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Вт</td>
                         <td></td>
                         <td><RecipeLink :item="weekMenu[1].lunch" /></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>{{ nextDay(2) }}</td>
                         <td></td>
                         <td><RecipeLink :item="weekMenu[1].dinner" /></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Ср</td>
@@ -73,16 +77,19 @@
                             <EmojiStaple :staple="weekMenu[3].lunch.staple" />
                         </td>
                         <td><RecipeLink :item="weekMenu[3].lunch" /></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>{{ nextDay(4) }}</td>
                         <td></td>
                         <td><RecipeLink :item="weekMenu[3].dinner" /></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Пт</td>
                         <td></td>
                         <td><RecipeLink :item="weekMenu[4].lunch" /></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>{{ nextDay(5) }}</td>
@@ -90,6 +97,7 @@
                             <EmojiFeature :feature="weekMenu[4].dinner.feature" />
                             <EmojiStaple :staple="weekMenu[4].dinner.staple" />
                         </td>
+                        <td><RecipeLink :item="weekMenu[4].dinner" /></td>
                         <td><RecipeLink :item="weekMenu[4].dinner" /></td>
                     </tr>
                 </tbody>
@@ -242,7 +250,19 @@ export default {
 </script>
 
 <style scoped>
-.meal {
-    width: 400px;
+.w-50 {
+    width: 50px;
+}
+.w-350 {
+    width: 350px;
+}
+thead > th {
+    border-bottom: 1px solid silver;
+}
+tr:nth-child(2n) > td {
+    border-bottom: 1px solid silver;
+}
+td {
+    border-right: 1px solid silver;
 }
 </style>
