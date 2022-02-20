@@ -40,9 +40,8 @@
                             :src="
                                 item.imageLink
                                     ? item.imageLink
-                                    : 'https://cdn.vuetifyjs.com/images/cards/cooking.png'
+                                    : 'https://sun9-30.userapi.com/impg/Z6fkeDwvqVVJMW8lviOyW1XyryvE90wVDnSDqw/XJRUwyS8L2s.jpg?size=380x300&quality=96&sign=93e6cf0b8c57ca7ad2c2608c01b4377a'
                             "
-                            class="white--text align-end"
                             height="200px"
                         >
                         </v-img>

@@ -8,10 +8,9 @@
                     :src="
                         recipe.imageLink
                             ? recipe.imageLink
-                            : 'https://cdn.vuetifyjs.com/images/cards/cooking.png'
+                            : 'https://sun9-30.userapi.com/impg/Z6fkeDwvqVVJMW8lviOyW1XyryvE90wVDnSDqw/XJRUwyS8L2s.jpg?size=380x300&quality=96&sign=93e6cf0b8c57ca7ad2c2608c01b4377a'
                     "
-                    class="white--text align-end"
-                    height="300px"
+                    height="250px"
                 >
                 </v-img>
                 <IconStaple :staple="recipe.staple" />
@@ -54,6 +53,7 @@
                                 return-object
                             >
                             </v-select>
+                            <v-switch v-model="isDiscounted" label="Со скидкой"></v-switch>
                         </div>
                     </v-col>
                     <v-col cols="8">
@@ -107,6 +107,7 @@ export default {
             title: 'Default Title',
             isShowLinks: false,
             isShowPrintVersion: false,
+            isDiscounted: false,
             shopOptions: [
                 { value: 'auchan', text: 'Ашан' },
                 { value: 'globus', text: 'Глобус' },
@@ -154,13 +155,15 @@ export default {
             this.fetchRecipes(this.$route.params.id);
         },
         linkToProductInShop(ingredient) {
+            const discounted = this.isDiscounted ? '&discounted=true' : '';
             const url =
                 'https://sbermarket.ru/' +
                 `${this.selectedShop.value}` +
                 '/search?keywords=' +
                 `${ingredient}` +
                 `&sort=` +
-                `${this.selectedSort.value}`;
+                `${this.selectedSort.value}` +
+                discounted;
             return url;
         },
     },
