@@ -172,7 +172,7 @@ export default {
          * Не пропускать в генератор рецепты с перечисленными id
          */
         getRecipesForGenerator() {
-            const notLunchIds = ['Ris-pripusknoi', 'Shokoladnaya-kolbasa', 'Pashtet', 'Satsebeli'];
+            const notLunchIds = ['Ris-pripusknoi', 'Shokoladnaya-kolbasa', 'Pashtet', 'Satsebeli', 'Testo-dlya-blinov'];
             this.recipesForGenerator = this.getAllRecipes().filter(
                 (item) => !notLunchIds.includes(item.id),
             );
