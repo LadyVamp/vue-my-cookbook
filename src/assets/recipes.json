@@ -1312,6 +1312,29 @@
       "feature": "oven"
     },
     {
+      "id": "Salat-iz-redki-morkovi-i-yaitsa",
+      "title": "Салат из редьки, моркови и яйца",
+      "servings": 2,
+      "ingredients": {
+        "Морковь": "2 шт",
+        "Редька зеленая": "1 шт",
+        "Яйцо куриное": "2 шт",
+        "Растительное масло": "По вкусу"
+      },
+      "note": "",
+      "steps": {
+        "1": "Сварить яйца",
+        "2": "Морковь и редьку почистить и натереть на крупной терке в миску",
+        "4": "Яйца нарезать и добавить в миску",
+        "5": "Добавить специи по вкусу",
+        "6": "Заправить маслом и перемешать"
+      },
+      "imageLink": "https://sun1-84.userapi.com/impf/XnoXqAoDonbjGrONQAHJStWjhs6VF_hGii0iww/1TPkmB4xIn0.jpg?size=519x575&quality=96&sign=339ffa84d05c516d0ea09c131385f40b&type=album",
+      "originalLink": null,
+      "staple": "vegetable",
+      "feature": "fast"
+    },
+    {
       "id": "template_id",
       "title": "template_title",
       "servings": 4,
