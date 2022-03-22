@@ -3,12 +3,7 @@
         <h2 class="secondary--text">Generator</h2>
         <v-row v-if="getLoading() === false">
             <v-col>
-                <BaseButton
-                    :label="'generate'"
-                    :icon="'mdi-auto-fix'"
-                    :color="'secondary'"
-                    @click.native="generate"
-                />
+                <BaseButton :label="'generate'" :icon="'mdi-auto-fix'" :color="'secondary'" @click.native="generate" />
             </v-col>
         </v-row>
         <div v-else>
@@ -108,6 +103,7 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
+import moment from 'moment';
 import BaseButton from '@/components/Buttons/BaseButton';
 import RecipeLink from '@/components/Recipe/RecipeLink';
 import EmojiFeature from '@/components/Recipe/Icons/EmojiFeature';
@@ -173,9 +169,7 @@ export default {
          */
         getRecipesForGenerator() {
             const notLunchIds = ['Ris-pripusknoi', 'Shokoladnaya-kolbasa', 'Pashtet', 'Satsebeli', 'Testo-dlya-blinov'];
-            this.recipesForGenerator = this.getAllRecipes().filter(
-                (item) => !notLunchIds.includes(item.id),
-            );
+            this.recipesForGenerator = this.getAllRecipes().filter((item) => !notLunchIds.includes(item.id));
         },
         generate() {
             this.sixServings();
@@ -240,10 +234,9 @@ export default {
             return randomDish;
         },
         nextDay(num) {
-            const today = new Date();
-            today.setDate(today.getDate() + ((num + (7 - today.getDay())) % 7));
-            let formatted = today.toLocaleDateString('ru-RU', { month: 'numeric', day: 'numeric' });
-            return formatted;
+            return moment()
+                .day(num + 7)
+                .format('DD.MM');
         },
     },
 };
