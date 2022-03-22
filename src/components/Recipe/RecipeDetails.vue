@@ -36,8 +36,8 @@
                         <div v-if="isShowLinks">
                             <v-select
                                 v-if="isShowLinks"
-                                label="Магазин"
                                 v-model="selectedShop"
+                                label="Магазин"
                                 :items="shopOptions"
                                 item-value="value"
                                 item-text="text"
@@ -45,8 +45,8 @@
                             >
                             </v-select>
                             <v-select
-                                label="Сортировка"
                                 v-model="selectedSort"
+                                label="Сортировка"
                                 :items="sortOptions"
                                 item-value="value"
                                 item-text="text"
@@ -143,6 +143,11 @@ export default {
             }
         },
     },
+    watch: {
+        $route() {
+            this.fetchData();
+        },
+    },
     mounted() {
         this.fetchData();
     },
@@ -165,11 +170,6 @@ export default {
                 `${this.selectedSort.value}` +
                 discounted;
             return url;
-        },
-    },
-    watch: {
-        $route() {
-            this.fetchData();
         },
     },
 };

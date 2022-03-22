@@ -5,8 +5,8 @@
             <v-col class="d-flex justify-end">
                 <div class="search_select">
                     <v-select
-                        label="Поиск"
                         v-model="selected"
+                        label="Поиск"
                         :items="options"
                         item-value="value"
                         item-text="text"

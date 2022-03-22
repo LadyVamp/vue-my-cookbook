@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <TheHeader :menuItems="menuItems" />
+    <TheHeader :menu-items="menuItems" />
     <v-main>
       <v-container>
-        <TheTabs :menuItems="menuItems" />
+        <TheTabs :menu-items="menuItems" />
         <router-view />
       </v-container>
     </v-main>

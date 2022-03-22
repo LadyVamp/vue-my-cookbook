@@ -1,6 +1,6 @@
 <template>
     <v-tabs class="hidden-xs-only">
-        <v-tab :to="item.path" v-for="item in menuItems" :key="item.name">
+        <v-tab v-for="item in menuItems" :key="item.name" :to="item.path">
             <v-icon class="pr-1"> {{ item.icon }} </v-icon>
             {{ item.name }}
         </v-tab>

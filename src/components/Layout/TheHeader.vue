@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-navigation-drawer app left temporary v-model="isShowDrawer">
+        <v-navigation-drawer v-model="isShowDrawer" app left temporary>
             <v-list-item-group>
                 <v-list-item>
                     <v-list-item-content>
@@ -25,8 +25,8 @@
 
         <v-app-bar app color="primary" dark>
             <v-app-bar-nav-icon
-                @click="isShowDrawer = !isShowDrawer"
                 class="hidden-sm-and-up"
+                @click="isShowDrawer = !isShowDrawer"
             ></v-app-bar-nav-icon>
             <router-link :to="{ path: '/' }">
                 <v-img
