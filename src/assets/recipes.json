@@ -30,7 +30,8 @@
       "imageLink": "https://img.povar.ru/main/f3/e1/da/f0/grecheskii_salat_s_bazilikom-81848.jpg",
       "originalLink": "https://povar.ru/recipes/grecheskii_salat_s_bazilikom-14818.html",
       "staple": "vegetable",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "summer"
     },
     {
       "id": "Svinina-s-kartoshkoi-v-pakete-v-dukhovke",
@@ -55,7 +56,8 @@
       "imageLink": "https://img.povar.ru/main/95/80/c5/b1/svinina_s_kartoshkoi_v_pakete_v_duhovke-149708.jpeg",
       "originalLink": "https://povar.ru/recipes/svinina_s_kartoshkoi_v_pakete_v_duhovke-24690.html",
       "staple": "meat",
-      "feature": "oven"
+      "feature": "oven",
+      "season": "all"
     },
     {
       "id": "Makaroni-po-flotski",
@@ -76,7 +78,8 @@
       "imageLink": "https://sun9-73.userapi.com/impg/bLlwBPRXSaJGrTOBXdy-vg0GT89lzoi_LoHnLw/b8aoNoq9yV8.jpg?size=802x846&quality=96&sign=a39be6ce01c9a7f4d3417bc81bb83f62",
       "originalLink": "https://eda.ru/recepty/pasta-picca/makarony-po-flotski-s-sochnym-farshem-80740",
       "staple": "meat",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Salat-s-tikvoi-i-sirom-brinza",
@@ -100,7 +103,8 @@
       "imageLink": "https://sun9-24.userapi.com/impg/q7li-40_67CYr7UCQL0-Vp7yVYpq-jMoCvcbSg/lOhbB5H6ZFc.jpg?size=892x932&quality=96&sign=202d57cb6e9eaa4ccf2e6b7922b8541c",
       "originalLink": "https://menunedeli.ru/recipe/salat-s-tykvoj-i-syrom-brynza/",
       "staple": "vegetable",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "autumn"
     },
     {
       "id": "Salat-s-kuritsei-i-seldereem",
@@ -125,7 +129,8 @@
       "originalLink": "https://www.iamcook.ru/showrecipe/7085",
       "staple": "bird",
       "feature": "combo",
-      "comboId": "Gribnoi-sup-pyure"
+      "comboId": "Gribnoi-sup-pyure",
+      "season": "all"
     },
     {
       "id": "Gribnoi-sup-pyure",
@@ -155,7 +160,8 @@
       "originalLink": "https://www.russianfood.com/recipes/recipe.php?rid=139033",
       "staple": "vegetable",
       "feature": "combo",
-      "comboId": "Salat-s-kuritsei-i-seldereem"
+      "comboId": "Salat-s-kuritsei-i-seldereem",
+      "season": "all"
     },
     {
       "id": "Kurinie-nozhki-zapechyonnie-s-kartofelem",
@@ -189,7 +195,8 @@
       "imageLink": "https://sun9-44.userapi.com/impg/Pz27skfxeJaBoWgtkFRzDReAvK1w2QtixC5gTQ/BdtPM7WukJ4.jpg?size=2076x1348&quality=96&rotate=180&sign=a5db96ae07878c3d37571af7ca34e9ba",
       "originalLink": "https://www.russianfood.com/recipes/recipe.php?rid=148538",
       "staple": "bird",
-      "feature": "oven"
+      "feature": "oven",
+      "season": "all"
     },
     {
       "id": "Lagman",
@@ -222,7 +229,8 @@
       "imageLink": "https://toprecepty.ru/wp-content/uploads/2020/01/lagman-uzbekskij.jpg",
       "originalLink": "https://povar.ru/recipes/lagman_klassicheskii-54519.html",
       "staple": "meat",
-      "feature": "cauldron"
+      "feature": "cauldron",
+      "season": "summer"
     },
     {
       "id": "Kuritsa-v-sirnom-souse",
@@ -246,7 +254,8 @@
       "imageLink": "https://sun9-51.userapi.com/impg/8WVPnpwK34dACh1xSJzYqJMEUZfK0mVBKs1xLQ/feiWSLRpReE.jpg?size=508x488&quality=96&sign=d9c44b034374fdb5ffe8420ea595b90e",
       "originalLink": null,
       "staple": "bird",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Ribnii-salat-iz-konservirovannoi-gorbushi",
@@ -271,7 +280,8 @@
       "imageLink": "https://sun9-73.userapi.com/impg/_UUkghP1ayEz99yIYKwnTx093IEDYgdo0ao6YQ/wd8BZQi-PY4.jpg?size=503x569&quality=96&sign=1d7e41e23539797c511e41696cf605f9",
       "originalLink": null,
       "staple": "fish",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Shashlik-na-shpazhkakh-v-dukhovke",
@@ -300,7 +310,8 @@
       "imageLink": "https://sun9-45.userapi.com/impg/vQ0TodqUK9mYsYaHCnKaRVp55gc21XWduyp7ew/h-M60Mevdus.jpg?size=1600x899&quality=96&sign=99436265cce0eca0b3d7d89f8002ff44",
       "originalLink": "https://www.youtube.com/watch?v=pmmWFOZCIww",
       "staple": "meat",
-      "feature": "oven"
+      "feature": "oven",
+      "season": "all"
     },
     {
       "id": "Gorokhovii-sup-s-kopchenoi-grudinkoi",
@@ -325,7 +336,8 @@
       "imageLink": "https://sun9-10.userapi.com/impg/-cKZeXOlyViquvy1V_u-mkZx0n_Kce6lED3EUA/7l_HM0VcrPU.jpg?size=612x625&quality=96&sign=aba7f6c4eaf5aae75345bf5b080fd2f8",
       "originalLink": "https://povar.ru/recipes/gorohovyi_sup_s_kopchenoi_grudinkoi-32144.html",
       "staple": "meat",
-      "feature": "pot"
+      "feature": "pot",
+      "season": "all"
     },
     {
       "id": "Kartofelnaya-zapekanka-s-farshem",
@@ -354,7 +366,8 @@
       "imageLink": "https://sun9-3.userapi.com/impg/eAJ6gA9qNiC1GAT2472VOL1UHPBgyrQi2Kh5sQ/GZPjyx1PeAc.jpg?size=616x631&quality=96&sign=7b4de27c7d5dbbc79c0fb9017a3f2956",
       "originalLink": "https://www.russianfood.com/recipes/recipe.php?rid=123023",
       "staple": "meat",
-      "feature": "oven"
+      "feature": "oven",
+      "season": "all"
     },
     {
       "id": "Tvorozhnaya-zapekanka",
@@ -380,7 +393,8 @@
       "imageLink": "https://sun9-73.userapi.com/impg/1jG9pYqZ53-p5K2xpBcrRY2Dzib8siu4rMp6mw/z2pBDR9ylUQ.jpg?size=1001x708&quality=96&sign=9af0331097b706e0bec27ffff8488967",
       "originalLink": null,
       "staple": "dairy",
-      "feature": "oven"
+      "feature": "oven",
+      "season": "all"
     },
     {
       "id": "Satsivi-iz-kuritsi",
@@ -409,7 +423,8 @@
       "imageLink": null,
       "originalLink": null,
       "staple": "bird",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Tortilya-ovoshchnaya",
@@ -435,7 +450,8 @@
       "imageLink": "https://sun9-58.userapi.com/impg/S4vdRTBA3kL-vNjPfqEc-rg6l6rgofaXZ4oxfA/nnXGxD4dGg8.jpg?size=884x851&quality=96&sign=d863a0d6bbcda3c8a3e405f9d1205dcc",
       "originalLink": null,
       "staple": "vegetable",
-      "feature": "oven"
+      "feature": "oven",
+      "season": "all"
     },
     {
       "id": "Kartofelnaya-zapekanka-s-gribami",
@@ -465,7 +481,8 @@
       "imageLink": "https://sun9-74.userapi.com/impg/LYTGpHMLS0KgdUyvdUzR4zV-d-qirCsgfEboJw/IsL4Q628txs.jpg?size=1089x1330&quality=96&sign=306d659f676af0f1254edc1747743318",
       "originalLink": "https://eda.ru/recepty/osnovnye-blyuda/kartofelnaja-zapekanka-s-gribami-sirom-31477",
       "staple": "vegetable",
-      "feature": "oven"
+      "feature": "oven",
+      "season": "all"
     },
     {
       "id": "Sup-s-kurinimi-nozhkami",
@@ -494,7 +511,8 @@
       "imageLink": "https://sun9-7.userapi.com/impg/H15xVP40LlqlFIthlsm9Qzj2DIsWdlywtcTPRQ/c4HE0b0CDgw.jpg?size=2032x1337&quality=96&sign=e91dae747a9be6728baa38decb63a2f6",
       "originalLink": "https://povar.ru/recipes/sup_s_kurinymi_nojkami-47839.html",
       "staple": "bird",
-      "feature": "pot"
+      "feature": "pot",
+      "season": "all"
     },
     {
       "id": "Vinegret",
@@ -519,7 +537,8 @@
       "imageLink": "https://sun9-60.userapi.com/impg/Z1QGqwAqTOLxosEkar_HhETnzDr_JiqOSszoSw/K2pHnagx5tk.jpg?size=499x527&quality=96&sign=8c9a0e201987159e29aa19463cb566d0",
       "originalLink": "https://povar.ru/recipes/vinegret_ochen_prostoi_recept-58562.html",
       "staple": "vegetable",
-      "feature": "pot"
+      "feature": "pot",
+      "season": "spring"
     },
     {
       "id": "Salat-iz-redki-s-yablokom",
@@ -544,7 +563,8 @@
       "imageLink": null,
       "originalLink": null,
       "staple": "vegetable",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "spring"
     },
     {
       "id": "Sirnii-sup-by-Pup",
@@ -572,7 +592,8 @@
       "imageLink": "https://sun1-22.userapi.com/impg/iIuJF0OrXADNAVGQMLc5oPSnSItGtZE_edniOg/sHtd8L8NyEI.jpg?size=893x840&quality=96&sign=8fab24d343ecc68bda8848c511daf18b",
       "originalLink": null,
       "staple": "bird",
-      "feature": "pot"
+      "feature": "pot",
+      "season": "all"
     },
     {
       "id": "Plov-iz-burogo-risa-so-svininoi",
@@ -600,7 +621,8 @@
       "imageLink": "https://sun9-36.userapi.com/impg/8OeN12W2VWYGAhKH78exwDnb6DwpQ64Li1YYyQ/9CW6gM63ILM.jpg?size=890x888&quality=96&sign=042a4a09ae822af4193a170727a30521",
       "originalLink": "https://povar.ru/recipes/plov_v_utyatnice-15264.html",
       "staple": "meat",
-      "feature": "cauldron"
+      "feature": "cauldron",
+      "season": "all"
     },
     {
       "id": "Grechka-s-shampinonami",
@@ -625,7 +647,8 @@
       "imageLink": "https://sun9-67.userapi.com/impg/jWRabAZx0F33BURj8hDGw9U68TbizAyUZAQxzw/HLAxEEiBGdM.jpg?size=831x1080&quality=96&sign=672318361d77c90631898a9b4cebd4c0",
       "originalLink": null,
       "staple": "vegetable",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Tabule-s-olivkami-i-marinovannimi-ogurtsami",
@@ -649,7 +672,8 @@
       "imageLink": "https://sun9-79.userapi.com/impg/ALm6avWQkf-JXuH_nQDGOi3PTtnQDHFoOvbfiA/YimO3-xgiow.jpg?size=890x836&quality=96&sign=213e94178a8e926d8fce5d89f8f88a6d",
       "originalLink": null,
       "staple": "vegetable",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Pechen-po-stroganovski",
@@ -673,7 +697,8 @@
       "imageLink": "https://sun9-11.userapi.com/impg/7vYHEBtAtcf2Uc6Hi3llGk9XJiobpU88t1IjiQ/jvhJcWFBYZs.jpg?size=892x903&quality=96&sign=360396184df8a2c78627a33ee61752c9",
       "originalLink": null,
       "staple": "bird",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Myaso-v-smetannom-souse",
@@ -697,7 +722,8 @@
       "imageLink": null,
       "originalLink": null,
       "staple": "meat",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Myaso-v-tomatnom-souse",
@@ -722,7 +748,8 @@
       "imageLink": null,
       "originalLink": null,
       "staple": "meat",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Pashtet",
@@ -751,7 +778,8 @@
       "imageLink": null,
       "originalLink": null,
       "staple": "bird",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Satsebeli",
@@ -778,7 +806,8 @@
       "imageLink": null,
       "originalLink": null,
       "staple": "vegetable",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Lenivaya-achma-iz-lavasha",
@@ -808,7 +837,8 @@
       "imageLink": "https://sun9-45.userapi.com/impg/UCWHYlErtPrQ4bpVdIRkoHYKrBioRf_Q-B7kHA/_WCWnB5zzX0.jpg?size=1597x888&quality=96&sign=5811f08ed432a068932c306db1abc07d",
       "originalLink": null,
       "staple": "dairy",
-      "feature": "oven"
+      "feature": "oven",
+      "season": "all"
     },
     {
       "id": "Salat-s-rukkoloi",
@@ -831,7 +861,8 @@
       "imageLink": null,
       "originalLink": null,
       "staple": "vegetable",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "summer"
     },
     {
       "id": "Salat-kuritsa-karri-s-ananasami",
@@ -853,7 +884,8 @@
       "imageLink": "https://sun9-81.userapi.com/impg/m4WxQfZHsPZE_B_bLtI6AcFex5R7XxQVUyClXw/3fFZ6pi_hF4.jpg?size=885x890&quality=96&rotate=270&sign=0d1ac8c5be59e333265289f60d7b8707",
       "originalLink": null,
       "staple": "bird",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Svinina-so-struchkovoi-fasolyu",
@@ -878,7 +910,8 @@
       "imageLink": "https://sun9-45.userapi.com/impg/6CJW6UqASPtjEZfVwBUuJ98Gu1uiDAP56-S6Bg/iElb9rwdmlk.jpg?size=884x915&quality=96&sign=3ff6192101ff4bca457b6cc4cf3d4ae8",
       "originalLink": null,
       "staple": "meat",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Zapechennaya-svinina-s-chesnokom",
@@ -903,7 +936,8 @@
       "imageLink": "https://sun9-4.userapi.com/impg/_vBQR_AUCobmL6rzgeFQE_1TL75qp4qQ2o3dZQ/QpiqlTs_Ez8.jpg?size=894x853&quality=96&sign=f9bec55738c65d58cd4d1b0a4bc12ae2",
       "originalLink": null,
       "staple": "meat",
-      "feature": "oven"
+      "feature": "oven",
+      "season": "all"
     },
     {
       "id": "Varenaya-kartoshka-s-seldyu",
@@ -927,7 +961,8 @@
       "imageLink": "https://sun9-60.userapi.com/impg/tlYjF99Ujh5kyvZewfSFcaOhCd64myex2a8LlQ/3p7JneQOJmg.jpg?size=895x903&quality=96&sign=e5b48ed8a8b6b0213867dafd8cd6cbef",
       "originalLink": null,
       "staple": "fish",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Tushenaya-kapusta-s-sardelkami",
@@ -953,7 +988,8 @@
       "imageLink": "https://sun9-68.userapi.com/impg/NkYJ2-mxpa01nP74p5DwSudZMq5Ej6lNNtU9Jw/3hYDEqbwzqs.jpg?size=891x899&quality=96&sign=c249f9ad4762f1113ba01bf50889eacf",
       "originalLink": "https://tutknow.ru/cookery/second_dishes/10998-tushenaya-kapusta-s-sardelkami.html",
       "staple": "meat",
-      "feature": "cauldron"
+      "feature": "cauldron",
+      "season": "all"
     },
     {
       "id": "Shokoladnaya-kolbasa",
@@ -978,7 +1014,8 @@
       "imageLink": "https://sun9-59.userapi.com/impg/mmpCK2k9h5m_V7YyXTlP7RRv6KU2IE-QaUOsTg/k5Me8lK4lkk.jpg?size=893x918&quality=96&sign=d587da95cb64d06a6b4e24f8e27d1d04",
       "originalLink": null,
       "staple": "dessert",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "winter"
     },
     {
       "id": "Tomatnii-sup-s-frikadelkami",
@@ -1010,7 +1047,8 @@
       "imageLink": "https://sun1-23.userapi.com/impg/Shqqc8_k2bAQGNaoWIX2k_wOAtVtMXHzBS06mg/iiWBiOFtH_U.jpg?size=893x998&quality=96&rotate=270&sign=2bae99aa5b2dca663592f1e7a4ee0253",
       "originalLink": "https://menunedeli.ru/recipe/dieticheskij-tomatnyj-sup-s-frikadelkami/",
       "staple": "meat",
-      "feature": "pot"
+      "feature": "pot",
+      "season": "all"
     },
     {
       "id": "Salat-s-krabovimi-palochkami",
@@ -1035,7 +1073,8 @@
       "imageLink": "https://sun9-73.userapi.com/impg/qhdsEyldAuqWFcy0JZ7Q01KAezvr3N1RR3dO_A/QeCTZsEZEXU.jpg?size=885x834&quality=96&sign=07f106bcbf15efc4a883d8d068f27daf",
       "originalLink": "https://lifehacker.ru/salaty-s-krabovymi-palochkami-recepty/",
       "staple": "fish",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Ris-pripusknoi",
@@ -1060,7 +1099,8 @@
       "imageLink": "https://sun9-66.userapi.com/impg/ldiaNNUDH6BG7glsI4a4FCMAIJyp60ehJyXRyg/SYk140T4fbw.jpg?size=867x922&quality=96&rotate=270&sign=05e1c2c331132113519dc1af6a898503",
       "originalLink": null,
       "staple": "vegetable",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Riba-zapechennaya-v-folge-i-dukhovke",
@@ -1084,7 +1124,8 @@
       "imageLink2": "https://sun1-99.userapi.com/impg/Ca0DFbo-p38lHpRTYip9NcrJcqNhb0KQtfzhfg/mbaXWNBNbCc.jpg?size=770x929&quality=96&sign=fc4d64955ca694889c662b7543a846c2",
       "originalLink": null,
       "staple": "fish",
-      "feature": "oven"
+      "feature": "oven",
+      "season": "all"
     },
     {
       "id": "Salat-iz-kapusti-i-morkovi",
@@ -1105,7 +1146,8 @@
       "imageLink": "https://sun1-90.userapi.com/impg/KD5wSYx45Uq9pzoh_uTrj7Vre3pnZwVGb0ffYw/ILQ4mVk80EI.jpg?size=652x747&quality=96&sign=a2c4f9f19499454fef2e2d277ce9fef2",
       "originalLink": "https://art-lunch.ru/recipe/salat-iz-kapusty-i-morkovi_foto/",
       "staple": "vegetable",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Meksikanskii-mix-s-myasom",
@@ -1125,7 +1167,8 @@
       "imageLink": "https://sun9-11.userapi.com/impg/dOoZOeKOQVl91ZpdxNwLEKuls6jOwCnZq6NbdA/LJh-Bp6R1us.jpg?size=891x920&quality=96&sign=9a71ab94eb49a9987cca2c33263b3e90",
       "originalLink": "https://bonduelle.ru/recipes/hot/meksikanskiy-miks-s-govyadinoy/",
       "staple": "meat",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Sardelki-s-grechkoi",
@@ -1149,7 +1192,8 @@
       "imageLink": "https://sun9-83.userapi.com/impg/JkdEGwaldFGCbsQTkHV_ZMKmkTgEAw-APSFjyw/9U9_9-5pPPc.jpg?size=861x1080&quality=96&rotate=90&sign=71e6ca3c6cd6b6055d8ac019aa91489c",
       "originalLink": null,
       "staple": "meat",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Morkovnii-salat-s-sirom-i-chesnokom",
@@ -1171,7 +1215,8 @@
       "imageLink": "https://sun9-19.userapi.com/impg/DAPcJypYGKnlniYvZamWa7fIZ6N83MJlDgvidg/9Y1j9PiOfTU.jpg?size=890x917&quality=96&sign=483335fad34e702b905b9c15ef0661d0",
       "originalLink": "https://eda.ru/recepty/salaty/morkovnij-salat-s-sirom-i-chesnokom-48434",
       "staple": "vegetable",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Tushenaya-kartoshka-s-myasom",
@@ -1196,7 +1241,8 @@
       "imageLink": "https://sun9-60.userapi.com/impg/CBYuWnB3_g3jye00LVRnhH_t1z4Swk-UeSe78A/8Ru6zzRX9g8.jpg?size=520x565&quality=96&sign=14a866938ac2e97aebf486d0b5b86ecc",
       "originalLink": null,
       "staple": "meat",
-      "feature": "cauldron"
+      "feature": "cauldron",
+      "season": "all"
     },
     {
       "id": "Pasta-s-tuntsom,-olivkami-i-chesnokom",
@@ -1221,7 +1267,8 @@
       "imageLink": "https://sun9-83.userapi.com/impg/FcMTNIk92yVKDvTjSIqkXMPt42Xq7DZQx597pQ/DZ1vKB-Nnjo.jpg?size=717x831&quality=96&sign=03da3e3ff375118fb664b1271570abf2",
       "originalLink": "https://www.edimdoma.ru/retsepty/81254-pasta-s-tuntsom-olivkami-i-chesnokom",
       "staple": "fish",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Chevapchichi",
@@ -1240,7 +1287,8 @@
       "imageLink": "https://sun9-29.userapi.com/impg/ZBd4wL4y4PXBeZJmLz__V4hSkXEnQAd3f7pBNw/pC4qZZ4Jcp8.jpg?size=709x866&quality=96&sign=b816bdce1b49e27a933f1daf98f50707",
       "originalLink": null,
       "staple": "meat",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Salat-iz-chechevitsi-s-seldereem-i-fetoi",
@@ -1266,7 +1314,8 @@
       "imageLink": "https://sun9-79.userapi.com/impg/ZD1vuKQ2LwK_4Tw9IkZyQg0JMf9QtXYOFKT0Jw/vSaUXsBkM7I.jpg?size=893x927&quality=96&sign=0191076f5802791d21d921eedf163f54",
       "originalLink": "https://www.edimdoma.ru/retsepty/40621-salat-iz-chechevitsy-s-seldereem-i-fetoy",
       "staple": "vegetable",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Testo-dlya-blinov",
@@ -1286,7 +1335,8 @@
       "imageLink": "https://sun9-78.userapi.com/impg/eHqy-oBLqqJ8Tjv3oxHnJF9tKAu_xSEYpn0rTg/5Xar2HiVvdY.jpg?size=525x505&quality=96&sign=6a07a6276b54c784d133ab384693bbdd&type=album",
       "originalLink": null,
       "staple": "dessert",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "winter"
     },
     {
       "id": "Zapechennie-kurinie-okorochka",
@@ -1309,7 +1359,8 @@
       "imageLink": "https://sun9-65.userapi.com/impg/akqRA_LBTwaod438aTMvpRM9LZwJCK_-Kf6CRA/ThwTrDfcGLY.jpg?size=886x1032&quality=96&rotate=90&sign=cba03f3908957856a4b1a4f17c4cba69&type=album",
       "originalLink": null,
       "staple": "bird",
-      "feature": "oven"
+      "feature": "oven",
+      "season": "all"
     },
     {
       "id": "Salat-iz-redki-morkovi-i-yaitsa",
@@ -1332,7 +1383,8 @@
       "imageLink": "https://sun1-84.userapi.com/impf/XnoXqAoDonbjGrONQAHJStWjhs6VF_hGii0iww/1TPkmB4xIn0.jpg?size=519x575&quality=96&sign=339ffa84d05c516d0ea09c131385f40b&type=album",
       "originalLink": null,
       "staple": "vegetable",
-      "feature": "fast"
+      "feature": "fast",
+      "season": "all"
     },
     {
       "id": "Morkov-po-koreiski",
@@ -1364,7 +1416,8 @@
       "imageLink": "https://sun9-47.userapi.com/impf/g7_exxcQhQtRvq89kQ7aqf0tt00LL_4QzprTJQ/r-7LOAECAZs.jpg?size=799x879&quality=96&sign=7d6b514e07d32188286c6347fcf27e16&type=album",
       "originalLink": null,
       "staple": "vegetable",
-      "feature": "pot"
+      "feature": "pot",
+      "season": "all"
     },
     {
       "id": "template_id",
@@ -1387,8 +1440,9 @@
       },
       "imageLink": null,
       "originalLink": null,
-      "staple": "vegetable || bird || meat || fish || dairy || dessert",
-      "feature": "fast || oven || cauldron || pot || combo"
+      "staple": "vegetable | bird | meat | fish | dairy | dessert",
+      "feature": "fast | oven | cauldron | pot | combo",
+      "season": "all | winter | spring | summer | autumn"
     }
   ]
 }

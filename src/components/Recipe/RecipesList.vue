@@ -27,6 +27,7 @@
         </v-row>
         <FilterByStaple @filterByStaple="onFilterByStaple" />
         <FilterByFeature @filterByFeature="onFilterByFeature" />
+        <FilterBySeason @filterBySeason="onFilterBySeason" />
         <v-row v-if="getLoading() === false">
             <v-col v-for="item in filteredList" :key="item.id" cols="12" sm="6" md="4" xl="3">
                 <v-card width="360px" height="360px">
@@ -50,6 +51,7 @@
                     <v-card-text>
                         <IconStaple :staple="item.staple" />
                         <IconFeature :feature="item.feature" />
+                        <IconSeason :season="item.season" />
                     </v-card-text>
                 </v-card>
             </v-col>
@@ -63,13 +65,15 @@
 <script>
 import IconStaple from '@/components/Recipe/Icons/IconStaple';
 import IconFeature from '@/components/Recipe/Icons/IconFeature';
+import IconSeason from '@/components/Recipe/Icons/IconSeason';
 import { mapActions, mapGetters } from 'vuex';
 import FilterByStaple from '@/components/Recipe/Filters/FilterByStaple';
 import FilterByFeature from '@/components/Recipe/Filters/FilterByFeature';
+import FilterBySeason from '@/components/Recipe/Filters/FilterBySeason';
 
 export default {
     name: 'RecipesList',
-    components: { IconStaple, IconFeature, FilterByStaple, FilterByFeature },
+    components: { IconStaple, IconFeature, IconSeason, FilterByStaple, FilterByFeature, FilterBySeason },
     data() {
         return {
             search: '',
@@ -102,18 +106,22 @@ export default {
             if (selectedStaple === 'all') {
                 this.showAllRecipes();
             } else {
-                this.filteredList = this.getAllRecipes().filter(
-                    (recipe) => recipe.staple === selectedStaple,
-                );
+                this.filteredList = this.getAllRecipes().filter((recipe) => recipe.staple === selectedStaple);
             }
         },
         onFilterByFeature(selectedFeature) {
             if (selectedFeature === 'all') {
                 this.showAllRecipes();
             } else {
-                this.filteredList = this.getAllRecipes().filter(
-                    (recipe) => recipe.feature === selectedFeature,
-                );
+                this.filteredList = this.getAllRecipes().filter((recipe) => recipe.feature === selectedFeature);
+            }
+        },
+        onFilterBySeason(selectedSeason) {
+            console.log(selectedSeason);
+            if (selectedSeason === 'all') {
+                this.showAllRecipes();
+            } else {
+                this.filteredList = this.getAllRecipes().filter((recipe) => recipe.season === selectedSeason);
             }
         },
         onSearchInput() {
@@ -126,9 +134,7 @@ export default {
             }
         },
         searchByTitle(searchInput) {
-            return this.getAllRecipes().filter((recipe) =>
-                recipe.title.toLowerCase().includes(searchInput),
-            );
+            return this.getAllRecipes().filter((recipe) => recipe.title.toLowerCase().includes(searchInput));
         },
         searchByIngredients(searchInput) {
             const set = new Set();
@@ -149,7 +155,7 @@ export default {
 
 <style lang="scss" scoped>
 .v-card__title {
-    line-height: 1.25rem;
+    line-height: 1.1rem;
     word-break: normal;
 }
 .search_select {

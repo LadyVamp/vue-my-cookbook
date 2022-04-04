@@ -15,6 +15,7 @@
                 </v-img>
                 <IconStaple :staple="recipe.staple" />
                 <IconFeature :feature="recipe.feature" />
+                <IconSeason :season="recipe.season" />
                 <v-btn
                     v-if="recipe.feature.includes('combo')"
                     :to="{
@@ -95,13 +96,14 @@
 <script>
 import IconStaple from '@/components/Recipe/Icons/IconStaple';
 import IconFeature from '@/components/Recipe/Icons/IconFeature';
+import IconSeason from '@/components/Recipe/Icons/IconSeason';
 import BackButton from '@/components/Buttons/BackButton';
 import { mapActions } from 'vuex';
 import RecipePrintVersion from '@/components/Recipe/RecipePrintVersion';
 
 export default {
     name: 'RecipeDetails',
-    components: { IconStaple, IconFeature, BackButton, RecipePrintVersion },
+    components: { IconStaple, IconFeature, IconSeason, BackButton, RecipePrintVersion },
     data() {
         return {
             title: 'Default Title',
