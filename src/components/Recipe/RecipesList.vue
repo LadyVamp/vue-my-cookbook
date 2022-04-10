@@ -28,6 +28,22 @@
         <FilterByStaple @filterByStaple="onFilterByStaple" />
         <FilterByFeature @filterByFeature="onFilterByFeature" />
         <FilterBySeason @filterBySeason="onFilterBySeason" />
+        <div class="d-flex justify-space-between">
+            <v-select
+                v-model="selectedServingsNumber"
+                label="Порций"
+                :items="optionsServingsNumber"
+                item-value="value"
+                item-text="text"
+                return-object
+                class="servings_select"
+                @change="onServingsNumberChange()"
+            >
+            </v-select>
+            <div class="my-4">
+                {{ filteredList.length }}
+            </div>
+        </div>
         <v-row v-if="getLoading() === false">
             <v-col v-for="item in filteredList" :key="item.id" cols="12" sm="6" md="4" xl="3">
                 <v-card width="360px" height="360px">
@@ -76,13 +92,20 @@ export default {
     components: { IconStaple, IconFeature, IconSeason, FilterByStaple, FilterByFeature, FilterBySeason },
     data() {
         return {
+            filteredList: [],
             search: '',
             options: [
                 { value: 'title', text: 'По названию' },
                 { value: 'ingredients', text: 'По ингредиентам' },
             ],
             selected: { value: 'title', text: 'По названию' },
-            filteredList: [],
+            optionsServingsNumber: [
+                { value: null, text: 'Все' },
+                { value: 2, text: '2' },
+                { value: 4, text: '4' },
+                { value: 6, text: '6' },
+            ],
+            selectedServingsNumber: { value: null, text: 'Все' },
         };
     },
     mounted() {
@@ -117,7 +140,6 @@ export default {
             }
         },
         onFilterBySeason(selectedSeason) {
-            console.log(selectedSeason);
             if (selectedSeason === 'all') {
                 this.showAllRecipes();
             } else {
@@ -149,6 +171,11 @@ export default {
             });
             return set;
         },
+        onServingsNumberChange() {
+            this.filteredList = this.getAllRecipes().filter(
+                (recipe) => recipe.servings === this.selectedServingsNumber.value,
+            );
+        },
     },
 };
 </script>
@@ -165,5 +192,8 @@ export default {
 }
 .search_input {
     width: 250px;
+}
+.servings_select {
+    max-width: 100px;
 }
 </style>

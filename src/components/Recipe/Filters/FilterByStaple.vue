@@ -1,35 +1,25 @@
 <template>
-    <v-row>
-        <v-col>
-            <v-chip-group active-class="primary--text">
-                <v-chip
-                    v-for="item in staples"
-                    :key="item"
-                    outlined
-                    class="text-caption"
-                    @click="filterByStaple(item)"
-                >
-                    <IconStaple :staple="item" />
-                </v-chip>
-            </v-chip-group>
-        </v-col>
-    </v-row>
+    <v-chip-group active-class="primary--text">
+        <v-chip v-for="item in staples" :key="item" outlined class="text-caption" @click="filterByStaple(item)">
+            <IconStaple :staple="item" />
+        </v-chip>
+    </v-chip-group>
 </template>
 
 <script>
-import IconStaple from "@/components/Recipe/Icons/IconStaple";
+import IconStaple from '@/components/Recipe/Icons/IconStaple';
 
 export default {
-    name: "FilterByStaple",
+    name: 'FilterByStaple',
     components: { IconStaple },
     data() {
         return {
-            staples: ["all", "vegetable", "bird", "meat", "fish", "dairy", "dessert"],
+            staples: ['all', 'vegetable', 'bird', 'meat', 'fish', 'dairy', 'dessert'],
         };
     },
     methods: {
         filterByStaple(selectedStaple) {
-            this.$emit("filterByStaple", selectedStaple);
+            this.$emit('filterByStaple', selectedStaple);
         },
     },
 };

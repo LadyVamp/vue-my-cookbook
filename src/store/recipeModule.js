@@ -44,9 +44,7 @@ export default {
                 )
                 .then((response) => {
                     // console.log('recipes', response.data.recipes);
-                    const recipes = response.data.recipes
-                        .reverse()
-                        .filter((item) => item.title !== 'template_title');
+                    const recipes = response.data.recipes.reverse().filter((item) => item.title !== 'template_title');
                     context.commit('setRecipes', recipes);
                     context.commit('setRecipesCount', recipes.length);
                     context.commit('setLoading', false);
