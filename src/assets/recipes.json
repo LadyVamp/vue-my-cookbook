@@ -1445,6 +1445,30 @@
       "season": "all"
     },
     {
+      "id": "Sirnaya-lepeshka",
+      "title": "Сырная лепешка",
+      "servings": 2,
+      "ingredients": {
+        "Сыр твердый": "100 г",
+        "Яйцо куриное": "2 шт",
+        "Молоко": "3 ст.л.",
+        "Мука пшеничная": "3 ст.л."
+      },
+      "note": "Неспешный завтрак в выходной",
+      "steps": {
+        "1": "Яйца взбить",
+        "2": "Сыр натереть на терке",
+        "3": "Смешать все ингредиенты в миске",
+        "4": "Вылить смесь на сковороду, накрыть крышкой, жарить 7 минут с одной стороны на медленном огне",
+        "5": "Аккуратно перевернуть и жарить 4 минуты с другой стороны"
+      },
+      "imageLink": "https://sun9-59.userapi.com/s/v1/if2/3ovpcxfpS3jG20X2LgpH4vOmNF-7IBDosPd3gsTFGFZzz8IHfQEv3FMGtxkfM09Fv88JtxiKa-bB7Ihbru_txzfP.jpg?size=671x897&quality=96&type=album",
+      "originalLink": "https://www.povarenok.ru/recipes/show/91090/",
+      "staple": "vegetable",
+      "feature": "fast",
+      "season": "all"
+    },
+    {
       "id": "template_id",
       "title": "template_title",
       "servings": 4,
