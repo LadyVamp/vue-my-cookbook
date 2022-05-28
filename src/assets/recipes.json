@@ -1469,6 +1469,28 @@
       "season": "all"
     },
     {
+      "id": "Salat-letnii",
+      "title": "Салат летний",
+      "servings": 2,
+      "ingredients": {
+        "Помидоры": "1 шт",
+        "Огурцы": "3 шт",
+        "Редис": "5 шт",
+        "Масло ароматное": "4 ст.л."
+      },
+      "note": "",
+      "steps": {
+        "1": "Все ингредиенты нарезать и поместить в миску",
+        "2": "Добавить соль и специи по вкусу",
+        "3": "Добавить масло и перемешать"
+      },
+      "imageLink": "https://sun1-97.userapi.com/s/v1/ig2/76ZML0q8YiUjWrApdN6_Tq1dw-9as-Ky8rZ-PJ_1yy5IxYU9Usci0x6LcKiASHirIgT4AKnP7SywRBFkXaZtZpYF.jpg?size=802x827&quality=96&type=album",
+      "originalLink": null,
+      "staple": "vegetable",
+      "feature": "fast",
+      "season": "summer"
+    },
+    {
       "id": "template_id",
       "title": "template_title",
       "servings": 4,
