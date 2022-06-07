@@ -1469,8 +1469,8 @@
       "season": "all"
     },
     {
-      "id": "Salat-letnii",
-      "title": "Салат летний",
+      "id": "Salat-letnii-s-redisom",
+      "title": "Салат летний с редисом",
       "servings": 2,
       "ingredients": {
         "Помидоры": "1 шт",
@@ -1512,6 +1512,30 @@
       "staple": "meat",
       "feature": "cauldron",
       "season": "all"
+    },
+    {
+      "id": "Salat-letnii-s-zelenyu",
+      "title": "Салат летний с зеленью",
+      "servings": 2,
+      "ingredients": {
+        "Помидоры": "2 шт",
+        "Огурцы": "3 шт",
+        "Укроп": "20 г",
+        "Петрушка": "20 г",
+        "Зеленый лук": "20 г",
+        "Масло ароматное": "4 ст.л."
+      },
+      "note": "",
+      "steps": {
+        "1": "Все ингредиенты нарезать и поместить в миску",
+        "2": "Добавить соль и специи по вкусу",
+        "3": "Добавить масло и перемешать"
+      },
+      "imageLink": "https://sun9-80.userapi.com/s/v1/ig2/hCImC_7aHCFMbyrDJ2VUIdgBIZ7gcDerJuMk7XDc16MsjTif52BaPL3dAOj5eZOxIU7Y7hoZiY2ywf4z_kUFOMXY.jpg?size=642x736&quality=96&type=album",
+      "originalLink": null,
+      "staple": "vegetable",
+      "feature": "fast",
+      "season": "summer"
     },
     {
       "id": "template_id",
