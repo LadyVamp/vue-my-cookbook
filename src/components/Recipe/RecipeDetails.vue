@@ -74,7 +74,7 @@
                             dark
                             small
                             color="secondary"
-                            title="Скопировать"
+                            title="Скопировать список ингредиентов без специй"
                             @click="copyIngredients"
                         >
                             <v-icon dark>mdi-content-copy</v-icon>
@@ -186,8 +186,24 @@ export default {
             return url;
         },
         copyIngredients() {
-            const listOfIngredients = Object.keys(this.recipe.ingredients).toString().split(',').join(', ');
-            this.copyToClipBoard(listOfIngredients);
+            this.copyToClipBoard(this.exceptSpices().join(', '));
+        },
+        exceptSpices() {
+            const asArray = Object.entries(this.recipe.ingredients);
+            const spices = [
+                'Перец черный молотый',
+                'Хмели-сунели',
+                'Мускатный орех',
+                'Паприка копченая',
+                'Кориандр молотый',
+                'Лавровый лист',
+                'Перец душистый',
+                'Смесь перцев',
+            ];
+            const filtered = asArray.filter(([key]) => !spices.includes(key));
+            const justStrings = Object.fromEntries(filtered);
+            const ingredientsWithoutSpices = Object.keys(justStrings);
+            return ingredientsWithoutSpices;
         },
         copyToClipBoard(textToCopy) {
             navigator.clipboard.writeText(textToCopy);
