@@ -30,10 +30,7 @@
             <v-col sm="6" md="8" class="hidden-sm-and-down">
                 <v-row>
                     <v-col cols="4">
-                        <v-switch
-                            v-model="isShowLinks"
-                            label="Показать ссылки на продукты в Сбермаркете"
-                        ></v-switch>
+                        <v-switch v-model="isShowLinks" label="Показать ссылки на продукты в Сбермаркете"></v-switch>
                         <div v-if="isShowLinks">
                             <v-select
                                 v-if="isShowLinks"
@@ -57,7 +54,7 @@
                             <v-switch v-model="isDiscounted" label="Со скидкой"></v-switch>
                         </div>
                     </v-col>
-                    <v-col cols="8">
+                    <v-col cols="4">
                         <v-switch v-model="isShowPrintVersion" label="Версия для печати"></v-switch>
                         <RecipePrintVersion v-if="isShowPrintVersion" :recipe="recipe" />
                     </v-col>
@@ -66,7 +63,24 @@
         </v-row>
         <v-row>
             <v-col cols="12" sm="6" class="my-4">
-                <h3 class="secondary--text">Ингредиенты</h3>
+                <v-row>
+                    <v-col>
+                        <h3 class="secondary--text">Ингредиенты</h3>
+                    </v-col>
+                    <v-col>
+                        <v-btn
+                            class="mx-2"
+                            fab
+                            dark
+                            small
+                            color="secondary"
+                            title="Скопировать"
+                            @click="copyIngredients"
+                        >
+                            <v-icon dark>mdi-content-copy</v-icon>
+                        </v-btn>
+                    </v-col>
+                </v-row>
                 <p>{{ declinationNumberOfServings }}</p>
                 <p v-if="recipe.note" class="secondary--text">
                     {{ recipe.note }}
@@ -84,9 +98,7 @@
             <v-col cols="12" sm="6" class="my-4">
                 <h3 class="secondary--text">Приготовление</h3>
                 <ul>
-                    <li v-for="(item, index) in recipe.steps" :key="item.key">
-                        {{ index }}. {{ item }}
-                    </li>
+                    <li v-for="(item, index) in recipe.steps" :key="item.key">{{ index }}. {{ item }}</li>
                 </ul>
             </v-col>
         </v-row>
@@ -172,6 +184,13 @@ export default {
                 `${this.selectedSort.value}` +
                 discounted;
             return url;
+        },
+        copyIngredients() {
+            const listOfIngredients = Object.keys(this.recipe.ingredients).toString().split(',').join(', ');
+            this.copyToClipBoard(listOfIngredients);
+        },
+        copyToClipBoard(textToCopy) {
+            navigator.clipboard.writeText(textToCopy);
         },
     },
 };
