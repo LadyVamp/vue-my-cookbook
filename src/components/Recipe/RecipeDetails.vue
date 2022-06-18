@@ -199,6 +199,7 @@ export default {
                 'Лавровый лист',
                 'Перец душистый',
                 'Смесь перцев',
+                'Приправа Vegeta'
             ];
             const filtered = asArray.filter(([key]) => !spices.includes(key));
             const justStrings = Object.fromEntries(filtered);
