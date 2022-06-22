@@ -1538,6 +1538,34 @@
       "season": "summer"
     },
     {
+      "id": "Grechnevaya-lapsha-s-kuritsei-i-ovoshchami",
+      "title": "Гречневая лапша с курицей и овощами",
+      "servings": 6,
+      "ingredients": {
+        "Куриное филе": "700 г",
+        "Гречневая лапша": "400 г",
+        "Морковь": "1 шт",
+        "Лук репчатый": "1 шт",
+        "Перец сладкий": "1 шт"
+      },
+      "note": "",
+      "steps": {
+        "1": "Сварить лапшу до готовности",
+        "2": "Натереть морковь на терке",
+        "3": "Нарезать лук мелко",
+        "4": "Спассеровать лук с морковью на растительном масле",
+        "5": "Добавить туда мелко нарезанный перец",
+        "6": "Добавить туда мелко нарезанное куриное филе",
+        "7": "Обжарить до готовности курицы",
+        "8":"Добавить специи и кунжут, посолить"
+      },
+      "imageLink": "https://sun9-54.userapi.com/impg/eDGLIX_6qfnxms8J7TfKPFJRpIbgQ3Yj61E3Kg/q-sbFLg0qtU.jpg?size=716x706&quality=96&sign=e4221210c4bda9d55e5d513b7b30d7cb&type=album",
+      "originalLink": null,
+      "staple": "bird",
+      "feature": "fast",
+      "season": "summer"
+    },
+    {
       "id": "template_id",
       "title": "template_title",
       "servings": 4,
