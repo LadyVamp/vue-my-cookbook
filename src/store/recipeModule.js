@@ -1,4 +1,4 @@
-import axios from 'axios';
+import { getAllRecipes } from '../api/api';
 
 export default {
     state: {
@@ -38,10 +38,7 @@ export default {
     actions: {
         fetchRecipes(context, recipeId) {
             context.commit('setLoading', true);
-            axios
-                .get(
-                    'https://gist.githubusercontent.com/LadyVamp/628c9e7aa0d9d26971bf9d512cef6bbe/raw/8eecca9f1100f2e03b1034b75d6c1dea6ca9e86c/recipes-2022-07-29.json',
-                )
+            getAllRecipes()
                 .then((response) => {
                     // console.log('recipes', response.data.recipes);
                     const recipes = response.data.recipes.reverse().filter((item) => item.title !== 'template_title');
