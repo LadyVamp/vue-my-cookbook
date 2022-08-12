@@ -49,6 +49,11 @@ export default {
                     label: 'Комбо',
                     icon: 'mdi-hexagon-multiple-outline',
                 },
+                {
+                    key: 'grill',
+                    label: 'Гриль',
+                    icon: 'mdi-grill',
+                },
             ],
         };
     },

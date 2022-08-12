@@ -1558,7 +1558,7 @@
         "5": "Добавить туда мелко нарезанный перец",
         "6": "Добавить туда мелко нарезанное куриное филе",
         "7": "Обжарить до готовности курицы",
-        "8":"Добавить специи и кунжут, посолить"
+        "8": "Добавить специи и кунжут, посолить"
       },
       "imageLink": "https://sun9-54.userapi.com/impg/eDGLIX_6qfnxms8J7TfKPFJRpIbgQ3Yj61E3Kg/q-sbFLg0qtU.jpg?size=716x706&quality=96&sign=e4221210c4bda9d55e5d513b7b30d7cb&type=album",
       "originalLink": null,
@@ -1600,6 +1600,31 @@
       "season": "summer"
     },
     {
+      "id": "Svinie-rebrishki-na-mangale",
+      "title": "Свиные ребрышки на мангале",
+      "servings": 2,
+      "ingredients": {
+        "Ребрышки свиные": "1 кг",
+        "Соевый соус": "50 мл",
+        "Лук репчатый": "2 шт",
+        "Приправа для мяса": "1 ст.л."
+      },
+      "note": "Вкусно, но мало мяса. Подойдет, если обычный шашлык надоел",
+      "steps": {
+        "1": "Ребра помыть, нарезать на порционные куски и закинуть в кастрюлю",
+        "2": "Лук нарезать кольцами и добавить в кастрюлю",
+        "3": "Добавить соевый соус и специи",
+        "4": "Мариновать 3 часа",
+        "5": "Жарить на решетке 15-20 минут",
+        "6": "Подавать с лавашом и летним салатом"
+      },
+      "imageLink": "https://sun9-85.userapi.com/impg/6Aysrnm0r2csr9AVCKcg_NET_fGq-nETsUeSiw/gzZPUiEqpbg.jpg?size=815x716&quality=96&sign=6ef5fbb116d1dbd48bc9ea262e44f2c8&type=album",
+      "originalLink": "https://lafoy.ru/svinye-rebryshki-na-mangale-recepty-1949",
+      "staple": "meat",
+      "feature": "grill",
+      "season": "summer"
+    },
+    {
       "id": "template_id",
       "title": "template_title",
       "servings": 4,
@@ -1621,7 +1646,7 @@
       "imageLink": null,
       "originalLink": null,
       "staple": "vegetable | bird | meat | fish | dairy | dessert",
-      "feature": "fast | oven | cauldron | pot | combo",
+      "feature": "fast | oven | cauldron | pot | combo | grill",
       "season": "all | winter | spring | summer | autumn"
     }
   ]

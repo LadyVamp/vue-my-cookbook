@@ -60,7 +60,7 @@ export default {
                     label: 'Десерт',
                     icon: 'mdi-candy',
                     color: 'lime darken-1',
-                },
+                }
             ],
         };
     },
