@@ -1625,6 +1625,32 @@
       "season": "summer"
     },
     {
+      "id": "Gaspacho",
+      "title": "Гаспачо",
+      "servings": 4,
+      "ingredients": {
+        "Помидоры": "1 кг",
+        "Огурцы": "1 шт",
+        "Перец сладкий": "2 шт",
+        "Сладкий салатный лук": "1/2 шт",
+        "Чеснок": "2-3 зубчика",
+        "Хлеб без корок": "1 ломтик",
+        "Бальзамический уксус": "1-2 ст.л.",
+        "Соус табаско": "1 ч.л.",
+        "Сок лимона": "1 ст.л.",
+        "Оливковое масло": "1-2 ст.л."
+      },
+      "note": "",
+      "steps": {
+        "1": "Порезать все и измельчить блендером"
+      },
+      "imageLink": "https://sun9-42.userapi.com/impg/SuXFBwpIFZEaZfm9Mf4Dt1cu6cJrXS6B_RGZFw/_77EHFBfiD8.jpg?size=1167x742&quality=96&sign=c4afa6761e9046ccc9299d33cb1cca68&type=album",
+      "originalLink": null,
+      "staple": "vegetable",
+      "feature": "fast",
+      "season": "summer"
+    },
+    {
       "id": "template_id",
       "title": "template_title",
       "servings": 4,
