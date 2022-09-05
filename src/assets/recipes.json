@@ -1717,7 +1717,34 @@
         "6": "Жарить на шампурах 15-20 минут",
         "7": "Подавать с лавашом и летним салатом"
       },
-      "imageLink": null,
+      "imageLink": "https://sun9-82.userapi.com/impg/-mQmvCfF-NI_8NQ_BILyCkv8jCfRbzFgujzJhA/83WzSK2jUVY.jpg?size=802x904&quality=96&sign=9b98a71d629b281985ce24a4a7b25f83&type=album",
+      "originalLink": null,
+      "staple": "meat",
+      "feature": "grill",
+      "season": "summer"
+    },
+    {
+      "id": "Shashlik-iz-kuritsi",
+      "title": "Шашлык из курицы",
+      "servings": 2,
+      "ingredients": {
+        "Голень куриная": "1 кг",
+        "Лимон": "1/2 шт",
+        "Чеснок": "5 зубчиков",
+        "Соевый соус": "50 мл",
+        "Приправа для мяса": "1 ст.л."
+      },
+      "note": "На фото окорочка. Окорочка больше не берем - есть риск, что плохо прожарятся",
+      "steps": {
+        "1": "Голени добавить в кастрюлю",
+        "2": "Лимон нарезать четверть-кольцами и добавить в кастрюлю",
+        "3": "Чеснок очистить и добавить в кастрюлю",
+        "4": "Добавить специи, перемешать",
+        "5": "Мариновать 3 часа",
+        "6": "Жарить голени на шампурах 15-20 минут",
+        "7": "Подавать с лавашом и летним салатом"
+      },
+      "imageLink": "https://sun9-30.userapi.com/impg/FaaM71Gk1Ko5InOM_gYHuvfS33JasX1VmR8Yuw/fHoerSiVmmY.jpg?size=490x497&quality=96&sign=ce04b1bff6680bbed9b8235f5ec51c96&type=album",
       "originalLink": null,
       "staple": "meat",
       "feature": "grill",
