@@ -32,6 +32,7 @@
                     <v-col cols="4">
                         <v-switch v-model="isShowLinks" label="Показать ссылки на продукты в Сбермаркете"></v-switch>
                         <div v-if="isShowLinks">
+                            <v-switch v-model="isDacha" label="Дача"></v-switch>
                             <v-select
                                 v-if="isShowLinks"
                                 v-model="selectedShop"
@@ -122,8 +123,10 @@ export default {
             isShowLinks: false,
             isShowPrintVersion: false,
             isDiscounted: false,
+            isDacha: false,
             shopOptions: [
                 { value: 'auchan', text: 'Ашан' },
+                { value: 'metro', text: 'Метро' },
                 { value: 'globus', text: 'Глобус' },
                 { value: 'lenta', text: 'Лента' },
                 { value: 'okey', text: 'Окей' },
@@ -160,6 +163,11 @@ export default {
     watch: {
         $route() {
             this.fetchData();
+        },
+        isDacha() {
+            this.isDacha
+                ? (this.selectedShop = { value: 'metro', text: 'Метро' })
+                : (this.selectedShop = { value: 'auchan', text: 'Ашан' });
         },
     },
     mounted() {
@@ -201,6 +209,8 @@ export default {
                 'Смесь перцев',
                 'Приправа Vegeta',
                 'Приправа для мяса',
+                'Паприка сладкая',
+                'Приправа карри',
             ];
             const filtered = asArray.filter(([key]) => !spices.includes(key));
             const justStrings = Object.fromEntries(filtered);
