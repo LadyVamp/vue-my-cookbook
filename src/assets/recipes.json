@@ -1751,6 +1751,99 @@
       "season": "summer"
     },
     {
+      "id": "Sosiski-s-grechkoi",
+      "title": "Сосиски с гречкой",
+      "servings": 2,
+      "ingredients": {
+        "Гречка": "1 чашка",
+        "Сосиски": "4 шт",
+        "Сливочное масло": "25 г"
+      },
+      "note": "",
+      "steps": {
+        "1": "Промыть гречку",
+        "2": "Насыпать гречку в кастрюлю, залить горячей водой, на 2 пальца выше уровня гречки",
+        "3": "Положить сосиски в эту же кастрюлю",
+        "4": "Варить 7 минут после закипания воды",
+        "5": "Добавить сливочное масло, посолить, перемешать"
+      },
+      "imageLink": "https://sun9-85.userapi.com/impg/EUHVIKxG4ojVQFtEkMRS3ZI6k_LDMGdVBX9hHQ/UIe3bBPUIvE.jpg?size=1192x695&quality=96&sign=e433b2b4690bc709ed40485b766222a0&type=album",
+      "originalLink": null,
+      "staple": "meat",
+      "feature": "fast",
+      "season": "all"
+    },
+    {
+      "id": "Zharenie-kurinie-nozhki",
+      "title": "Жареные куриные ножки",
+      "servings": 2,
+      "ingredients": {
+        "Голень куриная": "700 г",
+        "Морковь": "1 шт",
+        "Чеснок": "4 зубчика"
+      },
+      "note": "",
+      "steps": {
+        "1": "Ножки помыть и поставить жариться",
+        "2": "Морковь почистить, натереть на терке и добавить на сковороду",
+        "3": "Чеснок очистить, мелко нарезать и добавить на сковороду",
+        "4": "Жарить на среднем огне под крышкой 15 минут, помешивая"
+      },
+      "imageLink": "https://sun1-17.userapi.com/impg/vztyVQbpJciYY3D70iXA95ugxQuFIEsA0n98Sw/tV3CzzcGTB0.jpg?size=1252x850&quality=96&sign=3cbe46a08a11fa890a7e7e29f8a4a9b0&type=album",
+      "originalLink": null,
+      "staple": "bird",
+      "feature": "fast",
+      "season": "all"
+    },
+    {
+      "id": "Shashlik-na-kefire-iz-svinini",
+      "title": "Шашлык на кефире из свинины",
+      "servings": 2,
+      "ingredients": {
+        "Шея свиная": "1 кг",
+        "Лук репчатый": "3 шт",
+        "Кефир": "1/2 л",
+        "Приправа для мяса": "2 ст.л."
+      },
+      "note": "В таком варианте шашлык получается нежным",
+      "steps": {
+        "1": "Мясо помыть, нарезать на порционные куски и закинуть в кастрюлю",
+        "2": "Половину лука нарезать кольцами, вторую половину натереть на терке и добавить в кастрюлю",
+        "3": "Добавить кефир и специи, перемешать",
+        "4": "Мариновать 3 часа",
+        "5": "Жарить на шампурах 15-20 минут",
+        "6": "Подавать с лавашом и летним салатом"
+      },
+      "imageLink": "https://sun9-7.userapi.com/impg/c7QHWU8d4oHRwUEcJJ3Ai7R7awKLi-HPG-k_Lw/Pn_GTuOQHzk.jpg?size=1254x828&quality=96&sign=39014f11a7ec83b066e0c53fb4056252&type=album",
+      "originalLink": "https://www.chefmarket.ru/blog/shashlyk-na-kefire-iz-svininy-poshagovyj-recept/",
+      "staple": "meat",
+      "feature": "grill",
+      "season": "summer"
+    },
+    {
+      "id": "Sendvich-s-vetchinoi-i-sirom",
+      "title": "Сэндвич с ветчиной и сыром",
+      "servings": 2,
+      "ingredients": {
+        "Хлеб тостовый": "4 ломтика",
+        "Ветчина": "150 г",
+        "Сыр": "100 г"
+      },
+      "note": "",
+      "steps": {
+        "1": "Установить в мультипекарь панели для гриля. Включить мультипекарь",
+        "2": "Ветчину и сыр тонко нарезать",
+        "3": "Собрать сэндвич: хлеб, ветчина, сыр, хлеб",
+        "4": "Когда загорится индикатор готовности к работе, открыть крышку и выложить сэндвичи. Жарить 2 минуты",
+        "5": "Снять сэндвичи щипцами"
+      },
+      "imageLink": "https://sun9-60.userapi.com/impg/AKndELhxibFMjYsieuq6koLIcjPO0II_OyiPlA/9aHiM6CiEMI.jpg?size=2560x1439&quality=95&sign=527c3d19c47ac8f397ccbf17711bcf57&type=album",
+      "originalLink": "https://redmond.company/ru/recipes/26/1292/",
+      "staple": "meat",
+      "feature": "toaster",
+      "season": "all"
+    },
+    {
       "id": "template_id",
       "title": "template_title",
       "servings": 4,
@@ -1772,7 +1865,7 @@
       "imageLink": null,
       "originalLink": null,
       "staple": "vegetable | bird | meat | fish | dairy | dessert",
-      "feature": "fast | oven | cauldron | pot | combo | grill",
+      "feature": "fast | oven | cauldron | pot | combo | grill | toaster",
       "season": "all | winter | spring | summer | autumn"
     }
   ]
