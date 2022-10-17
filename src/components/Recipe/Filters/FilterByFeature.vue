@@ -14,7 +14,7 @@ export default {
     components: { IconFeature },
     data() {
         return {
-            features: ['all', 'fast', 'oven', 'cauldron', 'pot', 'combo', 'grill'],
+            features: ['all', 'fast', 'oven', 'cauldron', 'pot', 'combo', 'grill', 'toaster'],
         };
     },
 

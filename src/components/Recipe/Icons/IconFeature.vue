@@ -54,6 +54,11 @@ export default {
                     label: 'Гриль',
                     icon: 'mdi-grill',
                 },
+                {
+                    key: 'toaster',
+                    label: 'Мультипекарь',
+                    icon: 'mdi-toaster',
+                },
             ],
         };
     },
