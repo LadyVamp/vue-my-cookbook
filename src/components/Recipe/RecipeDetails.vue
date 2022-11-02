@@ -93,6 +93,15 @@
                         – {{ value }}
                     </li>
                 </ul>
+                <div v-if="recipe.extra">
+                    <h3 class="secondary--text mt-4">Дополнительно</h3>
+                    <ul v-for="(value, name) in recipe.extra" :key="value">
+                        <li>
+                            <span v-if="!isShowLinks">{{ name }}</span>
+                            <a v-else :href="linkToProductInShop(name)" target="_blank">{{ name }} </a> – {{ value }}
+                        </li>
+                    </ul>
+                </div>
             </v-col>
         </v-row>
         <v-row>
