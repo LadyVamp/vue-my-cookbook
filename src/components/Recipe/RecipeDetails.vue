@@ -86,19 +86,48 @@
                 <p v-if="recipe.note" class="secondary--text">
                     {{ recipe.note }}
                 </p>
-                <ul v-for="(value, name) in recipe.ingredients" :key="name">
+                <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
                     <li>
                         <span v-if="!isShowLinks">{{ name }}</span>
-                        <a v-else :href="linkToProductInShop(name)" target="_blank">{{ name }} </a>
+
+                        <span v-if="name.includes('||') && isShowLinks">
+                            <a :href="linkToProductInShop(name.split('||')[0])" target="_blank">
+                                {{ name.split('||')[0] }}</a
+                            >
+                            ||
+                            <a :href="linkToProductInShop(name.split('||')[1])" target="_blank">
+                                {{ name.split('||')[1] }}</a
+                            >
+                        </span>
+                        <a v-if="!name.includes('||') && isShowLinks" :href="linkToProductInShop(name)" target="_blank"
+                            >{{ name }}
+                        </a>
+
                         – {{ value }}
                     </li>
                 </ul>
                 <div v-if="recipe.extra">
                     <h3 class="secondary--text mt-4">Дополнительно</h3>
-                    <ul v-for="(value, name) in recipe.extra" :key="value">
+                    <ul v-for="(value, name, idx) in recipe.extra" :key="idx">
                         <li>
                             <span v-if="!isShowLinks">{{ name }}</span>
-                            <a v-else :href="linkToProductInShop(name)" target="_blank">{{ name }} </a> – {{ value }}
+
+                            <span v-if="name.includes('||') && isShowLinks">
+                                <a :href="linkToProductInShop(name.split('||')[0])" target="_blank">
+                                    {{ name.split('||')[0] }}</a
+                                >
+                                ||
+                                <a :href="linkToProductInShop(name.split('||')[1])" target="_blank">
+                                    {{ name.split('||')[1] }}</a
+                                >
+                            </span>
+                            <a
+                                v-if="!name.includes('||') && isShowLinks"
+                                :href="linkToProductInShop(name)"
+                                target="_blank"
+                                >{{ name }}
+                            </a>
+                            – {{ value }}
                         </li>
                     </ul>
                 </div>
