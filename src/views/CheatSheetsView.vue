@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h2 class="secondary--text">CheatSheets</h2>
         <div class="my-2">
             <h3 class="secondary--text">Шпаргалка по приготовлению круп</h3>
             <v-simple-table>

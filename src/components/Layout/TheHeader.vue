@@ -24,10 +24,7 @@
         </v-navigation-drawer>
 
         <v-app-bar app color="primary" dark>
-            <v-app-bar-nav-icon
-                class="hidden-sm-and-up"
-                @click="isShowDrawer = !isShowDrawer"
-            ></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon class="hidden-sm-and-up" @click="isShowDrawer = !isShowDrawer"></v-app-bar-nav-icon>
             <router-link :to="{ path: '/' }">
                 <v-img
                     alt="Logo"
@@ -48,7 +45,7 @@
 
 <script>
 export default {
-    name: "TheHeader",
+    name: 'TheHeader',
     props: {
         menuItems: {
             type: Array,
@@ -56,12 +53,11 @@ export default {
         },
     },
     data: () => ({
-        title: "My recipes",
-        subtitle: "Проверенные рецепты",
+        title: 'KISS recipes',
+        subtitle: 'Проверенные рецепты',
         isShowDrawer: false,
     }),
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

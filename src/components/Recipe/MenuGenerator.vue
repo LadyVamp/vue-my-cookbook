@@ -1,6 +1,5 @@
 <template>
     <v-container fluid>
-        <h2 class="secondary--text">Generator</h2>
         <v-row v-if="getLoading() === false">
             <v-col>
                 <BaseButton :label="'generate'" :icon="'mdi-auto-fix'" :color="'secondary'" @click.native="generate" />

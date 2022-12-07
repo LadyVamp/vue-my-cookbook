@@ -20,6 +20,11 @@ const routes = [
 		component: () => import('../views/AboutView.vue'),
 	},
 	{
+		path: '/dev',
+		name: 'Dev',
+		component: () => import('../views/DevView.vue'),
+	},
+	{
 		path: '/generator',
 		name: 'Generator',
 		component: () => import('../views/GeneratorView.vue'),

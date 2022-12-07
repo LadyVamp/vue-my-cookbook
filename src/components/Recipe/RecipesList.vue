@@ -1,6 +1,5 @@
 <template>
     <v-container fluid>
-        <h2 class="secondary--text">Список рецептов</h2>
         <v-row>
             <v-col class="d-flex justify-end">
                 <div class="search_select">
