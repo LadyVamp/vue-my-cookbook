@@ -232,10 +232,6 @@ export default {
             return url;
         },
         copyIngredients() {
-            this.copyToClipBoard(this.exceptSpices().join(', '));
-        },
-        exceptSpices() {
-            const asArray = Object.entries(this.recipe.ingredients);
             const spices = [
                 'Перец черный молотый',
                 'Хмели-сунели',
@@ -250,10 +246,9 @@ export default {
                 'Паприка сладкая',
                 'Приправа карри',
             ];
-            const filtered = asArray.filter(([key]) => !spices.includes(key));
-            const justStrings = Object.fromEntries(filtered);
-            const ingredientsWithoutSpices = Object.keys(justStrings);
-            return ingredientsWithoutSpices;
+            const exceptSpices = Object.entries(this.recipe.ingredients).filter(([key]) => !spices.includes(key));
+            const ingredientsExceptSpices = exceptSpices.map(([k, v]) => `${k} - ${v}`);
+            this.copyToClipBoard(ingredientsExceptSpices.join(', '));
         },
         copyToClipBoard(textToCopy) {
             navigator.clipboard.writeText(textToCopy);
