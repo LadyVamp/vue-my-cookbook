@@ -1,9 +1,7 @@
 <template>
-    <div>
-        <v-icon :color="getIconColor(staple)" :title="getIconLabel(staple)">
-            {{ getIcon(staple) }}
-        </v-icon>
-    </div>
+    <v-icon :color="getIconColor(staple)" :title="getIconLabel(staple)">
+        {{ getIcon(staple) }}
+    </v-icon>
 </template>
 
 <script>
@@ -13,7 +11,7 @@ export default {
         staple: {
             type: String,
             required: true,
-            default: 'all'
+            default: 'all',
         },
     },
     data() {
@@ -60,7 +58,7 @@ export default {
                     label: 'Десерт',
                     icon: 'mdi-candy',
                     color: 'lime darken-1',
-                }
+                },
             ],
         };
     },
@@ -69,10 +67,10 @@ export default {
             return this.iconStaples.find((item) => item.key === staple).icon;
         },
         getIconLabel(staple) {
-           return this.iconStaples.find((item) => item.key === staple).label;
+            return this.iconStaples.find((item) => item.key === staple).label;
         },
         getIconColor(staple) {
-           return this.iconStaples.find((item) => item.key === staple).color;
+            return this.iconStaples.find((item) => item.key === staple).color;
         },
     },
 };

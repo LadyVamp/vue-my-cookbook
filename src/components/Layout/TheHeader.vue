@@ -54,7 +54,7 @@ export default {
     },
     data: () => ({
         title: 'KISS recipes',
-        subtitle: 'Проверенные рецепты',
+        subtitle: 'Keep it short and simple. Проверенные рецепты',
         isShowDrawer: false,
     }),
 };

@@ -1,9 +1,7 @@
 <template>
-    <div>
-        <v-icon color="accent" :title="getIconLabel(feature)">
-            {{ getIcon(feature) }}
-        </v-icon>
-    </div>
+    <v-icon color="accent" :title="getIconLabel(feature)">
+        {{ getIcon(feature) }}
+    </v-icon>
 </template>
 
 <script>

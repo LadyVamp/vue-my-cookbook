@@ -2,6 +2,7 @@
     <div>
         <h2 class="secondary--text">Сборник рецептов по принципу “Чем проще - тем лучше”</h2>
         <section>
+            <em>Keep it short and simple</em>
             <h3 class="secondary--text">Чего здесь не будет</h3>
             <ul class="list-style-type-wrong">
                 <li>
@@ -22,7 +23,7 @@
                     Поиск
                     <ul class="list-style-type-diamond">
                         <li>По названию</li>
-                        <li>По инредиентам</li>
+                        <li>По ингредиентам</li>
                     </ul>
                 </li>
                 <li>

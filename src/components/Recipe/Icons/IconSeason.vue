@@ -1,9 +1,7 @@
 <template>
-    <div>
-        <v-icon :color="getIconColor(season)" :title="getIconLabel(season)">
-            {{ getIcon(season) }}
-        </v-icon>
-    </div>
+    <v-icon :color="getIconColor(season)" :title="getIconLabel(season)">
+        {{ getIcon(season) }}
+    </v-icon>
 </template>
 
 <script>
