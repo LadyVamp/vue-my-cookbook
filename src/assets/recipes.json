@@ -1193,32 +1193,6 @@
       "season": "all"
     },
     {
-      "id": "Pasta-s-tuntsom,-olivkami-i-chesnokom",
-      "title": "Паста с тунцом, оливками и чесноком",
-      "servings": 4,
-      "ingredients": {
-        "Макароны": "2 чашки",
-        "Тунец 5 Морей филе в масле": "2 банки",
-        "Оливки без косточек": "1 банка",
-        "Томатная паста": "200 г",
-        "Чеснок": "4 зубчика",
-        "Базилик свежий": "По вкусу"
-      },
-      "note": "",
-      "steps": {
-        "1": "Поставить варить макароны",
-        "2": "Измельчить чеснок",
-        "3": "Оливки поджарить вместе с чесноком на сковороде",
-        "4": "Добавить к чесноку и оливкам тунца и томатную пасту, хорошо перемешать соус, дать ему прогреться",
-        "5": "Добавить макароны к соусу, перемешать"
-      },
-      "imageLink": "https://sun9-83.userapi.com/impg/FcMTNIk92yVKDvTjSIqkXMPt42Xq7DZQx597pQ/DZ1vKB-Nnjo.jpg?size=717x831&quality=96&sign=03da3e3ff375118fb664b1271570abf2",
-      "originalLink": "https://www.edimdoma.ru/retsepty/81254-pasta-s-tuntsom-olivkami-i-chesnokom",
-      "staple": "fish",
-      "feature": "fast",
-      "season": "all"
-    },
-    {
       "id": "Chevapchichi",
       "title": "Чевапчичи",
       "servings": 2,
@@ -1842,6 +1816,57 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "pot",
+      "season": "all"
+    },
+    {
+      "id": "Varenoe-kurinoe-file-s-burim-risom",
+      "title": "Вареное куриное филе с бурым рисом",
+      "servings": 4,
+      "ingredients": {
+        "Куриное филе": "700 г",
+        "Бурый рис": "1 чашка",
+        "Лавровый лист": "1 шт"
+      },
+      "note": "Вместо риса на гарнир подойдет гречка",
+      "steps": {
+        "1": "Поставить варить рис, 30 минут после закипания",
+        "2": "Куриное филе промыть, положить в кастрюлю, добавить лавровый лист, залить водой",
+        "3": "Варить филе в течение 30 минут, снимая пену",
+        "4": "Извлечь куриное филе из бульона",
+        "5": "Выложить рис на тарелку, нарезать филе ломтиками"
+      },
+      "imageLink": "https://sun9-71.userapi.com/impg/pr3dBFRykNPl5Brs7ux5jgZhyv-LB7YBaq7E6g/60sSsjecb1E.jpg?size=1241x892&quality=96&sign=8664192b7541cbab0470f3e0220f05be&type=album",
+      "originalLink": "https://povar.ru/recipes/dieticheskaya_kurica_s_grechkoi-78327.html",
+      "staple": "bird",
+      "feature": "fast",
+      "season": "all"
+    },
+    {
+      "id": "Kuritsa-po-stroganovski",
+      "title": "Курица по-строгановски",
+      "servings": 4,
+      "ingredients": {
+        "Куриное филе": "700 г",
+        "Лук репчатый": "1 шт",
+        "Сметана": "300 г",
+        "Хмели-сунели": "По вкусу",
+        "Паприка копченая": "По вкусу",
+        "Смесь перцев": "По вкусу"
+      },
+      "note": "",
+      "steps": {
+        "1": "Вскипятить чайник",
+        "2": "Поставить варить гарнир (рис/картошка/макароны/гречка/булгур)",
+        "3": "Спассеровать лук",
+        "4": "Добавить к луку мелко нарезанную курицу",
+        "5": "Обжарить до готовности",
+        "6": "Добавить соль и специи",
+        "7": "Добавить сметану, перемешать, томить на медленном огне без кипения"
+      },
+      "imageLink": "https://sun9-61.userapi.com/impg/UeSdXJZXrpf2I_8df3GZ7YWaC9mMntDNDCnCBg/Oy9rx7MvtHw.jpg?size=1076x723&quality=96&sign=278a9c401ed0eeb714c363c23d58d960&type=album",
+      "originalLink": null,
+      "staple": "bird",
+      "feature": "fast",
       "season": "all"
     },
     {
