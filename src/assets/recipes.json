@@ -31,7 +31,8 @@
       "originalLink": "https://povar.ru/recipes/grecheskii_salat_s_bazilikom-14818.html",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": true
     },
     {
       "id": "Svinina-s-kartoshkoi-v-pakete-v-dukhovke",
@@ -57,7 +58,8 @@
       "originalLink": "https://povar.ru/recipes/svinina_s_kartoshkoi_v_pakete_v_duhovke-24690.html",
       "staple": "meat",
       "feature": "oven",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Makaroni-po-flotski",
@@ -79,7 +81,8 @@
       "originalLink": "https://eda.ru/recepty/pasta-picca/makarony-po-flotski-s-sochnym-farshem-80740",
       "staple": "meat",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Salat-s-tikvoi-i-sirom-brinza",
@@ -104,7 +107,8 @@
       "originalLink": "https://menunedeli.ru/recipe/salat-s-tykvoj-i-syrom-brynza/",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "autumn"
+      "season": "autumn",
+      "isDiet": true
     },
     {
       "id": "Salat-s-kuritsei-i-seldereem",
@@ -130,7 +134,8 @@
       "staple": "bird",
       "feature": "combo",
       "comboId": "Gribnoi-sup-pyure",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Gribnoi-sup-pyure",
@@ -161,7 +166,8 @@
       "staple": "vegetable",
       "feature": "combo",
       "comboId": "Salat-s-kuritsei-i-seldereem",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Kurinie-nozhki-zapechyonnie-s-kartofelem",
@@ -196,7 +202,8 @@
       "originalLink": "https://www.russianfood.com/recipes/recipe.php?rid=148538",
       "staple": "bird",
       "feature": "oven",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Lagman",
@@ -224,7 +231,8 @@
       "originalLink": "https://povar.ru/recipes/lagman_klassicheskii-54519.html",
       "staple": "meat",
       "feature": "cauldron",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": true
     },
     {
       "id": "Kuritsa-v-sirnom-souse",
@@ -249,7 +257,8 @@
       "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Ribnii-salat-iz-konservirovannoi-gorbushi",
@@ -275,7 +284,8 @@
       "originalLink": null,
       "staple": "fish",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Shashlik-na-shpazhkakh-v-dukhovke",
@@ -305,7 +315,8 @@
       "originalLink": "https://www.youtube.com/watch?v=pmmWFOZCIww",
       "staple": "meat",
       "feature": "oven",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Gorokhovii-sup-s-kopchenoi-grudinkoi",
@@ -331,7 +342,8 @@
       "originalLink": "https://povar.ru/recipes/gorohovyi_sup_s_kopchenoi_grudinkoi-32144.html",
       "staple": "meat",
       "feature": "pot",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Kartofelnaya-zapekanka-s-farshem",
@@ -361,7 +373,8 @@
       "originalLink": "https://www.russianfood.com/recipes/recipe.php?rid=123023",
       "staple": "meat",
       "feature": "oven",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Tvorozhnaya-zapekanka",
@@ -388,7 +401,8 @@
       "originalLink": null,
       "staple": "dairy",
       "feature": "oven",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Satsivi-iz-kuritsi",
@@ -418,7 +432,8 @@
       "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Tortilya-ovoshchnaya",
@@ -445,7 +460,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "oven",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Kartofelnaya-zapekanka-s-gribami",
@@ -476,7 +492,8 @@
       "originalLink": "https://eda.ru/recepty/osnovnye-blyuda/kartofelnaja-zapekanka-s-gribami-sirom-31477",
       "staple": "vegetable",
       "feature": "oven",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Sup-s-kurinimi-nozhkami",
@@ -506,7 +523,8 @@
       "originalLink": "https://povar.ru/recipes/sup_s_kurinymi_nojkami-47839.html",
       "staple": "bird",
       "feature": "pot",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Vinegret",
@@ -536,7 +554,8 @@
       "originalLink": "https://povar.ru/recipes/vinegret_ochen_prostoi_recept-58562.html",
       "staple": "vegetable",
       "feature": "pot",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Salat-iz-redki-s-yablokom",
@@ -562,7 +581,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "spring"
+      "season": "spring",
+      "isDiet": true
     },
     {
       "id": "Sirnii-sup-by-Pup",
@@ -591,7 +611,8 @@
       "originalLink": null,
       "staple": "bird",
       "feature": "pot",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Plov-iz-burogo-risa-so-svininoi",
@@ -620,7 +641,8 @@
       "originalLink": "https://povar.ru/recipes/plov_v_utyatnice-15264.html",
       "staple": "meat",
       "feature": "cauldron",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Grechka-s-shampinonami",
@@ -646,7 +668,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Tabule-s-olivkami-i-marinovannimi-ogurtsami",
@@ -671,7 +694,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": true
     },
     {
       "id": "Pechen-po-stroganovski",
@@ -696,7 +720,8 @@
       "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Pashtet",
@@ -727,7 +752,8 @@
       "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Satsebeli",
@@ -755,7 +781,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Lenivaya-achma-iz-lavasha",
@@ -786,7 +813,8 @@
       "originalLink": null,
       "staple": "dairy",
       "feature": "oven",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Salat-s-rukkoloi",
@@ -810,7 +838,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": true
     },
     {
       "id": "Salat-kuritsa-karri-s-ananasami",
@@ -833,7 +862,8 @@
       "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Svinina-so-struchkovoi-fasolyu",
@@ -859,7 +889,8 @@
       "originalLink": null,
       "staple": "meat",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Zapechennaya-svinina-s-chesnokom",
@@ -885,7 +916,8 @@
       "originalLink": null,
       "staple": "meat",
       "feature": "oven",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Varenaya-kartoshka-s-seldyu",
@@ -910,7 +942,8 @@
       "originalLink": null,
       "staple": "fish",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Tushenaya-kapusta-s-sardelkami",
@@ -937,7 +970,8 @@
       "originalLink": "https://tutknow.ru/cookery/second_dishes/10998-tushenaya-kapusta-s-sardelkami.html",
       "staple": "meat",
       "feature": "cauldron",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Shokoladnaya-kolbasa",
@@ -963,7 +997,8 @@
       "originalLink": null,
       "staple": "dessert",
       "feature": "pot",
-      "season": "winter"
+      "season": "winter",
+      "isDiet": false
     },
     {
       "id": "Tomatnii-sup-s-frikadelkami",
@@ -996,7 +1031,8 @@
       "originalLink": "https://menunedeli.ru/recipe/dieticheskij-tomatnyj-sup-s-frikadelkami/",
       "staple": "meat",
       "feature": "pot",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Salat-s-krabovimi-palochkami",
@@ -1022,7 +1058,8 @@
       "originalLink": "https://lifehacker.ru/salaty-s-krabovymi-palochkami-recepty/",
       "staple": "fish",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Ris-pripusknoi",
@@ -1048,7 +1085,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Riba-zapechennaya-v-folge-i-dukhovke",
@@ -1073,7 +1111,8 @@
       "originalLink": null,
       "staple": "fish",
       "feature": "oven",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Salat-iz-kapusti-i-morkovi",
@@ -1095,7 +1134,8 @@
       "originalLink": "https://art-lunch.ru/recipe/salat-iz-kapusty-i-morkovi_foto/",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Meksikanskii-mix-s-myasom",
@@ -1116,7 +1156,8 @@
       "originalLink": "https://bonduelle.ru/recipes/hot/meksikanskiy-miks-s-govyadinoy/",
       "staple": "meat",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Sardelki-s-grechkoi",
@@ -1141,7 +1182,8 @@
       "originalLink": null,
       "staple": "meat",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Morkovnii-salat-s-sirom-i-chesnokom",
@@ -1164,7 +1206,8 @@
       "originalLink": "https://eda.ru/recepty/salaty/morkovnij-salat-s-sirom-i-chesnokom-48434",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Tushenaya-kartoshka-s-myasom",
@@ -1190,7 +1233,8 @@
       "originalLink": null,
       "staple": "meat",
       "feature": "cauldron",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Chevapchichi",
@@ -1210,7 +1254,8 @@
       "originalLink": null,
       "staple": "meat",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Salat-iz-chechevitsi-s-seldereem-i-fetoi",
@@ -1237,7 +1282,8 @@
       "originalLink": "https://www.edimdoma.ru/retsepty/40621-salat-iz-chechevitsy-s-seldereem-i-fetoy",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Testo-dlya-blinov",
@@ -1258,7 +1304,8 @@
       "originalLink": null,
       "staple": "dessert",
       "feature": "pot",
-      "season": "winter"
+      "season": "winter",
+      "isDiet": false
     },
     {
       "id": "Zapechennie-kurinie-okorochka",
@@ -1283,7 +1330,8 @@
       "originalLink": null,
       "staple": "bird",
       "feature": "oven",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Salat-iz-redki-morkovi-i-yaitsa",
@@ -1307,7 +1355,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Morkov-po-koreiski",
@@ -1340,7 +1389,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "pot",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Kroketi-kartofelnie",
@@ -1364,7 +1414,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "pot",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Sirnaya-lepeshka",
@@ -1388,7 +1439,8 @@
       "originalLink": "https://www.povarenok.ru/recipes/show/91090/",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Salat-letnii-s-redisom",
@@ -1410,7 +1462,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": true
     },
     {
       "id": "Svinina-tushyonaya-s-gorokhom",
@@ -1433,7 +1486,8 @@
       "originalLink": null,
       "staple": "meat",
       "feature": "cauldron",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Salat-letnii-s-zelenyu",
@@ -1457,7 +1511,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": true
     },
     {
       "id": "Grechnevaya-lapsha-s-kuritsei-i-ovoshchami",
@@ -1485,7 +1540,8 @@
       "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": true
     },
     {
       "id": "Okroshka",
@@ -1518,7 +1574,8 @@
       "originalLink": null,
       "staple": "meat",
       "feature": "pot",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": false
     },
     {
       "id": "Svinie-rebrishki-na-mangale",
@@ -1549,7 +1606,8 @@
       "originalLink": "https://lafoy.ru/svinye-rebryshki-na-mangale-recepty-1949",
       "staple": "meat",
       "feature": "grill",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": false
     },
     {
       "id": "Gaspacho",
@@ -1575,7 +1633,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": false
     },
     {
       "id": "Zharenaya-kartoshka-s-lukom",
@@ -1598,7 +1657,8 @@
       "originalLink": "https://1000.menu/cooking/37550-jarenaya-kartoshka-s-lukom-na-skovorode",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Shashlik-iz-svinini",
@@ -1628,7 +1688,8 @@
       "originalLink": null,
       "staple": "meat",
       "feature": "grill",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": false
     },
     {
       "id": "Shashlik-iz-govyadini",
@@ -1660,7 +1721,8 @@
       "originalLink": null,
       "staple": "meat",
       "feature": "grill",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": false
     },
     {
       "id": "Shashlik-iz-kuritsi",
@@ -1693,7 +1755,8 @@
       "originalLink": null,
       "staple": "meat",
       "feature": "grill",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": false
     },
     {
       "id": "Sosiski-s-grechkoi",
@@ -1716,7 +1779,8 @@
       "originalLink": null,
       "staple": "meat",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Zharenie-kurinie-nozhki",
@@ -1738,7 +1802,8 @@
       "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Shashlik-na-kefire-iz-svinini",
@@ -1769,7 +1834,8 @@
       "originalLink": "https://www.chefmarket.ru/blog/shashlyk-na-kefire-iz-svininy-poshagovyj-recept/",
       "staple": "meat",
       "feature": "grill",
-      "season": "summer"
+      "season": "summer",
+      "isDiet": false
     },
     {
       "id": "Sendvich-s-vetchinoi-i-sirom",
@@ -1792,7 +1858,8 @@
       "originalLink": "https://redmond.company/ru/recipes/26/1292/",
       "staple": "meat",
       "feature": "toaster",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Lobio",
@@ -1816,7 +1883,8 @@
       "originalLink": null,
       "staple": "vegetable",
       "feature": "pot",
-      "season": "all"
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "Varenoe-kurinoe-file-s-burim-risom",
@@ -1839,7 +1907,8 @@
       "originalLink": "https://povar.ru/recipes/dieticheskaya_kurica_s_grechkoi-78327.html",
       "staple": "bird",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "Kuritsa-po-stroganovski",
@@ -1867,7 +1936,8 @@
       "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all"
+      "season": "all",
+      "isDiet": true
     },
     {
       "id": "template_id",
@@ -1892,7 +1962,8 @@
       "originalLink": null,
       "staple": "vegetable | bird | meat | fish | dairy | dessert",
       "feature": "fast | oven | cauldron | pot | combo | grill | toaster",
-      "season": "all | winter | spring | summer | autumn"
+      "season": "all | winter | spring | summer | autumn",
+      "isDiet": false
     }
   ]
 }

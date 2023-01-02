@@ -28,17 +28,20 @@
         <FilterByFeature @filterByFeature="onFilterByFeature" />
         <FilterBySeason @filterBySeason="onFilterBySeason" />
         <div class="d-flex justify-space-between">
-            <v-select
-                v-model="selectedServingsNumber"
-                label="Порций"
-                :items="optionsServingsNumber"
-                item-value="value"
-                item-text="text"
-                return-object
-                class="servings_select"
-                @change="onServingsNumberChange()"
-            >
-            </v-select>
+            <div class="d-flex justify-start">
+                <v-select
+                    v-model="selectedServingsNumber"
+                    label="Порций"
+                    :items="optionsServingsNumber"
+                    item-value="value"
+                    item-text="text"
+                    return-object
+                    class="servings_select"
+                    @change="onServingsNumberChange()"
+                >
+                </v-select>
+                <v-switch v-model="isDiet" class="mx-4" label="Диетическое" @change="onChangeDiet"></v-switch>
+            </div>
             <div class="my-4">
                 {{ filteredList.length }}
             </div>
@@ -67,6 +70,9 @@
                         <IconStaple :staple="item.staple" />
                         <IconFeature :feature="item.feature" />
                         <IconSeason :season="item.season" />
+                        <v-icon v-if="item.isDiet" color="blue-grey darken-2" title="Диетическое">
+                            mdi-dumbbell
+                        </v-icon>
                     </v-card-text>
                 </v-card>
             </v-col>
@@ -105,6 +111,7 @@ export default {
                 { value: 6, text: '6' },
             ],
             selectedServingsNumber: { value: null, text: 'Все' },
+            isDiet: false,
         };
     },
     mounted() {
@@ -174,6 +181,13 @@ export default {
             this.filteredList = this.getAllRecipes().filter(
                 (recipe) => recipe.servings === this.selectedServingsNumber.value,
             );
+        },
+        onChangeDiet() {
+            if (this.isDiet) {
+                this.filteredList = this.getAllRecipes().filter((recipe) => recipe.isDiet === this.isDiet);
+            } else {
+                this.showAllRecipes();
+            }
         },
     },
 };

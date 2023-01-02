@@ -16,6 +16,7 @@
                 <IconStaple :staple="recipe.staple" />
                 <IconFeature :feature="recipe.feature" />
                 <IconSeason :season="recipe.season" />
+                <v-icon v-if="recipe.isDiet" color="blue-grey darken-2" title="Диетическое"> mdi-dumbbell </v-icon>
                 <v-btn
                     v-if="recipe.feature.includes('combo')"
                     :to="{
@@ -70,15 +71,12 @@
                     </v-col>
                     <v-col>
                         <v-btn
-                            class="mx-2"
-                            fab
-                            dark
-                            small
+                            icon
                             color="secondary"
                             title="Скопировать список ингредиентов без специй"
                             @click="copyIngredients"
                         >
-                            <v-icon dark>mdi-content-copy</v-icon>
+                            <v-icon>mdi-content-copy</v-icon>
                         </v-btn>
                     </v-col>
                 </v-row>
