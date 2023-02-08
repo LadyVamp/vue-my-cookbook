@@ -90,17 +90,20 @@
 
                         <span v-if="name.includes('||') && isShowLinks">
                             <a :href="linkToProductInShop(name.split('||')[0])" target="_blank">
-                                {{ name.split('||')[0] }}</a
-                            >
+                                {{ name.split('||')[0] }}
+                            </a>
                             ||
                             <a :href="linkToProductInShop(name.split('||')[1])" target="_blank">
-                                {{ name.split('||')[1] }}</a
-                            >
+                                {{ name.split('||')[1] }}
+                            </a>
+                            <span v-if="name.split('||')[2]">||</span>
+                            <a :href="linkToProductInShop(name.split('||')[2])" target="_blank">
+                                {{ name.split('||')[2] }}
+                            </a>
                         </span>
                         <a v-if="!name.includes('||') && isShowLinks" :href="linkToProductInShop(name)" target="_blank"
                             >{{ name }}
                         </a>
-
                         – {{ value }}
                     </li>
                 </ul>
