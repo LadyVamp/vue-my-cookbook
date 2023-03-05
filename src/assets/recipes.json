@@ -2051,6 +2051,29 @@
       "isDiet": false
     },
     {
+      "id": "Kurinoe-file-na-skovorode-gril",
+      "title": "Куриное филе на сковороде-гриль",
+      "servings": 4,
+      "ingredients": {
+        "Филе куриное": "700 г"
+      },
+      "note": "",
+      "steps": {
+        "1": "Поставить варить гарнир (рис/макароны/гречка/булгур)",
+        "2": "Филе помыть, порезать на стейки толщиной 1-2 см",
+        "3": "Стейки положить на разделочную доску, накрыть пленкой и отбить молотком",
+        "4": "Посолить, поперчить",
+        "5": "На разогретую сковороду-гриль брызнуть масло, положить стейки",
+        "6": "Обжарить с обеих сторон по 2 минуты до образования небольшой корочки"
+      },
+      "imageLink": "https://sun9-14.userapi.com/impg/jHk39KIhy_WagBDKZpQZIeHu55Epq9Q2VQt4pQ/dKiDEY6dGKA.jpg?size=1390x921&quality=96&sign=3c9a5c548cf58295b741da7b29f30f23&type=album",
+      "originalLink": "https://edanyam.ru/kurinaya-grudka-na-skovorode-gril/",
+      "staple": "bird",
+      "feature": "fast",
+      "season": "all",
+      "isDiet": true
+    },
+    {
       "id": "template_id",
       "title": "template_title",
       "servings": 4,
