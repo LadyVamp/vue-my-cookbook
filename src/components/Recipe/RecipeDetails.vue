@@ -33,7 +33,6 @@
                     <v-col cols="4">
                         <v-switch v-model="isShowLinks" label="Показать ссылки на продукты в Сбермаркете"></v-switch>
                         <div v-if="isShowLinks">
-                            <v-switch v-model="isDacha" label="Дача"></v-switch>
                             <v-select
                                 v-if="isShowLinks"
                                 v-model="selectedShop"
@@ -162,7 +161,7 @@ export default {
             isShowLinks: false,
             isShowPrintVersion: false,
             isDiscounted: false,
-            isDacha: false,
+            selectedShop: { value: 'auchan', text: 'Ашан' },
             shopOptions: [
                 { value: 'auchan', text: 'Ашан' },
                 { value: 'metro', text: 'Метро' },
@@ -171,14 +170,13 @@ export default {
                 { value: 'okey', text: 'Окей' },
                 { value: 'vkusvill', text: 'Вкусвилл' },
             ],
-            selectedShop: { value: 'auchan', text: 'Ашан' },
+            selectedSort: { value: 'unit_price_asc', text: 'Выгоднее по весу' },
             sortOptions: [
                 { value: 'popularity', text: 'По популярности' },
                 { value: 'price_asc', text: 'Сначала дешевые' },
                 { value: 'price_desc', text: 'Сначала дорогие' },
                 { value: 'unit_price_asc', text: 'Выгоднее по весу' },
             ],
-            selectedSort: { value: 'unit_price_asc', text: 'Выгоднее по весу' },
         };
     },
     metaInfo() {
@@ -203,14 +201,11 @@ export default {
         $route() {
             this.fetchData();
         },
-        isDacha() {
-            this.isDacha
-                ? (this.selectedShop = { value: 'metro', text: 'Метро' })
-                : (this.selectedShop = { value: 'auchan', text: 'Ашан' });
-        },
     },
     mounted() {
         this.fetchData();
+        this.isShowLinks = this.$store.state.recipeModule.isShowLinks;
+        this.selectedShop = this.$store.state.recipeModule.selectedShop;
     },
     updated() {
         this.title = this.recipe.title;

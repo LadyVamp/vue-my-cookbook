@@ -47,6 +47,11 @@ export default {
                     icon: 'mdi-auto-fix',
                 },
                 {
+                    name: 'Settings',
+                    path: '/settings',
+                    icon: 'mdi-cog',
+                },
+                {
                     name: 'Dev',
                     path: '/dev',
                     icon: 'mdi-code-tags',

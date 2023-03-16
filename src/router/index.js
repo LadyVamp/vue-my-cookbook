@@ -30,6 +30,11 @@ const routes = [
 		component: () => import('../views/GeneratorView.vue'),
 	},
 	{
+		path: '/settings',
+		name: 'Settings',
+		component: () => import('../views/SettingsView.vue'),
+	},
+	{
 		path: '/recipe/:id',
 		name: 'RecipeDetails',
 		component: RecipeDetails,

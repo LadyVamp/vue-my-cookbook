@@ -6,6 +6,8 @@ export default {
         currentRecipe: null,
         recipesCount: 0,
         isLoading: false,
+        isShowLinks: localStorage.getItem('isShowLinks') || false,
+        selectedShop: JSON.parse(localStorage.getItem('selectedShop')) || { value: 'auchan', text: 'Ашан' },
     },
     mutations: {
         setRecipes(state, payload) {
@@ -19,6 +21,14 @@ export default {
         },
         setLoading(state, payload) {
             state.isLoading = payload;
+        },
+        setIsShowLinks(state, payload) {
+            state.isShowLinks = payload;
+            localStorage.setItem('isShowLinks', state.isShowLinks);
+        },
+        setSelectedShop(state, payload) {
+            state.selectedShop = payload;
+            localStorage.setItem('selectedShop', JSON.stringify(state.selectedShop));
         },
     },
     getters: {
