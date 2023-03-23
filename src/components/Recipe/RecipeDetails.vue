@@ -164,8 +164,8 @@ export default {
             selectedShop: { value: 'auchan', text: 'Ашан' },
             shopOptions: [
                 { value: 'auchan', text: 'Ашан' },
-                { value: 'metro', text: 'Метро' },
                 { value: 'globus', text: 'Глобус' },
+                { value: 'metro', text: 'Метро' },
                 { value: 'lenta', text: 'Лента' },
                 { value: 'okey', text: 'Окей' },
                 { value: 'vkusvill', text: 'Вкусвилл' },

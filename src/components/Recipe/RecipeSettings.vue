@@ -28,6 +28,14 @@
                 />
             </v-col>
         </v-row>
+        <v-row>
+            <v-col>
+                <div v-for="item in constProducts" :key="item">
+                    <a v-if="selectedShop.value === 'auchan'" :href="item.auchan" target="_blank">{{ item.name }}</a>
+                    <a v-if="selectedShop.value === 'globus'" :href="item.globus" target="_blank">{{ item.name }}</a>
+                </div>
+            </v-col>
+        </v-row>
     </div>
 </template>
 
@@ -44,11 +52,38 @@ export default {
             selectedShop: { value: 'auchan', text: 'Ашан' },
             shopOptions: [
                 { value: 'auchan', text: 'Ашан' },
-                { value: 'metro', text: 'Метро' },
                 { value: 'globus', text: 'Глобус' },
+                { value: 'metro', text: 'Метро' },
                 { value: 'lenta', text: 'Лента' },
                 { value: 'okey', text: 'Окей' },
                 { value: 'vkusvill', text: 'Вкусвилл' },
+            ],
+            constProducts: [
+                {
+                    name: 'Яйцо куриное',
+                    auchan: 'https://sbermarket.ru/auchan/c/moloko-sir-yajtsa-rastitelnie-produkti-8f15252/yajtsa?sort=unit_price_asc',
+                    globus: 'https://sbermarket.ru/globus/c/katalog-globus/moloko-yajtsa/yajtsa?sid=32731&sort=unit_price_asc',
+                },
+                {
+                    name: 'Хлеб',
+                    auchan: 'https://sbermarket.ru/auchan/c/khleb-khlebtsi-vipechka/khleb-lavash-lepeshki?sid=177&source=category',
+                    globus: 'https://sbermarket.ru/globus/c/katalog-globus/khleb-vipechka/khleb-lavash-lepeshki?sid=32731',
+                },
+                {
+                    name: 'Сыр',
+                    auchan: 'https://sbermarket.ru/auchan/c/moloko-sir-yajtsa-rastitelnie-produkti-8f15252/siyri/f/tverdyy-217249/polutverdyy-217250?sid=177&source=category&sort=unit_price_asc&discounted=true',
+                    globus: 'https://sbermarket.ru/globus/c/katalog-globus/moloko-yajtsa/siri-new/f/tverdyy-217125/polutverdyy-217126?sid=32731&discounted=true&sort=popularity',
+                },
+                {
+                    name: 'Ветчина',
+                    auchan: 'https://sbermarket.ru/auchan/c/kolbasi-sosiski-delikatesy/vetchina-delikatesi?sid=177&source=category&sort=unit_price_asc&discounted=true',
+                    globus: 'https://sbermarket.ru/globus/c/katalog-globus/kolbasi-sosiski-delikatesi/kolbasi-vetchiny?sid=32731&sort=unit_price_asc&discounted=true',
+                },
+                {
+                    name: 'Фрукты',
+                    auchan: 'https://sbermarket.ru/auchan/c/ovoshchi-frukti-orekhi/frukti?sid=177&source=category&sort=unit_price_asc',
+                    globus: 'https://sbermarket.ru/globus/c/katalog-globus/ovoshchi-frukti-orekhi/frukti?sid=32731&sort=unit_price_asc',
+                },
             ],
         };
     },
