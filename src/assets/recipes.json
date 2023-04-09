@@ -8,10 +8,9 @@
         "Фета": "250 г",
         "Помидоры": "2 шт",
         "Огурцы": "2 шт",
-        "Лук красный": "1 шт",
         "Перец сладкий": "1 шт",
         "Базилик свежий": "1 шт",
-        "Маслины": "1 банка",
+        "Оливки без косточек": "1 банка",
         "Лимон": "1/2 шт",
         "Масло оливковое": "5-6 cт.л",
         "Перец черный молотый": "По вкусу",
@@ -20,14 +19,13 @@
       "steps": {
         "1": "Огурцы вымыть, обсушить и крупно нарезать",
         "2": "У перца удалить плодоножку и семена. Нарезать полосками или квадратиками",
-        "3": "Помидоры нарезать дольками или кусочками среднего размера",
-        "4": "Лук нашинковать полукольцами",
-        "5": "Измельчить вымытый и обсушенный базилик. Также поступить с другой зеленью.",
-        "6": "Выдавить сок из половинки лимона",
-        "7": "Нарезать кубиками фету",
-        "8": "Сложить все ингредиенты для салата в миску, заправить лимонным соком и маслом. Добавить маслины, соль, перец и орегано. Перемешать."
+        "3": "Помидоры нарезать дольками",
+        "4": "Измельчить вымытый и обсушенный базилик",
+        "5": "Выдавить сок из половинки лимона",
+        "6": "Нарезать кубиками фету",
+        "7": "Сложить все ингредиенты для салата в миску, заправить лимонным соком и маслом. Добавить оливки, соль, перец и орегано. Перемешать."
       },
-      "imageLink": "https://img.povar.ru/main/f3/e1/da/f0/grecheskii_salat_s_bazilikom-81848.jpg",
+      "imageLink": "https://sun9-71.userapi.com/impg/bbV72L21y1AzLyxwtnCBKnpvs-aVQTIZXinnJA/CQkgJaTLYQ0.jpg?size=1121x723&quality=96&sign=74a12b7ed14014c0ef9526d7452f50f2&type=album",
       "originalLink": "https://povar.ru/recipes/grecheskii_salat_s_bazilikom-14818.html",
       "staple": "vegetable",
       "feature": "fast",
@@ -210,8 +208,8 @@
       "title": "Лагман",
       "servings": 6,
       "ingredients": {
-        "Говядина охлажденная": "1 кг",
-        "Лапша свежая широкая": "500 г",
+        "Говядина охлажденная || Шея говяжья без кости": "1 кг",
+        "Лапша свежая широкая || Лапша лагманная": "500 г",
         "Морковь": "1 шт",
         "Лук репчатый": "1 шт",
         "Помидоры": "2 шт",
@@ -268,7 +266,6 @@
         "Горбуша натуральная": "1-2 банки",
         "Яйцо куриное": "4 шт",
         "Рис": "1/4 стакана",
-        "Лук репчатый": "1 шт",
         "Майонез": "По вкусу"
       },
       "note": "Горбушу можно заменить на сайру",
@@ -280,7 +277,7 @@
         "5": "Добавить соль и специи по вкусу",
         "6": "Перемешать"
       },
-      "imageLink": "https://sun9-73.userapi.com/impg/_UUkghP1ayEz99yIYKwnTx093IEDYgdo0ao6YQ/wd8BZQi-PY4.jpg?size=503x569&quality=96&sign=1d7e41e23539797c511e41696cf605f9",
+      "imageLink": "https://sun9-49.userapi.com/impg/dfsKV5bt2vib0_DI8ILCG6MDiN-nUlrzMW8QjA/XKzeFVlUdvo.jpg?size=1197x831&quality=96&sign=66d2a3fe3ae892eaa03cc98187bed285&type=album",
       "originalLink": null,
       "staple": "fish",
       "feature": "fast",
@@ -834,7 +831,7 @@
         "3": "Посыпать толченым грецким орехом",
         "4": "Заправить растительное масло + бальзамический уксус"
       },
-      "imageLink": null,
+      "imageLink": "https://sun9-59.userapi.com/impg/D3nr3n5CHR7B8t72Lo-41lGOycMAcxHlQKJuTg/76lfTNzwhg8.jpg?size=1348x901&quality=96&sign=05854d6192b11890db60a92c27189157&type=album",
       "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
@@ -942,34 +939,6 @@
       "originalLink": null,
       "staple": "fish",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
-    },
-    {
-      "id": "Tushenaya-kapusta-s-sardelkami",
-      "title": "Тушеная капуста с сардельками",
-      "servings": 4,
-      "ingredients": {
-        "Капуста белокочанная": "1 кг (небольшой кочан)",
-        "Сардельки": "500 г",
-        "Кориандр молотый": "По вкусу",
-        "Лавровый лист": "По вкусу",
-        "Перец душистый": "По вкусу"
-      },
-      "note": "Можно сосиски вместо сарделек",
-      "steps": {
-        "1": "Помыть капусту, снять верхние листочки, тонко нашинковать",
-        "2": "Утятницу поставить на плиту, налить растительное масло и нагреть",
-        "3": "Положить в утятницу капусту и лавровый лист",
-        "4": "Жарить капусту на среднем огне 10 минут, помешивая",
-        "5": "Налить в утяницу немного воды, накрыть крышку и тушить 30 минут",
-        "6": "Нарезать сардельки, закинуть к капусте, добавить специи",
-        "7": "Перемешать и тушить еще 10 минут"
-      },
-      "imageLink": "https://sun9-68.userapi.com/impg/NkYJ2-mxpa01nP74p5DwSudZMq5Ej6lNNtU9Jw/3hYDEqbwzqs.jpg?size=891x899&quality=96&sign=c249f9ad4762f1113ba01bf50889eacf",
-      "originalLink": "https://tutknow.ru/cookery/second_dishes/10998-tushenaya-kapusta-s-sardelkami.html",
-      "staple": "meat",
-      "feature": "cauldron",
       "season": "all",
       "isDiet": false
     },
@@ -1437,7 +1406,7 @@
       },
       "imageLink": "https://sun9-59.userapi.com/s/v1/if2/3ovpcxfpS3jG20X2LgpH4vOmNF-7IBDosPd3gsTFGFZzz8IHfQEv3FMGtxkfM09Fv88JtxiKa-bB7Ihbru_txzfP.jpg?size=671x897&quality=96",
       "originalLink": "https://www.povarenok.ru/recipes/show/91090/",
-      "staple": "vegetable",
+      "staple": "dairy",
       "feature": "fast",
       "season": "all",
       "isDiet": false
@@ -2001,7 +1970,7 @@
       "title": "Овсянка на молоке",
       "servings": 2,
       "ingredients": {
-        "Геркулес монастырский": "1 чашка",
+        "Геркулес монастырский": "2/3 чашки",
         "Молоко": "1/2 чашки",
         "Масло сливочное": "По вкусу",
         "Сахар": "1-2 ст.л"
@@ -2068,6 +2037,29 @@
       },
       "imageLink": "https://sun9-14.userapi.com/impg/jHk39KIhy_WagBDKZpQZIeHu55Epq9Q2VQt4pQ/dKiDEY6dGKA.jpg?size=1390x921&quality=96&sign=3c9a5c548cf58295b741da7b29f30f23&type=album",
       "originalLink": "https://edanyam.ru/kurinaya-grudka-na-skovorode-gril/",
+      "staple": "bird",
+      "feature": "fast",
+      "season": "all",
+      "isDiet": true
+    },
+    {
+      "id": "Indeika-s-chechevitsei-na-skovorode-gril",
+      "title": "Индейка с чечевицей на сковороде-гриль",
+      "servings": 4,
+      "ingredients": {
+        "Филе грудки индейки": "700 г",
+        "Чечевица зеленая": "1 чашка"
+      },
+      "note": "",
+      "steps": {
+        "1": "Поставить варить гарнир чечевицу (15 минут после закипания)",
+        "2": "Филе помыть, порезать на стейки толщиной 1-2 см",
+        "3": "Посолить, поперчить",
+        "4": "На разогретую сковороду-гриль брызнуть масло, положить стейки",
+        "5": "Обжарить с обеих сторон по 3 минуты до образования небольшой корочки"
+      },
+      "imageLink": "https://sun9-6.userapi.com/impg/2Bv63ZM9fgtYY-Gmn134aXRWodW039X6vqulQg/xKXjvkuM-K8.jpg?size=1193x802&quality=96&sign=1b0b2ac070fb47c5d08dd166dbe6ee89&type=album",
+      "originalLink": "",
       "staple": "bird",
       "feature": "fast",
       "season": "all",
