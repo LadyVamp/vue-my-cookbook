@@ -2066,6 +2066,27 @@
       "isDiet": true
     },
     {
+      "id": "Makaroni-s-tushenkoi",
+      "title": "Макароны с тушенкой",
+      "servings": 2,
+      "ingredients": {
+        "Макароны Barilla": "400 г",
+        "Говядина тушеная": "1 банка"
+      },
+      "note": "",
+      "steps": {
+        "1": "Поставить варить макароны",
+        "2": "Консервы вскрыть и размять вилкой",
+        "3": "Добавить тушенку к макаронам, перемешать"
+      },
+      "imageLink": "https://sun1-19.userapi.com/impg/3hKG6qxsfmGEZd1BcVoNu9Yq8uHIgSSahFZuRg/amktHm3d5JU.jpg?size=2560x1442&quality=95&sign=7c889804c4063395f09df2b8399b8df1&type=album",
+      "originalLink": null,
+      "staple": "meat",
+      "feature": "fast",
+      "season": "all",
+      "isDiet": false
+    },
+    {
       "id": "template_id",
       "title": "template_title",
       "servings": 4,
