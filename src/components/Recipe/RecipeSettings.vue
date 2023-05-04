@@ -7,15 +7,7 @@
         </v-row>
         <v-row>
             <v-col cols="2">
-                <v-select
-                    v-model="selectedShop"
-                    label="Магазин"
-                    :items="shopOptions"
-                    item-value="value"
-                    item-text="text"
-                    return-object
-                >
-                </v-select>
+                <v-select v-model="selectedShop" label="Магазин" :items="shops"></v-select>
             </v-col>
         </v-row>
         <v-row>
@@ -41,6 +33,8 @@
 
 <script>
 import BaseButton from '@/components/Buttons/BaseButton';
+import shopList from '/src/assets/shops.js';
+
 export default {
     name: 'RecipeSettings',
     components: {
@@ -50,14 +44,7 @@ export default {
         return {
             isShowLinks: false,
             selectedShop: { value: 'auchan', text: 'Ашан' },
-            shopOptions: [
-                { value: 'auchan', text: 'Ашан' },
-                { value: 'globus', text: 'Глобус' },
-                { value: 'metro', text: 'Метро' },
-                { value: 'lenta', text: 'Лента' },
-                { value: 'okey', text: 'Окей' },
-                { value: 'vkusvill', text: 'Вкусвилл' },
-            ],
+            shops: [],
             constProducts: [
                 {
                     name: 'Яйцо куриное',
@@ -91,7 +78,13 @@ export default {
         this.isShowLinks = this.$store.state.recipeModule.isShowLinks;
         this.selectedShop = this.$store.state.recipeModule.selectedShop;
     },
+    mounted() {
+        this.loadShops();
+    },
     methods: {
+        loadShops() {
+            this.shops = shopList;
+        },
         save() {
             this.$store.commit('setIsShowLinks', this.isShowLinks);
             this.$store.commit('setSelectedShop', this.selectedShop);

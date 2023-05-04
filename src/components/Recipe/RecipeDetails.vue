@@ -37,7 +37,7 @@
                                 v-if="isShowLinks"
                                 v-model="selectedShop"
                                 label="Магазин"
-                                :items="shopOptions"
+                                :items="shops"
                                 item-value="value"
                                 item-text="text"
                                 return-object
@@ -151,6 +151,7 @@ import IconSeason from '@/components/Recipe/Icons/IconSeason';
 import BackButton from '@/components/Buttons/BackButton';
 import { mapActions } from 'vuex';
 import RecipePrintVersion from '@/components/Recipe/RecipePrintVersion';
+import shopList from '/src/assets/shops.js';
 
 export default {
     name: 'RecipeDetails',
@@ -162,14 +163,7 @@ export default {
             isShowPrintVersion: false,
             isDiscounted: false,
             selectedShop: { value: 'auchan', text: 'Ашан' },
-            shopOptions: [
-                { value: 'auchan', text: 'Ашан' },
-                { value: 'globus', text: 'Глобус' },
-                { value: 'metro', text: 'Метро' },
-                { value: 'lenta', text: 'Лента' },
-                { value: 'okey', text: 'Окей' },
-                { value: 'vkusvill', text: 'Вкусвилл' },
-            ],
+            shops: [],
             selectedSort: { value: 'unit_price_asc', text: 'Выгоднее по весу' },
             sortOptions: [
                 { value: 'popularity', text: 'По популярности' },
@@ -206,6 +200,7 @@ export default {
         this.fetchData();
         this.isShowLinks = this.$store.state.recipeModule.isShowLinks;
         this.selectedShop = this.$store.state.recipeModule.selectedShop;
+        this.loadShops();
     },
     updated() {
         this.title = this.recipe.title;
@@ -214,6 +209,9 @@ export default {
         ...mapActions(['fetchRecipes']),
         fetchData() {
             this.fetchRecipes(this.$route.params.id);
+        },
+        loadShops() {
+            this.shops = shopList;
         },
         linkToProductInShop(ingredient) {
             const discounted = this.isDiscounted ? '&discounted=true' : '';
