@@ -7,7 +7,7 @@
         </v-row>
         <v-row>
             <v-col cols="2">
-                <v-select v-model="selectedShop" label="Магазин" :items="shops"></v-select>
+                <v-select v-model="selectedShop" label="Магазин" :items="shops" return-object></v-select>
             </v-col>
         </v-row>
         <v-row>
@@ -75,11 +75,9 @@ export default {
         };
     },
     created() {
+        this.loadShops();
         this.isShowLinks = this.$store.state.recipeModule.isShowLinks;
         this.selectedShop = this.$store.state.recipeModule.selectedShop;
-    },
-    mounted() {
-        this.loadShops();
     },
     methods: {
         loadShops() {

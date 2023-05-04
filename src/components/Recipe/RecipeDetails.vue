@@ -197,10 +197,10 @@ export default {
         },
     },
     mounted() {
+        this.loadShops();
         this.fetchData();
         this.isShowLinks = this.$store.state.recipeModule.isShowLinks;
         this.selectedShop = this.$store.state.recipeModule.selectedShop;
-        this.loadShops();
     },
     updated() {
         this.title = this.recipe.title;
