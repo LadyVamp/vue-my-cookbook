@@ -55,10 +55,6 @@
                             <v-switch v-model="isDiscounted" label="Со скидкой"></v-switch>
                         </div>
                     </v-col>
-                    <v-col cols="4">
-                        <v-switch v-model="isShowPrintVersion" label="Версия для печати"></v-switch>
-                        <RecipePrintVersion v-if="isShowPrintVersion" :recipe="recipe" />
-                    </v-col>
                 </v-row>
             </v-col>
         </v-row>
@@ -150,17 +146,15 @@ import IconFeature from '@/components/Recipe/Icons/IconFeature';
 import IconSeason from '@/components/Recipe/Icons/IconSeason';
 import BackButton from '@/components/Buttons/BackButton';
 import { mapActions } from 'vuex';
-import RecipePrintVersion from '@/components/Recipe/RecipePrintVersion';
 import shopList from '/src/assets/shops.js';
 
 export default {
     name: 'RecipeDetails',
-    components: { IconStaple, IconFeature, IconSeason, BackButton, RecipePrintVersion },
+    components: { IconStaple, IconFeature, IconSeason, BackButton },
     data() {
         return {
             title: 'Default Title',
             isShowLinks: false,
-            isShowPrintVersion: false,
             isDiscounted: false,
             selectedShop: { value: 'auchan', text: 'Ашан' },
             shops: [],
