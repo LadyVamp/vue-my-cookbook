@@ -9,7 +9,7 @@
             <v-progress-circular :size="50" color="primary" indeterminate></v-progress-circular>
         </div>
         <div v-if="weekMenu">
-            <table class="my-2 bordered">
+            <table class="my-2">
                 <thead>
                     <th class="w-50">День</th>
                     <th class="w-50">Тип</th>

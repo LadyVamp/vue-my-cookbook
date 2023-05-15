@@ -31,10 +31,14 @@
             <v-col sm="6" md="8" class="hidden-sm-and-down">
                 <v-row>
                     <v-col cols="4">
-                        <v-switch v-model="isShowLinks" label="Показать ссылки на продукты в Сбермаркете"></v-switch>
-                        <div v-if="isShowLinks">
+                        <v-switch
+                            v-model="isShowLinksSber"
+                            label="Показать ссылки на продукты в Сбермаркете"
+                            :disabled="isShowLinksVprok"
+                        ></v-switch>
+                        <div v-if="isShowLinksSber && !isShowLinksVprok">
                             <v-select
-                                v-if="isShowLinks"
+                                v-if="isShowLinksSber"
                                 v-model="selectedShop"
                                 label="Магазин"
                                 :items="shops"
@@ -54,6 +58,13 @@
                             </v-select>
                             <v-switch v-model="isDiscounted" label="Со скидкой"></v-switch>
                         </div>
+                    </v-col>
+                    <v-col cols="4">
+                        <v-switch
+                            v-model="isShowLinksVprok"
+                            label="Показать ссылки на продукты в Впрок"
+                            :disabled="isShowLinksSber"
+                        ></v-switch>
                     </v-col>
                 </v-row>
             </v-col>
@@ -79,50 +90,60 @@
                 <p v-if="recipe.note" class="secondary--text">
                     {{ recipe.note }}
                 </p>
-                <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
-                    <li>
-                        <span v-if="!isShowLinks">{{ name }}</span>
-
-                        <span v-if="name.includes('||') && isShowLinks">
-                            <a :href="linkToProductInShop(name.split('||')[0])" target="_blank">
-                                {{ name.split('||')[0] }}
+                <div v-if="!isShowLinksVprok">
+                    <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
+                        <li>
+                            <span v-if="!isShowLinksSber">{{ name }}</span>
+                            <span v-if="name.includes('||') && isShowLinksSber">
+                                <span v-for="(item, index) in name.split('||')" :key="index">
+                                    <BaseLink :link="linkToProductInSber(item)" :label="item" />
+                                </span>
+                            </span>
+                            <a
+                                v-if="!name.includes('||') && isShowLinksSber"
+                                :href="linkToProductInSber(name)"
+                                target="_blank"
+                                >{{ name }}
                             </a>
-                            ||
-                            <a :href="linkToProductInShop(name.split('||')[1])" target="_blank">
-                                {{ name.split('||')[1] }}
-                            </a>
-                            <span v-if="name.split('||')[2]">||</span>
-                            <a :href="linkToProductInShop(name.split('||')[2])" target="_blank">
-                                {{ name.split('||')[2] }}
-                            </a>
-                        </span>
-                        <a v-if="!name.includes('||') && isShowLinks" :href="linkToProductInShop(name)" target="_blank"
-                            >{{ name }}
-                        </a>
-                        – {{ value }}
-                    </li>
-                </ul>
+                            – {{ value }}
+                        </li>
+                    </ul>
+                </div>
+                <div v-if="!isShowLinksSber && isShowLinksVprok">
+                    <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
+                        <li>
+                            <span v-if="!isShowLinksVprok">{{ name }}</span>
+                            <span v-if="name.includes('||') && isShowLinksVprok">
+                                <span v-for="(item, index) in name.split('||')" :key="index">
+                                    <BaseLink :link="linkToProductInVprok(item)" :label="item" />
+                                </span>
+                            </span>
+                            <BaseLink
+                                v-if="!name.includes('||') && isShowLinksVprok"
+                                :link="linkToProductInVprok(name)"
+                                :label="name"
+                            />
+                            – {{ value }}
+                        </li>
+                    </ul>
+                </div>
                 <div v-if="recipe.extra">
                     <h3 class="secondary--text mt-4">Дополнительно</h3>
                     <ul v-for="(value, name, idx) in recipe.extra" :key="idx">
                         <li>
-                            <span v-if="!isShowLinks">{{ name }}</span>
-
-                            <span v-if="name.includes('||') && isShowLinks">
-                                <a :href="linkToProductInShop(name.split('||')[0])" target="_blank">
-                                    {{ name.split('||')[0] }}</a
-                                >
-                                ||
-                                <a :href="linkToProductInShop(name.split('||')[1])" target="_blank">
-                                    {{ name.split('||')[1] }}</a
-                                >
+                            <span v-if="!isShowLinksSber">{{ name }}</span>
+                            <span v-if="name.includes('||') && isShowLinksSber">
+                                <span v-if="name.includes('||') && isShowLinksSber">
+                                    <span v-for="(item, index) in name.split('||')" :key="index">
+                                        <BaseLink :link="linkToProductInSber(item)" :label="item" />
+                                    </span>
+                                </span>
                             </span>
-                            <a
-                                v-if="!name.includes('||') && isShowLinks"
-                                :href="linkToProductInShop(name)"
-                                target="_blank"
-                                >{{ name }}
-                            </a>
+                            <BaseLink
+                                v-if="!name.includes('||') && isShowLinksSber"
+                                :link="linkToProductInSber(name)"
+                                :label="name"
+                            />
                             – {{ value }}
                         </li>
                     </ul>
@@ -145,16 +166,18 @@ import IconStaple from '@/components/Recipe/Icons/IconStaple';
 import IconFeature from '@/components/Recipe/Icons/IconFeature';
 import IconSeason from '@/components/Recipe/Icons/IconSeason';
 import BackButton from '@/components/Buttons/BackButton';
+import BaseLink from '@/components/Buttons/BaseLink';
 import { mapActions } from 'vuex';
 import shopList from '/src/assets/shops.js';
 
 export default {
     name: 'RecipeDetails',
-    components: { IconStaple, IconFeature, IconSeason, BackButton },
+    components: { IconStaple, IconFeature, IconSeason, BackButton, BaseLink },
     data() {
         return {
             title: 'Default Title',
-            isShowLinks: false,
+            isShowLinksSber: false,
+            isShowLinksVprok: false,
             isDiscounted: false,
             selectedShop: { value: 'auchan', text: 'Ашан' },
             shops: [],
@@ -193,7 +216,7 @@ export default {
     mounted() {
         this.loadShops();
         this.fetchData();
-        this.isShowLinks = this.$store.state.recipeModule.isShowLinks;
+        this.isShowLinksSber = this.$store.state.recipeModule.isShowLinksSber;
         this.selectedShop = this.$store.state.recipeModule.selectedShop;
     },
     updated() {
@@ -207,16 +230,20 @@ export default {
         loadShops() {
             this.shops = shopList;
         },
-        linkToProductInShop(ingredient) {
+        linkToProductInSber(ingredient) {
             const discounted = this.isDiscounted ? '&discounted=true' : '';
             const url =
                 'https://sbermarket.ru/' +
                 `${this.selectedShop.value}` +
                 '/search?keywords=' +
-                `${ingredient}` +
+                `${ingredient.trim()}` +
                 `&sort=` +
                 `${this.selectedSort.value}` +
                 discounted;
+            return url;
+        },
+        linkToProductInVprok(ingredient) {
+            const url = 'https://www.vprok.ru/catalog/search?text=' + `${ingredient.trim()}`;
             return url;
         },
         copyIngredients() {

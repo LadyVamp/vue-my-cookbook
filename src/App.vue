@@ -69,4 +69,7 @@ a {
 li {
     list-style-type: none;
 }
+.bordered {
+    border: 1px solid deeppink;
+}
 </style>

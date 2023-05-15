@@ -2,7 +2,7 @@
     <div>
         <v-row>
             <v-col cols="3">
-                <v-switch v-model="isShowLinks" label="Показать ссылки на продукты в Сбермаркете"></v-switch>
+                <v-switch v-model="isShowLinksSber" label="Показать ссылки на продукты в Сбермаркете"></v-switch>
             </v-col>
         </v-row>
         <v-row>
@@ -42,7 +42,7 @@ export default {
     },
     data() {
         return {
-            isShowLinks: false,
+            isShowLinksSber: false,
             selectedShop: { value: 'auchan', text: 'Ашан' },
             shops: [],
             constProducts: [
@@ -76,7 +76,7 @@ export default {
     },
     created() {
         this.loadShops();
-        this.isShowLinks = this.$store.state.recipeModule.isShowLinks;
+        this.isShowLinksSber = this.$store.state.recipeModule.isShowLinksSber;
         this.selectedShop = this.$store.state.recipeModule.selectedShop;
     },
     methods: {
@@ -84,7 +84,7 @@ export default {
             this.shops = shopList;
         },
         save() {
-            this.$store.commit('setIsShowLinks', this.isShowLinks);
+            this.$store.commit('setIsShowLinksSber', this.isShowLinksSber);
             this.$store.commit('setSelectedShop', this.selectedShop);
         },
     },
