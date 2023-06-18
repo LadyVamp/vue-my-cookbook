@@ -15,7 +15,7 @@
                 </div>
                 <div class="search_input">
                     <v-text-field
-                        v-model="search"
+                        v-model.trim="search"
                         append-icon="mdi-magnify"
                         :label="'Поиск по ' + getRecipesCount() + ' рецептам'"
                         single-line
