@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 const recipes =
-    'https://gist.githubusercontent.com/LadyVamp/628c9e7aa0d9d26971bf9d512cef6bbe/raw/0260618f97e47d0609dbfebd2e57c2264ec8382a/recipes-2023-05-12.json';
+    'https://gist.githubusercontent.com/LadyVamp/628c9e7aa0d9d26971bf9d512cef6bbe/raw/f4a02d49a8cf9dd65a870a4c6dbba0e52b80032d/recipes-2023-06-18.json';
 
 export async function getAllRecipes() {
     try {
