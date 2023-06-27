@@ -6,6 +6,7 @@
 
 <script>
 export default {
+    name: 'BaseLink',
     props: {
         label: {
             type: String,

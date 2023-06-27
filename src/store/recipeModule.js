@@ -6,7 +6,7 @@ export default {
         currentRecipe: null,
         recipesCount: 0,
         isLoading: false,
-        isShowLinksSber: localStorage.getItem('isShowLinksSber') || false,
+        isShowLinksSber: !!localStorage.getItem('isShowLinksSber') || false,
         selectedShop: JSON.parse(localStorage.getItem('selectedShop')) || { value: 'auchan', text: 'Ашан' },
     },
     mutations: {

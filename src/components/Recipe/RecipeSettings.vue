@@ -12,12 +12,7 @@
         </v-row>
         <v-row>
             <v-col>
-                <BaseButton
-                    :label="'Сохранить'"
-                    :icon="'mdi-content-save-cog'"
-                    :color="'secondary'"
-                    @click.native="save"
-                />
+                <BaseButton label="Сохранить" icon="mdi-content-save-cog" color="secondary" @click.native="save" />
             </v-col>
         </v-row>
         <v-row>
@@ -32,7 +27,7 @@
 </template>
 
 <script>
-import BaseButton from '@/components/Buttons/BaseButton';
+import BaseButton from '@/components/ui-components/BaseButton';
 import shopList from '/src/assets/shops.js';
 
 export default {

@@ -5,12 +5,12 @@
         <!-- <LinkButton :label="'favicon'" :link="'https://icons8.ru/icon/set/watermelon/emoji'" :color="'accent'" /> -->
         <h3 class="secondary--text">Кириллица в транслит для id</h3>
         <CyrillicTransliterator />
-        <LinkButton :label="'gist'" :link="'https://gist.github.com/LadyVamp/'" :color="'#f5f5f5'" />
+        <LinkButton label="gist" link="https://gist.github.com/LadyVamp/" color="#f5f5f5" />
     </div>
 </template>
 
 <script>
-import LinkButton from '@/components/Buttons/LinkButton';
+import LinkButton from '@/components/ui-components/LinkButton';
 import CyrillicTransliterator from '@/components/Recipe/CyrillicTransliterator';
 
 export default {

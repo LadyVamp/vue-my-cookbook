@@ -9,6 +9,7 @@
 
 <script>
 export default {
+    name: 'BaseButton',
     props: {
         label: {
             type: String,

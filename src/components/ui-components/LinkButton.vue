@@ -11,6 +11,7 @@
 
 <script>
 export default {
+    name: 'LinkButton',
     props: {
         label: {
             type: String,
@@ -23,11 +24,11 @@ export default {
         // icons https://materialdesignicons.com/
         icon: {
             type: String,
-            default: "mdi-open-in-new",
+            default: 'mdi-open-in-new',
         },
         color: {
             type: String,
-            default: "primary",
+            default: 'primary',
         },
     },
 };

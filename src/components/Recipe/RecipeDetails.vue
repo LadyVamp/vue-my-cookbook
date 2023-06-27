@@ -162,17 +162,17 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+import shopList from '/src/assets/shops.js';
+import BaseLink from '@/components/ui-components/BaseLink';
+import BackButton from '@/components/ui-components/BackButton';
 import IconStaple from '@/components/Recipe/Icons/IconStaple';
 import IconFeature from '@/components/Recipe/Icons/IconFeature';
 import IconSeason from '@/components/Recipe/Icons/IconSeason';
-import BackButton from '@/components/Buttons/BackButton';
-import BaseLink from '@/components/Buttons/BaseLink';
-import { mapActions } from 'vuex';
-import shopList from '/src/assets/shops.js';
 
 export default {
     name: 'RecipeDetails',
-    components: { IconStaple, IconFeature, IconSeason, BackButton, BaseLink },
+    components: { BackButton, BaseLink, IconStaple, IconFeature, IconSeason },
     data() {
         return {
             title: 'Default Title',

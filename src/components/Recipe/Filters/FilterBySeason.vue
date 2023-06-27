@@ -10,7 +10,7 @@
 import IconSeason from '@/components/Recipe/Icons/IconSeason';
 
 export default {
-    name: 'FilterByFeature',
+    name: 'FilterBySeason',
     components: { IconSeason },
     data() {
         return {
