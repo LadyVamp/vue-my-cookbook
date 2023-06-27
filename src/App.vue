@@ -42,11 +42,6 @@ export default {
                     icon: 'mdi-information-outline',
                 },
                 {
-                    name: 'Generator',
-                    path: '/generator',
-                    icon: 'mdi-auto-fix',
-                },
-                {
                     name: 'Settings',
                     path: '/settings',
                     icon: 'mdi-cog',

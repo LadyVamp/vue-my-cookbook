@@ -1,6 +1,6 @@
 {
   "name": "vue-my-cookbook",
-  "version": "1.16.0",
+  "version": "1.17.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -12,7 +12,6 @@
     "core-js": "^3.6.5",
     "cyrillic-to-translit-js": "^3.2.1",
     "eslint-config-prettier": "^8.5.0",
-    "moment": "^2.29.1",
     "vue": "^2.6.11",
     "vue-axios": "^3.2.4",
     "vue-meta": "^2.4.0",

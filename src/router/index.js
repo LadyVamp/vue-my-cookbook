@@ -25,11 +25,6 @@ const routes = [
 		component: () => import('../views/DevView.vue'),
 	},
 	{
-		path: '/generator',
-		name: 'Generator',
-		component: () => import('../views/GeneratorView.vue'),
-	},
-	{
 		path: '/settings',
 		name: 'Settings',
 		component: () => import('../views/SettingsView.vue'),
