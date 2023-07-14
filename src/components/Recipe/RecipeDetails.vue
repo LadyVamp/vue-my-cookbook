@@ -1,7 +1,12 @@
 <template>
     <div v-if="recipe" class="d-flex flex-column mb-4">
         <BackButton />
-        <h2 class="primary--text">{{ recipe.title }}</h2>
+        <h2 class="primary--text">
+            {{ recipe.title }}
+            <v-btn icon color="secondary" title="Скопировать название рецепта" @click="copyToClipBoard(recipe.title)">
+                <v-icon>mdi-content-copy</v-icon>
+            </v-btn>
+        </h2>
         <v-row>
             <v-col cols="12" sm="6" md="4">
                 <v-img
@@ -28,14 +33,15 @@
                     Открыть комбо-рецепт
                 </v-btn>
             </v-col>
-            <v-col sm="6" md="8" class="hidden-sm-and-down">
+            <v-col sm="6" md="8">
                 <v-row>
-                    <v-col cols="4">
+                    <v-col md="6" lg="3">
                         <v-switch
                             v-model="isShowLinksSber"
-                            label="Показать ссылки на продукты в Сбермаркете"
+                            label="Показать ссылки на Сбермаркет"
                             :disabled="isShowLinksVprok"
-                        ></v-switch>
+                        >
+                        </v-switch>
                         <div v-if="isShowLinksSber && !isShowLinksVprok">
                             <v-select
                                 v-if="isShowLinksSber"
@@ -59,10 +65,10 @@
                             <v-switch v-model="isDiscounted" label="Со скидкой"></v-switch>
                         </div>
                     </v-col>
-                    <v-col cols="4">
+                    <v-col md="6" lg="3">
                         <v-switch
                             v-model="isShowLinksVprok"
-                            label="Показать ссылки на продукты в Впрок"
+                            label="Показать ссылки на Впрок"
                             :disabled="isShowLinksSber"
                         ></v-switch>
                     </v-col>
@@ -74,16 +80,6 @@
                 <v-row>
                     <v-col>
                         <h3 class="secondary--text">Ингредиенты</h3>
-                    </v-col>
-                    <v-col>
-                        <v-btn
-                            icon
-                            color="secondary"
-                            title="Скопировать список ингредиентов без специй"
-                            @click="copyIngredients"
-                        >
-                            <v-icon>mdi-content-copy</v-icon>
-                        </v-btn>
                     </v-col>
                 </v-row>
                 <p>{{ declinationNumberOfServings }}</p>
@@ -245,25 +241,6 @@ export default {
         linkToProductInVprok(ingredient) {
             const url = 'https://www.vprok.ru/catalog/search?text=' + `${ingredient.trim()}`;
             return url;
-        },
-        copyIngredients() {
-            const spices = [
-                'Перец черный молотый',
-                'Хмели-сунели',
-                'Мускатный орех',
-                'Паприка копченая',
-                'Кориандр молотый',
-                'Лавровый лист',
-                'Перец душистый',
-                'Смесь перцев',
-                'Приправа Vegeta',
-                'Приправа для мяса',
-                'Паприка сладкая',
-                'Приправа карри',
-            ];
-            const exceptSpices = Object.entries(this.recipe.ingredients).filter(([key]) => !spices.includes(key));
-            const ingredientsExceptSpices = exceptSpices.map(([k, v]) => `${k} - ${v}`);
-            this.copyToClipBoard(ingredientsExceptSpices.join(', '));
         },
         copyToClipBoard(textToCopy) {
             navigator.clipboard.writeText(textToCopy);
