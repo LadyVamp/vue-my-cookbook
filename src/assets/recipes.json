@@ -1842,7 +1842,7 @@
       "servings": 4,
       "ingredients": {
         "Филе куриное охлажденное": "700 г",
-        "Бурый рис": "1 чашка",
+        "Рис бурый": "1 чашка",
         "Лавровый лист": "1 шт"
       },
       "note": "Вместо риса на гарнир подойдет гречка",
@@ -2029,7 +2029,7 @@
       "title": "Куриное филе на сковороде-гриль",
       "servings": 4,
       "ingredients": {
-        "Филе куриное": "700 г"
+        "Грудка куриная филе": "700 г"
       },
       "note": "",
       "steps": {
@@ -2196,13 +2196,13 @@
       "imageLink": "https://sun9-31.userapi.com/impg/-1LRn98_CO2Sp63U_O7BCZwra8-zknMTQR7SkQ/cotEelLczuQ.jpg?size=1849x930&quality=96&sign=823634b28e50b7a7264206390428064c&type=album",
       "originalLink": null,
       "staple": "meat",
-      "feature": "cauldron",
+      "feature": "pot",
       "season": "all",
       "isDiet": false
     },
     {
-      "id": "Limonad",
-      "title": "Лимонад",
+      "id": "Myatnyj-limonad",
+      "title": "Мятный лимонад",
       "servings": 4,
       "ingredients": {
         "Мята перечная": "1 пучок",
@@ -2226,6 +2226,58 @@
       "feature": "fast",
       "season": "summer",
       "isDiet": true
+    },
+    {
+      "id": "File-kurinogo-bedra-na-skovorode-gril",
+      "title": "Филе куриного бедра на сковороде-гриль",
+      "servings": 2,
+      "ingredients": {
+        "Филе куриного бедра охлажденное": "700 г",
+        "Паприка копченая": "По вкусу",
+        "Перец черный молотый": "По вкусу"
+      },
+      "note": "",
+      "steps": {
+        "1": "Филе помыть, порезать каждый кусок пополам",
+        "2": "Положить филе в чистый полиэтиленовый пакет и отбить молотком",
+        "4": "Посолить, поперчить, обвалять в копченой паприке",
+        "5": "На разогретую сковороду-гриль брызнуть масло, положить филе",
+        "6": "Жарить 20 минут переворачивая каждые 2 минуты"
+      },
+      "imageLink": "https://sun1-55.userapi.com/impg/HH9LvKplf_mjbMH5PTcEsfUXUDdloRviBAhpfw/bqkHLYo4zxc.jpg?size=1241x834&quality=96&sign=df5747fd1911eeb3b27a41de86f4ff3a&type=album",
+      "originalLink": "",
+      "staple": "bird",
+      "feature": "fast",
+      "season": "all",
+      "isDiet": true
+    },
+    {
+      "id": "Prostoj-sup-xarcho",
+      "title": "Простой суп харчо",
+      "servings": 4,
+      "ingredients": {
+        "Голяшка говяжья без кости": "600 г",
+        "Морковь": "2 шт",
+        "Лук репчатый": "1 шт",
+        "Томатная паста Aro ГОСТ 65 г": "65 г",
+        "Рис": "5 ст.л.",
+        "Чеснок": "4 зубчика",
+        "Хмели-сунели || Maggi Букет приправ": "По вкусу"
+      },
+      "note": "",
+      "steps": {
+        "1": "Мясо промыть, положить в кастрюлю, залить водой, довести до кипения. Снимать пену. Варить 1,5 часа",
+        "2": "Лук нарезать кубиками, морковь потереть на крупной терке",
+        "3": "Лук и морковь обжарить на растительном масле и выложить в суп вместе с томатной пастой",
+        "4": "Пока готовится зажарка, положить промытый рис и варить около 5 минут",
+        "5": "Положить чеснок и приправу, варить 5 минут"
+      },
+      "imageLink": "https://sun9-42.userapi.com/impg/OITxhI1Nkstc99AltOMEeK3iKHQz4q21xC1iGw/6GtgTT51V5M.jpg?size=957x785&quality=96&sign=b05bbee2eba06c4931bf528c0b8c589d&type=album",
+      "originalLink": "https://zefira.net/recipe/prostoj-recept-supa-xarcho/",
+      "staple": "meat",
+      "feature": "pot",
+      "season": "all",
+      "isDiet": false
     },
     {
       "id": "template_id",
