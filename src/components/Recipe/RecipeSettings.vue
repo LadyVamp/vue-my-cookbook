@@ -1,22 +1,22 @@
 <template>
     <div>
         <v-row>
-            <v-col cols="3">
+            <v-col xs="12" md="3">
                 <v-switch v-model="isShowLinksSber" label="Показать ссылки на продукты в Сбермаркете"></v-switch>
             </v-col>
         </v-row>
         <v-row>
-            <v-col cols="2">
+            <v-col xs="12" md="3">
                 <v-select v-model="selectedShop" label="Магазин" :items="shops" return-object></v-select>
             </v-col>
         </v-row>
         <v-row>
-            <v-col>
+            <v-col xs="12" md="3">
                 <BaseButton label="Сохранить" icon="mdi-content-save-cog" color="secondary" @click.native="save" />
             </v-col>
         </v-row>
         <v-row>
-            <v-col>
+            <v-col xs="12" md="3">
                 <div v-for="item in constProducts" :key="item">
                     <a v-if="selectedShop.value === 'auchan'" :href="item.auchan" target="_blank">{{ item.name }}</a>
                     <a v-if="selectedShop.value === 'globus'" :href="item.globus" target="_blank">{{ item.name }}</a>
