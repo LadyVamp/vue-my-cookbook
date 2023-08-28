@@ -228,7 +228,7 @@
       "imageLink": "https://toprecepty.ru/wp-content/uploads/2020/01/lagman-uzbekskij.jpg",
       "originalLink": "https://povar.ru/recipes/lagman_klassicheskii-54519.html",
       "staple": "meat",
-      "feature": "cauldron",
+      "feature": "stewingdish",
       "season": "summer",
       "isDiet": true
     },
@@ -637,7 +637,7 @@
       "imageLink": "https://sun9-36.userapi.com/impg/8OeN12W2VWYGAhKH78exwDnb6DwpQ64Li1YYyQ/9CW6gM63ILM.jpg?size=890x888&quality=96&sign=042a4a09ae822af4193a170727a30521",
       "originalLink": "https://povar.ru/recipes/plov_v_utyatnice-15264.html",
       "staple": "meat",
-      "feature": "cauldron",
+      "feature": "stewingdish",
       "season": "all",
       "isDiet": false
     },
@@ -1195,13 +1195,13 @@
         "1": "Спассеровать лук с морковкой",
         "2": "Картошку почистить, нарезать небольшими кубиками",
         "3": "Мясо порезать мелкими кусочками",
-        "4": "Добавить к пассировке, тушить 30 минут. Добавить немного воды",
+        "4": "Добавить к пассировке, накрыть крышкой, тушить 30 минут. Добавить немного воды",
         "5": "Добавить картошку и специи, тушить еще 30 минут"
       },
-      "imageLink": "https://sun9-60.userapi.com/impg/CBYuWnB3_g3jye00LVRnhH_t1z4Swk-UeSe78A/8Ru6zzRX9g8.jpg?size=520x565&quality=96&sign=14a866938ac2e97aebf486d0b5b86ecc",
+      "imageLink": "https://sun9-74.userapi.com/impg/U9SGj6BalXJqp6uxmAuZEe2cqAl7FAQxDTdLvA/iMTM72CW1wo.jpg?size=1502x848&quality=96&sign=cb441a1d21c02bba580e687a63209d33&type=album",
       "originalLink": null,
       "staple": "meat",
-      "feature": "cauldron",
+      "feature": "stewingdish",
       "season": "all",
       "isDiet": false
     },
@@ -2196,7 +2196,7 @@
       "imageLink": "https://sun9-31.userapi.com/impg/-1LRn98_CO2Sp63U_O7BCZwra8-zknMTQR7SkQ/cotEelLczuQ.jpg?size=1849x930&quality=96&sign=823634b28e50b7a7264206390428064c&type=album",
       "originalLink": null,
       "staple": "meat",
-      "feature": "pot",
+      "feature": "stewingdish",
       "season": "all",
       "isDiet": false
     },
@@ -2301,7 +2301,7 @@
       "imageLink": null,
       "originalLink": null,
       "staple": "vegetable | bird | meat | fish | dairy | dessert",
-      "feature": "fast | oven | cauldron | pot | combo | grill | toaster",
+      "feature": "fast | oven | stewingdish | pot | combo | grill | toaster",
       "season": "all | winter | spring | summer | autumn",
       "isDiet": false
     }

@@ -33,7 +33,7 @@ export default {
                     icon: 'mdi-stove',
                 },
                 {
-                    key: 'cauldron',
+                    key: 'stewingdish',
                     label: 'Утятница',
                     icon: 'mdi-dome-light',
                 },
