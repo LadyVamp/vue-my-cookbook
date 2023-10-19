@@ -1903,6 +1903,7 @@
         "Соус цезарь": "По вкусу"
       },
       "note": "",
+      "time": "60",
       "steps": {
         "1": "Филе помыть, отварить 25 минут, остудить и порезать кубиками",
         "2": "Яйца отварить, остудить и порезать кубиками",
@@ -1912,7 +1913,7 @@
         "6": "Листья салата порвать руками",
         "7": "Все ингредиенты поместить в миску, заправить соусом, перемешать"
       },
-      "imageLink": "https://sun9-13.userapi.com/impg/efzooaCW7Bju96ywiRvNB_idGpD5y4vqzObo_w/FOeAIvrwBG0.jpg?size=1402x931&quality=96&sign=e4a25c37595d28512b4a69607aaabae2",
+      "imageLink": "https://sun1-27.userapi.com/impg/Kz_obrBG0lNaDf70KCQRYyRnDkANc9uZT-pdXg/0KXSRfdOXBw.jpg?size=1270x865&quality=96&sign=9806c1080b6671a33528dd7e9fde968b&type=album",
       "originalLink": "https://www.gastronom.ru/recipe/23698/salat-cezar-s-kuricej",
       "staple": "bird",
       "feature": "pot",
@@ -2292,6 +2293,7 @@
         "item5": ""
       },
       "note": "",
+      "time": "",
       "steps": {
         "1": "",
         "2": "",

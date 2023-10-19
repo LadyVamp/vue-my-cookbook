@@ -86,6 +86,7 @@
                 <p v-if="recipe.note" class="secondary--text">
                     {{ recipe.note }}
                 </p>
+                <p v-if="recipe.time" class="secondary--text">Время приготовления: {{ recipe.time }} минут</p>
                 <div v-if="!isShowLinksVprok">
                     <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
                         <li>
