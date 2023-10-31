@@ -35,7 +35,7 @@
             </v-col>
             <v-col sm="6" md="8">
                 <v-row>
-                    <v-col md="6" lg="3">
+                    <v-col v-if="!isMobile" md="6" lg="3">
                         <v-switch
                             v-model="isShowLinksSber"
                             label="Показать ссылки на Сбермаркет"
@@ -65,7 +65,7 @@
                             <v-switch v-model="isDiscounted" label="Со скидкой"></v-switch>
                         </div>
                     </v-col>
-                    <v-col md="6" lg="3">
+                    <v-col v-if="!isMobile" md="6" lg="3">
                         <v-switch
                             v-model="isShowLinksVprok"
                             label="Показать ссылки на Впрок"
@@ -76,10 +76,15 @@
             </v-col>
         </v-row>
         <v-row>
-            <v-col cols="12" sm="6" class="my-4">
+            <v-col cols="12" sm="6">
                 <v-row>
                     <v-col>
                         <h3 class="secondary--text">Ингредиенты</h3>
+                    </v-col>
+                    <v-col v-if="isMobile" class="d-flex justify-end" md="6" lg="3">
+                        <v-btn fab dark small color="accent" @click="wakeLock">
+                            <v-icon dark> mdi-lightbulb-off-outline </v-icon>
+                        </v-btn>
                     </v-col>
                 </v-row>
                 <p>{{ declinationNumberOfServings }}</p>
@@ -148,13 +153,19 @@
             </v-col>
         </v-row>
         <v-row>
-            <v-col cols="12" sm="6" class="my-4">
+            <v-col cols="12" sm="6" class="my-2">
                 <h3 class="secondary--text">Приготовление</h3>
                 <ul>
                     <li v-for="(item, index) in recipe.steps" :key="item.key">{{ index }}. {{ item }}</li>
                 </ul>
             </v-col>
         </v-row>
+        <v-snackbar v-model="isShowSnackbar">
+            {{ text }}
+            <template v-slot:action="{ attrs }">
+                <v-btn color="pink" text v-bind="attrs" @click="isShowSnackbar = false"> OK </v-btn>
+            </template>
+        </v-snackbar>
     </div>
 </template>
 
@@ -176,6 +187,8 @@ export default {
             isShowLinksSber: false,
             isShowLinksVprok: false,
             isDiscounted: false,
+            isShowSnackbar: false,
+            text: 'WakeLock активирован',
             selectedShop: { value: 'auchan', text: 'Ашан' },
             shops: [],
             selectedSort: { value: 'unit_price_asc', text: 'Выгоднее по весу' },
@@ -203,6 +216,9 @@ export default {
             } else {
                 return 'Неожиданное количество порций!';
             }
+        },
+        isMobile() {
+            return screen.width <= 760 ? true : false;
         },
     },
     watch: {
@@ -245,6 +261,18 @@ export default {
         },
         copyToClipBoard(textToCopy) {
             navigator.clipboard.writeText(textToCopy);
+        },
+        wakeLock() {
+            const requestWakeLock = async () => {
+                try {
+                    const wakeLock = await navigator.wakeLock.request('screen');
+                    console.log(wakeLock);
+                } catch (err) {
+                    console.log(`${err.name}, ${err.message}`);
+                }
+            };
+            requestWakeLock();
+            this.isShowSnackbar = true;
         },
     },
 };
