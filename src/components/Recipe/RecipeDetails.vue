@@ -82,8 +82,8 @@
                         <h3 class="secondary--text">Ингредиенты</h3>
                     </v-col>
                     <v-col v-if="isMobile" class="d-flex justify-end" md="6" lg="3">
-                        <v-btn fab dark small color="accent" @click="wakeLock">
-                            <v-icon dark> mdi-lightbulb-off-outline </v-icon>
+                        <v-btn small fab outlined color="accent" @click="wakeLock">
+                            <v-icon> mdi-sleep-off </v-icon>
                         </v-btn>
                     </v-col>
                 </v-row>
@@ -163,7 +163,7 @@
         <v-snackbar v-model="isShowSnackbar">
             {{ text }}
             <template v-slot:action="{ attrs }">
-                <v-btn color="pink" text v-bind="attrs" @click="isShowSnackbar = false"> OK </v-btn>
+                <v-btn color="accent" text v-bind="attrs" @click="isShowSnackbar = false"> OK </v-btn>
             </template>
         </v-snackbar>
     </div>
@@ -268,7 +268,7 @@ export default {
                     const wakeLock = await navigator.wakeLock.request('screen');
                     console.log(wakeLock);
                 } catch (err) {
-                    console.log(`${err.name}, ${err.message}`);
+                    console.log(err);
                 }
             };
             requestWakeLock();
