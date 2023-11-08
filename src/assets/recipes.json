@@ -130,8 +130,7 @@
       "imageLink": "https://s1.eda.ru/StaticContent/Photos/110816122025/141101151423/p_O.jpg",
       "originalLink": "https://www.iamcook.ru/showrecipe/7085",
       "staple": "bird",
-      "feature": "combo",
-      "comboId": "Gribnoi-sup-pyure",
+      "feature": "pot",
       "season": "all",
       "isDiet": true
     },
@@ -162,8 +161,7 @@
       "imageLink": "https://sun9-9.userapi.com/impg/WykwPWPRL5aknOCoFmOMJBPmsE3H6amRNjDpQw/o4rICBE4tmc.jpg?size=895x925&quality=96&sign=46214ed237432f0c8b17cbd2692c1044",
       "originalLink": "https://www.russianfood.com/recipes/recipe.php?rid=139033",
       "staple": "vegetable",
-      "feature": "combo",
-      "comboId": "Salat-s-kuritsei-i-seldereem",
+      "feature": "pot",
       "season": "all",
       "isDiet": false
     },
@@ -1083,7 +1081,6 @@
         "4": "Запекать рыбу 20 минут. Затем развернуть фольгу и запекать ещё 5 минут"
       },
       "imageLink": "https://sun9-20.userapi.com/impg/SYzEH7bYUPxGnOu4Dcxm-yI-qz85vltQyv4MIg/HoElg69DQEk.jpg?size=874x794&quality=96&sign=d37c340f20716fe533d487102fd2efc9",
-      "imageLink2": "https://sun1-99.userapi.com/impg/Ca0DFbo-p38lHpRTYip9NcrJcqNhb0KQtfzhfg/mbaXWNBNbCc.jpg?size=770x929&quality=96&sign=fc4d64955ca694889c662b7543a846c2",
       "originalLink": null,
       "staple": "fish",
       "feature": "oven",
@@ -2311,7 +2308,7 @@
       "imageLink": null,
       "originalLink": null,
       "staple": "vegetable | bird | meat | fish | dairy | dessert",
-      "feature": "fast | oven | stewingdish | pot | combo | grill | toaster",
+      "feature": "fast | oven | stewingdish | pot | grill | toaster",
       "season": "all | winter | spring | summer | autumn",
       "isDiet": false
     }

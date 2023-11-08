@@ -22,16 +22,6 @@
                 <IconFeature :feature="recipe.feature" />
                 <IconSeason :season="recipe.season" />
                 <v-icon v-if="recipe.isDiet" color="blue-grey darken-2" title="Диетическое"> mdi-dumbbell </v-icon>
-                <v-btn
-                    v-if="recipe.feature.includes('combo')"
-                    :to="{
-                        name: 'RecipeDetails',
-                        params: { id: recipe.comboId },
-                    }"
-                    color="primary"
-                >
-                    Открыть комбо-рецепт
-                </v-btn>
             </v-col>
             <v-col sm="6" md="8">
                 <v-row>

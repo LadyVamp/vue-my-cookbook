@@ -43,11 +43,6 @@ export default {
                     icon: 'mdi-pot-steam-outline',
                 },
                 {
-                    key: 'combo',
-                    label: 'Комбо',
-                    icon: 'mdi-hexagon-multiple-outline',
-                },
-                {
                     key: 'grill',
                     label: 'Гриль',
                     icon: 'mdi-grill',
