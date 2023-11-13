@@ -37,6 +37,11 @@ export default {
                     icon: 'mdi-lightbulb-outline',
                 },
                 {
+                    name: 'BlackList',
+                    path: '/blacklist',
+                    icon: 'mdi-heart-broken',
+                },
+                {
                     name: 'About',
                     path: '/about',
                     icon: 'mdi-information-outline',
