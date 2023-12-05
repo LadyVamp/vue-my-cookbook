@@ -223,7 +223,7 @@
         "7": "Сварить лапшу в соответствии с инструкцией на упаковке",
         "8": "Выложить лапшу по порциям, а сверху — овощи с мясом в подливе"
       },
-      "imageLink": "https://toprecepty.ru/wp-content/uploads/2020/01/lagman-uzbekskij.jpg",
+      "imageLink": "https://sun9-66.userapi.com/impg/Rzn0Woj5r99JpA9mSZiZFLR1bsZ_kHm4X-Va4A/moaV5yg5ENQ.jpg?size=1110x818&quality=96&sign=597a082cdb9055e338fea410792a212d&type=album",
       "originalLink": "https://povar.ru/recipes/lagman_klassicheskii-54519.html",
       "staple": "meat",
       "feature": "stewingdish",
@@ -2303,9 +2303,34 @@
         "3": "Если время года холодное, то нагреть молоко в микроволновке 1 минуту",
         "4": "Финики, молоко и специи поместить в стакан для блендера и измельчить блендером"
       },
-      "imageLink": null,
+      "imageLink": "https://sun1-84.userapi.com/impg/O1rAtOhYz5d6-nN0rrbJj1XJmC405mYx1VBfzg/xKWznZ1mGjo.jpg?size=1226x851&quality=96&sign=e6fe839ceb3fa71a02f5901189012bc0&type=album",
       "originalLink": null,
-      "staple": "dairy",
+      "staple": "dessert",
+      "feature": "fast",
+      "season": "all",
+      "isDiet": true
+    },
+    {
+      "id": "Smuzi",
+      "title": "Смузи",
+      "servings": 2,
+      "ingredients": {
+        "Банан": "1 шт",
+        "Яблоко": "1 шт",
+        "Петрушка": "1 пучок"
+      },
+      "note": "",
+      "time": 0,
+      "steps": {
+        "1": "Удалить сердцевину из яблока, положить в блендер",
+        "2": "Банан нарезать и положить в блендер",
+        "3": "Петрушку помыть и положить в блендер",
+        "4": "Добавить 1/2 стакана воды",
+        "5": "Взбить в режиме турбо 30 секунд"
+      },
+      "imageLink": "https://sun9-40.userapi.com/impg/mm_zaIETxVtqnuml9XVJKcp1bSOBG78e83V-CQ/jlb6dsnHq_k.jpg?size=1099x737&quality=96&sign=abd9f91dc1ab5cedda337a19a2038109&type=album",
+      "originalLink": null,
+      "staple": "vegetable",
       "feature": "fast",
       "season": "all",
       "isDiet": true
