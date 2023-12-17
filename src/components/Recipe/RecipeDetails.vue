@@ -123,7 +123,7 @@
                         </li>
                     </ul>
                 </div>
-                <div v-if="!isShowLinksSber && isShowLinksVprok && !isShowLinksLenta">
+                <div v-if="isShowLinksVprok && !isShowLinksSber && !isShowLinksLenta && !isShowLinksMetro">
                     <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
                         <li>
                             <span v-if="!isShowLinksVprok">{{ name }}</span>
@@ -165,7 +165,7 @@
                             <span v-if="!isShowLinksLenta">{{ name }}</span>
                             <span v-if="name.includes('||') && isShowLinksLenta">
                                 <span v-for="(item, index) in name.split('||')" :key="index">
-                                    <BaseLink :link="linkToProductInMetro(item)" :label="item" />
+                                    <BaseLink :link="linkToProductInLenta(item)" :label="item" />
                                 </span>
                             </span>
                             <BaseLink

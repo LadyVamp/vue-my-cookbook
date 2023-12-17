@@ -37,6 +37,7 @@ export default {
     },
     data() {
         return {
+            // TODO: сломалось сохранение настроек. Из-за этого на мобильном всегда отображаются ссылки
             isShowLinksSber: false,
             selectedShop: { value: 'auchan', text: 'Ашан' },
             shops: [],
