@@ -61,6 +61,14 @@
                             label="Показать ссылки на Впрок"
                             :disabled="isShowLinksSber || isShowLinksMetro || isShowLinksLenta"
                         ></v-switch>
+                        <v-icon
+                            v-if="isShowLinksVprok"
+                            color="accent"
+                            dark
+                            title="Этот магазин добавил проверку браузера"
+                        >
+                            mdi-biohazard
+                        </v-icon>
                     </v-col>
                     <v-col v-if="!isMobile" md="6" lg="3">
                         <v-switch
