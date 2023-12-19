@@ -3,17 +3,16 @@
   "version": "1.17.0",
   "private": true,
   "scripts": {
-    "start": "vue-cli-service serve",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build --base=./"
   },
   "dependencies": {
-    "axios": "^0.21.4",
-    "core-js": "^3.6.5",
+    "@vitejs/plugin-vue2": "^2.3.1",
+    "axios": "^0.27.2",
     "cyrillic-to-translit-js": "^3.2.1",
-    "eslint-config-prettier": "^8.5.0",
-    "vue": "^2.6.11",
+    "detect-incognito": "^1.0.0",
+    "vue": "^2.7.15",
     "vue-axios": "^3.2.4",
     "vue-meta": "^2.4.0",
     "vue-router": "^3.2.0",
@@ -22,24 +21,19 @@
     "vuex": "^3.6.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/eslint-config-airbnb": "^5.0.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "node-sass": "^6.0.1",
-    "sass": "~1.32.0",
-    "sass-loader": "^10.0.0",
-    "vue-cli-plugin-vuetify": "~2.4.3",
-    "vue-template-compiler": "^2.6.11",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-vue": "^9.18.1",
+    "prettier": "^3.1.0",
+    "sass": "~1.32.12",
+    "unplugin-vue-components": "^0.25.2",
+    "vite": "^4.5.0",
+    "vue-template-compiler": "^2.6.14",
     "vuetify-loader": "^1.7.0"
   },
   "engines": {
-    "node": ">=16.20.2",
-    "npm": ">=8.19.4"
+    "node": ">=18.19.0",
+    "npm": ">=10.2.3"
   }
 }

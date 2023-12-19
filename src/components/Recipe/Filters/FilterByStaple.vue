@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import IconStaple from '@/components/Recipe/Icons/IconStaple';
+import IconStaple from '@/components/Recipe/Icons/IconStaple.vue';
 
 export default {
     name: 'FilterByStaple',

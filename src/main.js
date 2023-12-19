@@ -10,19 +10,19 @@ import VueMeta from 'vue-meta';
 Vue.config.productionTip = false;
 Vue.use(VueMeta);
 Vue.use(VueYandexMetrika, {
-	id: 86162667,
-	router: router,
-	env: process.env.NODE_ENV,
-	clickmap: true,
-	trackLinks: true,
-	accurateTrackBounce: true,
-	webvisor: true
-})
+    id: 86162667,
+    router: router,
+    env: process.env.NODE_ENV,
+    clickmap: true,
+    trackLinks: true,
+    accurateTrackBounce: true,
+    webvisor: true,
+});
 
 new Vue({
-	router,
-	store,
-	vuetify,
-	axios,
-	render: (h) => h(App),
+    router,
+    store,
+    vuetify,
+    axios,
+    render: (h) => h(App),
 }).$mount('#app');

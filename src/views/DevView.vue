@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import LinkButton from '@/components/ui-components/LinkButton';
-import CyrillicTransliterator from '@/components/Recipe/CyrillicTransliterator';
+import LinkButton from '@/components/ui-components/LinkButton.vue';
+import CyrillicTransliterator from '@/components/Recipe/CyrillicTransliterator.vue';
 
 export default {
     components: {

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import IconFeature from '@/components/Recipe/Icons/IconFeature';
+import IconFeature from '@/components/Recipe/Icons/IconFeature.vue';
 
 export default {
     name: 'FilterByFeature',

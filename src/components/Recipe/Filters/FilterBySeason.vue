@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import IconSeason from '@/components/Recipe/Icons/IconSeason';
+import IconSeason from '@/components/Recipe/Icons/IconSeason.vue';
 
 export default {
     name: 'FilterBySeason',

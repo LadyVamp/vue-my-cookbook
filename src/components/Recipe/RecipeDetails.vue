@@ -220,11 +220,11 @@
 <script>
 import { mapActions } from 'vuex';
 import shopList from '/src/assets/shops.js';
-import BaseLink from '@/components/ui-components/BaseLink';
-import BackButton from '@/components/ui-components/BackButton';
-import IconStaple from '@/components/Recipe/Icons/IconStaple';
-import IconFeature from '@/components/Recipe/Icons/IconFeature';
-import IconSeason from '@/components/Recipe/Icons/IconSeason';
+import BaseLink from '@/components/ui-components/BaseLink.vue';
+import BackButton from '@/components/ui-components/BackButton.vue';
+import IconStaple from '@/components/Recipe/Icons/IconStaple.vue';
+import IconFeature from '@/components/Recipe/Icons/IconFeature.vue';
+import IconSeason from '@/components/Recipe/Icons/IconSeason.vue';
 
 export default {
     name: 'RecipeDetails',

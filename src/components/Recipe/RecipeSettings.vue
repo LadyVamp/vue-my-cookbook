@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import BaseButton from '@/components/ui-components/BaseButton';
+import BaseButton from '@/components/ui-components/BaseButton.vue';
 import shopList from '/src/assets/shops.js';
 
 export default {

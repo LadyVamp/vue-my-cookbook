@@ -84,13 +84,13 @@
 </template>
 
 <script>
-import IconStaple from '@/components/Recipe/Icons/IconStaple';
-import IconFeature from '@/components/Recipe/Icons/IconFeature';
-import IconSeason from '@/components/Recipe/Icons/IconSeason';
+import IconStaple from '@/components/Recipe/Icons/IconStaple.vue';
+import IconFeature from '@/components/Recipe/Icons/IconFeature.vue';
+import IconSeason from '@/components/Recipe/Icons/IconSeason.vue';
 import { mapActions, mapGetters } from 'vuex';
-import FilterByStaple from '@/components/Recipe/Filters/FilterByStaple';
-import FilterByFeature from '@/components/Recipe/Filters/FilterByFeature';
-import FilterBySeason from '@/components/Recipe/Filters/FilterBySeason';
+import FilterByStaple from '@/components/Recipe/Filters/FilterByStaple.vue';
+import FilterByFeature from '@/components/Recipe/Filters/FilterByFeature.vue';
+import FilterBySeason from '@/components/Recipe/Filters/FilterBySeason.vue';
 
 export default {
     name: 'RecipesList',

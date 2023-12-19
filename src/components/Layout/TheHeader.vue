@@ -30,7 +30,7 @@
                     alt="Logo"
                     class="shrink mr-2"
                     contain
-                    src="../../assets/logo.png"
+                    :src="logoUrl"
                     transition="scale-transition"
                     width="40"
                     title="На главную"
@@ -52,11 +52,14 @@ export default {
             required: true,
         },
     },
-    data: () => ({
-        title: 'KISS recipes',
-        subtitle: 'Keep it short and simple. Проверенные рецепты',
-        isShowDrawer: false,
-    }),
+    data() {
+        return {
+            title: 'KISS recipes',
+            subtitle: 'Keep it short and simple. Проверенные рецепты',
+            isShowDrawer: false,
+            logoUrl: new URL('@/assets/logo.png', import.meta.url).href,
+        };
+    },
 };
 </script>
 
