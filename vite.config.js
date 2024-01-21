@@ -8,7 +8,7 @@ const REPLACEMENT = `${path.resolve(__dirname, './src')}/`;
 // https://vitejs.dev/config/
 
 export default defineConfig({
-    base: '/vue-my-cookbook/',
+    base: 'https://ladyvamp.github.io/vue-my-cookbook/',
     define: {
         'process.env': {},
     },

@@ -40,7 +40,6 @@
                     @change="onServingsNumberChange()"
                 >
                 </v-select>
-                <v-switch v-model="isDiet" class="mx-4" label="Диетическое" @change="onChangeDiet"></v-switch>
             </div>
             <div class="my-4">
                 {{ filteredList.length }}
@@ -56,11 +55,7 @@
                         }"
                     >
                         <v-img
-                            :src="
-                                item.imageLink
-                                    ? item.imageLink
-                                    : 'https://sun9-30.userapi.com/impg/Z6fkeDwvqVVJMW8lviOyW1XyryvE90wVDnSDqw/XJRUwyS8L2s.jpg?size=380x300&quality=96&sign=93e6cf0b8c57ca7ad2c2608c01b4377a'
-                            "
+                            :src="'https://ladyvamp.github.io/vue-my-cookbook/recipe-images/' + item.id + '.jpg'"
                             height="200px"
                         >
                         </v-img>
@@ -70,9 +65,6 @@
                         <IconStaple :staple="item.staple" />
                         <IconFeature :feature="item.feature" />
                         <IconSeason :season="item.season" />
-                        <v-icon v-if="item.isDiet" color="blue-grey darken-2" title="Диетическое">
-                            mdi-dumbbell
-                        </v-icon>
                     </v-card-text>
                 </v-card>
             </v-col>
@@ -111,7 +103,6 @@ export default {
                 { value: 6, text: '6' },
             ],
             selectedServingsNumber: { value: null, text: 'Все' },
-            isDiet: false,
         };
     },
     mounted() {
@@ -181,13 +172,6 @@ export default {
             this.filteredList = this.getAllRecipes().filter(
                 (recipe) => recipe.servings === this.selectedServingsNumber.value,
             );
-        },
-        onChangeDiet() {
-            if (this.isDiet) {
-                this.filteredList = this.getAllRecipes().filter((recipe) => recipe.isDiet === this.isDiet);
-            } else {
-                this.showAllRecipes();
-            }
         },
     },
 };

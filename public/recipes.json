@@ -25,12 +25,9 @@
         "6": "Нарезать кубиками фету",
         "7": "Сложить все ингредиенты для салата в миску, заправить лимонным соком и маслом. Добавить оливки, соль, перец и орегано. Перемешать."
       },
-      "imageLink": "https://sun9-71.userapi.com/impg/bbV72L21y1AzLyxwtnCBKnpvs-aVQTIZXinnJA/CQkgJaTLYQ0.jpg?size=1121x723&quality=96&sign=74a12b7ed14014c0ef9526d7452f50f2&type=album",
-      "originalLink": "https://povar.ru/recipes/grecheskii_salat_s_bazilikom-14818.html",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer",
-      "isDiet": true
+      "season": "summer"
     },
     {
       "id": "Svinina-s-kartoshkoi-v-pakete-v-dukhovke",
@@ -52,12 +49,9 @@
         "6": "Застелить бумагой для выпечки форму для запекания",
         "7": "Проткнуть рукав сверху ножом в двух местах, выложить его в форму для запекания и отправить в разогретую духовку при 190 градусов на 1 час"
       },
-      "imageLink": "https://sun9-23.userapi.com/impg/Crm1dKkfo9Io94PHW7Tsq4tEnkS1k4rkvttwRA/fjC26JEZNDE.jpg?size=1600x899&quality=95&rotate=270&sign=5524bb1d5fb4da05cf31e99407690b52",
-      "originalLink": "https://povar.ru/recipes/svinina_s_kartoshkoi_v_pakete_v_duhovke-24690.html",
       "staple": "meat",
       "feature": "oven",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Makaroni-po-flotski",
@@ -75,12 +69,9 @@
         "3": "Готовые макароны откинуть на дуршлаг",
         "4": "Смешать макароны с жареным фаршем и луком"
       },
-      "imageLink": "https://sun9-73.userapi.com/impg/bLlwBPRXSaJGrTOBXdy-vg0GT89lzoi_LoHnLw/b8aoNoq9yV8.jpg?size=802x846&quality=96&sign=a39be6ce01c9a7f4d3417bc81bb83f62",
-      "originalLink": "https://eda.ru/recepty/pasta-picca/makarony-po-flotski-s-sochnym-farshem-80740",
       "staple": "meat",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Salat-s-tikvoi-i-sirom-brinza",
@@ -101,12 +92,9 @@
         "4": "Нарезать брынзу",
         "5": "Все смешать, посыпать тыквенными семеками и заправить кунжутным маслом"
       },
-      "imageLink": "https://sun9-24.userapi.com/impg/q7li-40_67CYr7UCQL0-Vp7yVYpq-jMoCvcbSg/lOhbB5H6ZFc.jpg?size=892x932&quality=96&sign=202d57cb6e9eaa4ccf2e6b7922b8541c",
-      "originalLink": "https://menunedeli.ru/recipe/salat-s-tykvoj-i-syrom-brynza/",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "autumn",
-      "isDiet": true
+      "season": "autumn"
     },
     {
       "id": "Salat-s-kuritsei-i-seldereem",
@@ -126,12 +114,9 @@
         "4": "Соединить все ингредиенты",
         "5": "Добавить перец и йогурт, перемешать"
       },
-      "imageLink": "https://s1.eda.ru/StaticContent/Photos/110816122025/141101151423/p_O.jpg",
-      "originalLink": "https://www.iamcook.ru/showrecipe/7085",
       "staple": "bird",
       "feature": "pot",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Gribnoi-sup-pyure",
@@ -156,12 +141,9 @@
         "8": "Добавить молоко",
         "9": "Взбить блендером до однородной массы"
       },
-      "imageLink": "https://sun9-9.userapi.com/impg/WykwPWPRL5aknOCoFmOMJBPmsE3H6amRNjDpQw/o4rICBE4tmc.jpg?size=895x925&quality=96&sign=46214ed237432f0c8b17cbd2692c1044",
-      "originalLink": "https://www.russianfood.com/recipes/recipe.php?rid=139033",
       "staple": "vegetable",
       "feature": "pot",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Kurinie-nozhki-zapechyonnie-s-kartofelem",
@@ -192,12 +174,9 @@
         "10": "Выложить куриные ножки в форму над овощами, накрыть фольгой",
         "11": "Запекать курицу с картофелем в духовке 1 час. Затем снять фольгу и запекать ещё 20 минут."
       },
-      "imageLink": "https://sun9-44.userapi.com/impg/Pz27skfxeJaBoWgtkFRzDReAvK1w2QtixC5gTQ/BdtPM7WukJ4.jpg?size=2076x1348&quality=96&rotate=180&sign=a5db96ae07878c3d37571af7ca34e9ba",
-      "originalLink": "https://www.russianfood.com/recipes/recipe.php?rid=148538",
       "staple": "bird",
       "feature": "oven",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Lagman",
@@ -223,12 +202,9 @@
         "7": "Сварить лапшу в соответствии с инструкцией на упаковке",
         "8": "Выложить лапшу по порциям, а сверху — овощи с мясом в подливе"
       },
-      "imageLink": "https://sun9-66.userapi.com/impg/Rzn0Woj5r99JpA9mSZiZFLR1bsZ_kHm4X-Va4A/moaV5yg5ENQ.jpg?size=1110x818&quality=96&sign=597a082cdb9055e338fea410792a212d&type=album",
-      "originalLink": "https://povar.ru/recipes/lagman_klassicheskii-54519.html",
       "staple": "meat",
       "feature": "stewingdish",
-      "season": "summer",
-      "isDiet": true
+      "season": "summer"
     },
     {
       "id": "Kuritsa-v-sirnom-souse",
@@ -249,12 +225,9 @@
         "4": "Добавить немного молока, чтобы было пожиже",
         "5": "Добавить соль и специи по вкусу"
       },
-      "imageLink": "https://sun9-51.userapi.com/impg/8WVPnpwK34dACh1xSJzYqJMEUZfK0mVBKs1xLQ/feiWSLRpReE.jpg?size=508x488&quality=96&sign=d9c44b034374fdb5ffe8420ea595b90e",
-      "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Ribnii-salat-iz-konservirovannoi-gorbushi",
@@ -279,12 +252,9 @@
         "7": "Добавить соль и специи по вкусу",
         "8": "Перемешать"
       },
-      "imageLink": "https://sun9-49.userapi.com/impg/dfsKV5bt2vib0_DI8ILCG6MDiN-nUlrzMW8QjA/XKzeFVlUdvo.jpg?size=1197x831&quality=96&sign=66d2a3fe3ae892eaa03cc98187bed285&type=album",
-      "originalLink": null,
       "staple": "fish",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Shashlik-na-shpazhkakh-v-dukhovke",
@@ -295,9 +265,9 @@
         "Лук репчатый": "2 шт",
         "Шампуры-шпажки": "10 шт",
         "Фольга алюминиевая": "1 слой",
-        "Приправа для шашлыка": "По вкусу"
+        "Приправа для мяса": "По вкусу"
       },
-      "note": "Если нет приправы для шашлыка, заменить на смесь перцев и хмели-сунели.",
+      "note": "",
       "steps": {
         "1": "Нарезать свинину на кусочки. Размером меньше, чем на обычный шашлык",
         "2": "Нарезать лук",
@@ -310,12 +280,9 @@
         "9": "Через 20 минут перевернуть шашлык на другую сторону и продолжать готовить еще 30 минут",
         "10": "Переложить горячее сочное мясо на тарелку и подать со свежим хлебом, зеленью и легким овощным салатиком"
       },
-      "imageLink": "https://sun9-45.userapi.com/impg/vQ0TodqUK9mYsYaHCnKaRVp55gc21XWduyp7ew/h-M60Mevdus.jpg?size=1600x899&quality=96&sign=99436265cce0eca0b3d7d89f8002ff44",
-      "originalLink": "https://www.youtube.com/watch?v=pmmWFOZCIww",
       "staple": "meat",
       "feature": "oven",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Gorokhovii-sup-s-kopchenoi-grudinkoi",
@@ -337,12 +304,9 @@
         "6": "Добавить грудинку и овощи в кастрюлю, варить 20 минут",
         "7": "Добавить бульонный кубик и варить 10 минут"
       },
-      "imageLink": "https://sun9-11.userapi.com/impg/jwu7moF3fsTfQt6vjbFQuRwWbpg7XaRwh3wM1Q/C4maSeWa2k8.jpg?size=1133x827&quality=96&sign=123567d3c808bc3dd3ad573c33cb27bf",
-      "originalLink": "https://povar.ru/recipes/gorohovyi_sup_s_kopchenoi_grudinkoi-32144.html",
       "staple": "meat",
       "feature": "pot",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Kartofelnaya-zapekanka-s-farshem",
@@ -368,12 +332,9 @@
         "10": "Посыпать сверху тертым сыром",
         "11": "Отправить в разогретую духовку на 20-30 минут, пока не зарумянится сыр"
       },
-      "imageLink": "https://sun9-3.userapi.com/impg/eAJ6gA9qNiC1GAT2472VOL1UHPBgyrQi2Kh5sQ/GZPjyx1PeAc.jpg?size=616x631&quality=96&sign=7b4de27c7d5dbbc79c0fb9017a3f2956",
-      "originalLink": "https://www.russianfood.com/recipes/recipe.php?rid=123023",
       "staple": "meat",
       "feature": "oven",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Tvorozhnaya-zapekanka",
@@ -396,43 +357,9 @@
         "3": "Смазать растительным маслом форму для запекания и вылить в неё твороженную массу",
         "4": "Запекать в духовке 40 минут"
       },
-      "imageLink": "https://sun9-73.userapi.com/impg/1jG9pYqZ53-p5K2xpBcrRY2Dzib8siu4rMp6mw/z2pBDR9ylUQ.jpg?size=1001x708&quality=96&sign=9af0331097b706e0bec27ffff8488967",
-      "originalLink": null,
       "staple": "dairy",
       "feature": "oven",
-      "season": "all",
-      "isDiet": true
-    },
-    {
-      "id": "Satsivi-iz-kuritsi",
-      "title": "Сациви из курицы",
-      "servings": 4,
-      "ingredients": {
-        "Куриная грудка": "800 г",
-        "Лук репчатый": "1 шт",
-        "Мука": "2 ч.л.",
-        "Уксус": "1,5 ст.л.",
-        "Чеснок": "4 зубчика",
-        "Грецкие орехи": "200 г",
-        "Хмели-сунели": "По вкусу",
-        "Перец красный молотый": "По вкусу"
-      },
-      "note": "Использовать куриную грудку на кости. Гарнир не нужен",
-      "steps": {
-        "1": "Курицу отварить 30 минут, бульон не выливать",
-        "2": "Лук обжарить на масле + мука",
-        "3": "Блендером: лук + мука + бульон + орехи + шафран + хмели-сунели + кориандр + соль + перец",
-        "4": "Перелить в сковороду + рубленная курица + уксус",
-        "5": "Томить 10 минут",
-        "6": "Добавить чеснок",
-        "7": "Убрать в холодильник"
-      },
-      "imageLink": null,
-      "originalLink": null,
-      "staple": "bird",
-      "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Tortilya-ovoshchnaya",
@@ -455,12 +382,9 @@
         "5": "Залить омлетной смесью. При желании посыпать сверху тертым сыром",
         "6": "Запекать в духовке 20-40 минут"
       },
-      "imageLink": "https://sun9-58.userapi.com/impg/S4vdRTBA3kL-vNjPfqEc-rg6l6rgofaXZ4oxfA/nnXGxD4dGg8.jpg?size=884x851&quality=96&sign=d863a0d6bbcda3c8a3e405f9d1205dcc",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "oven",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Kartofelnaya-zapekanka-s-gribami",
@@ -487,12 +411,9 @@
         "10": "Выложить оставшийся картофель. Посыпать сыром",
         "11": "Отправить в разогретую духовку на 20-30 минут, пока не зарумянится сыр"
       },
-      "imageLink": "https://sun9-74.userapi.com/impg/LYTGpHMLS0KgdUyvdUzR4zV-d-qirCsgfEboJw/IsL4Q628txs.jpg?size=1089x1330&quality=96&sign=306d659f676af0f1254edc1747743318",
-      "originalLink": "https://eda.ru/recepty/osnovnye-blyuda/kartofelnaja-zapekanka-s-gribami-sirom-31477",
       "staple": "vegetable",
       "feature": "oven",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Sup-s-kurinimi-nozhkami",
@@ -519,12 +440,9 @@
         "8": "Посолить, поперчить и добавить приправ по вкусу",
         "9": "Выключить огонь и дать настояться под крышкой"
       },
-      "imageLink": "https://sun9-7.userapi.com/impg/H15xVP40LlqlFIthlsm9Qzj2DIsWdlywtcTPRQ/c4HE0b0CDgw.jpg?size=2032x1337&quality=96&sign=e91dae747a9be6728baa38decb63a2f6",
-      "originalLink": "https://povar.ru/recipes/sup_s_kurinymi_nojkami-47839.html",
       "staple": "bird",
       "feature": "pot",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Vinegret",
@@ -550,39 +468,9 @@
         "8": "Квашеную капусту добавить к остальным ингредиентам",
         "9": "Заправить все маслом, посолить и поперчить. Перемешать"
       },
-      "imageLink": "https://sun9-60.userapi.com/impg/Z1QGqwAqTOLxosEkar_HhETnzDr_JiqOSszoSw/K2pHnagx5tk.jpg?size=499x527&quality=96&sign=8c9a0e201987159e29aa19463cb566d0",
-      "originalLink": "https://povar.ru/recipes/vinegret_ochen_prostoi_recept-58562.html",
       "staple": "vegetable",
       "feature": "pot",
-      "season": "all",
-      "isDiet": true
-    },
-    {
-      "id": "Salat-iz-redki-s-yablokom",
-      "title": "Салат из редьки с яблоком",
-      "servings": 2,
-      "ingredients": {
-        "Редька зеленая": "1 шт",
-        "Яблоки": "1 шт",
-        "Салат китайский || пекинская капуста": "1/2 кочана",
-        "Майонезный соус легкий": "По вкусу",
-        "Специи": "По вкусу"
-      },
-      "note": "",
-      "steps": {
-        "1": "Редьку почистить и натереть на крупной терке",
-        "2": "Яблоко нарезать",
-        "3": "Пекинскую капусту помыть, обсушить и порезать",
-        "4": "Все ингредиенты поместить в миску",
-        "5": "Добавить соль и специи по вкусу",
-        "6": "Добавить майонез и перемешать"
-      },
-      "imageLink": null,
-      "originalLink": null,
-      "staple": "vegetable",
-      "feature": "fast",
-      "season": "spring",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Sirnii-sup-by-Pup",
@@ -607,12 +495,9 @@
         "6": "Курицу обратно закинуть, нашинковав ее помельче",
         "7": "Добавить нарезанный кубиками плавленый сыр и специи"
       },
-      "imageLink": "https://sun1-22.userapi.com/impg/iIuJF0OrXADNAVGQMLc5oPSnSItGtZE_edniOg/sHtd8L8NyEI.jpg?size=893x840&quality=96&sign=8fab24d343ecc68bda8848c511daf18b",
-      "originalLink": null,
       "staple": "bird",
       "feature": "pot",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Plov-so-svininoi",
@@ -639,12 +524,9 @@
         "7": "Влить кипяток так, чтобы она на 1.5-2 сантиметра была выше риса. Готовить на большом огне до закипания",
         "8": "Затем убавить огонь, положить лавровый лист, соль и специи. Готовить еще 30 минут на медленном огне под закрытой крышкой"
       },
-      "imageLink": "https://sun9-36.userapi.com/impg/8OeN12W2VWYGAhKH78exwDnb6DwpQ64Li1YYyQ/9CW6gM63ILM.jpg?size=890x888&quality=96&sign=042a4a09ae822af4193a170727a30521",
-      "originalLink": "https://povar.ru/recipes/plov_v_utyatnice-15264.html",
       "staple": "meat",
       "feature": "stewingdish",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Grechka-s-shampinonami",
@@ -666,15 +548,12 @@
         "5": "Добавить соль, перец и специи",
         "6": "Закинуть обжаренные лук и грибы в кастрюлю с гречкой, перемешать"
       },
-      "imageLink": "https://sun9-67.userapi.com/impg/jWRabAZx0F33BURj8hDGw9U68TbizAyUZAQxzw/HLAxEEiBGdM.jpg?size=831x1080&quality=96&sign=672318361d77c90631898a9b4cebd4c0",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
-      "id": "Tabule-s-olivkami-i-marinovannimi-ogurtsami",
+      "id": "Tabule-s-olivkami",
       "title": "Табуле с оливками",
       "servings": 4,
       "ingredients": {
@@ -692,12 +571,9 @@
         "2": "Все овощи измельчить на мелкие кубики",
         "3": "Смешать овощи с крупой, заправить маслом, соком лимона, посолить и поперчить по вкусу"
       },
-      "imageLink": "https://sun9-79.userapi.com/impg/ALm6avWQkf-JXuH_nQDGOi3PTtnQDHFoOvbfiA/YimO3-xgiow.jpg?size=890x836&quality=96&sign=213e94178a8e926d8fce5d89f8f88a6d",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer",
-      "isDiet": true
+      "season": "summer"
     },
     {
       "id": "Pechen-po-stroganovski",
@@ -718,12 +594,9 @@
         "4": "Добавить сметану, соль, специи",
         "5": "Перемешать со сметаной в сковородке и прогреть до начала закипания (не кипятить)"
       },
-      "imageLink": "https://sun9-11.userapi.com/impg/7vYHEBtAtcf2Uc6Hi3llGk9XJiobpU88t1IjiQ/jvhJcWFBYZs.jpg?size=892x903&quality=96&sign=360396184df8a2c78627a33ee61752c9",
-      "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Pashtet",
@@ -750,12 +623,9 @@
         "8": "Пюрировать блендером",
         "9": "Охладить от 2 часов"
       },
-      "imageLink": "https://sun9-40.userapi.com/impf/palMIxEJXbJ0J8BU7jSPE41LzDTGCP-QMNQU8g/lxJqebMChIM.jpg?size=896x903&quality=96&sign=31c88055c5fbaee8f5b6f0c0493ae3f9",
-      "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Satsebeli",
@@ -771,7 +641,7 @@
         "Перец черный молотый": "1/4 ч.л.",
         "Хмели-сунели": "1 ч.л."
       },
-      "note": "Вместо кетчупа подходит к любому мясу или курице или хачапури",
+      "note": "TODO: сфоткать сацебели и заменить фотку. Вместо кетчупа подходит к любому мясу или курице или хачапури",
       "steps": {
         "1": "Зелень растереть с чесноком и специями",
         "2": "Добавить пасту, потом воду",
@@ -779,12 +649,9 @@
         "4": "или (еще ленивей) вместо шагов 1-3 измельчить все в блендере!",
         "5": "Выдержать в холодильнике около 2 часов перед употреблением"
       },
-      "imageLink": null,
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Lenivaya-achma-iz-lavasha",
@@ -811,12 +678,9 @@
         "10": "Выпекать 30 минут (до разрумянивания верхнего слоя)",
         "11": "Есть горячим или холодным"
       },
-      "imageLink": "https://sun9-45.userapi.com/impg/UCWHYlErtPrQ4bpVdIRkoHYKrBioRf_Q-B7kHA/_WCWnB5zzX0.jpg?size=1597x888&quality=96&sign=5811f08ed432a068932c306db1abc07d",
-      "originalLink": null,
       "staple": "dairy",
       "feature": "oven",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Salat-s-rukkoloi",
@@ -836,12 +700,9 @@
         "3": "Посыпать толченым грецким орехом",
         "4": "Заправить растительное масло + бальзамический уксус"
       },
-      "imageLink": "https://sun9-59.userapi.com/impg/D3nr3n5CHR7B8t72Lo-41lGOycMAcxHlQKJuTg/76lfTNzwhg8.jpg?size=1348x901&quality=96&sign=05854d6192b11890db60a92c27189157&type=album",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer",
-      "isDiet": true
+      "season": "summer"
     },
     {
       "id": "Salat-kuritsa-karri-s-ananasami",
@@ -860,12 +721,9 @@
         "3": "Добавить карри, соль, йогурт",
         "4": "Перемешать"
       },
-      "imageLink": "https://sun9-81.userapi.com/impg/m4WxQfZHsPZE_B_bLtI6AcFex5R7XxQVUyClXw/3fFZ6pi_hF4.jpg?size=885x890&quality=96&rotate=270&sign=0d1ac8c5be59e333265289f60d7b8707",
-      "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Svinina-so-struchkovoi-fasolyu",
@@ -887,12 +745,9 @@
         "6": "Смешать фасоль и мясо с луком",
         "7": "Подавать с соевым соусом"
       },
-      "imageLink": "https://sun9-45.userapi.com/impg/6CJW6UqASPtjEZfVwBUuJ98Gu1uiDAP56-S6Bg/iElb9rwdmlk.jpg?size=884x915&quality=96&sign=3ff6192101ff4bca457b6cc4cf3d4ae8",
-      "originalLink": null,
       "staple": "meat",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Zapechennaya-svinina-s-chesnokom",
@@ -914,12 +769,9 @@
         "5": "Мясо посолить, натереть специями, завернуть в фольгу в 2 слоя",
         "6": "Запекать в духовке 1 час 20 минут"
       },
-      "imageLink": "https://sun9-4.userapi.com/impg/_vBQR_AUCobmL6rzgeFQE_1TL75qp4qQ2o3dZQ/QpiqlTs_Ez8.jpg?size=894x853&quality=96&sign=f9bec55738c65d58cd4d1b0a4bc12ae2",
-      "originalLink": null,
       "staple": "meat",
       "feature": "oven",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Varenaya-kartoshka-s-seldyu",
@@ -940,12 +792,9 @@
         "5": "Открыть банки с сельдью, слить масло",
         "6": "Выложить картофель с укропом на тарелку и подать к столу горячим"
       },
-      "imageLink": "https://sun9-60.userapi.com/impg/tlYjF99Ujh5kyvZewfSFcaOhCd64myex2a8LlQ/3p7JneQOJmg.jpg?size=895x903&quality=96&sign=e5b48ed8a8b6b0213867dafd8cd6cbef",
-      "originalLink": null,
       "staple": "fish",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Shokoladnaya-kolbasa",
@@ -967,12 +816,9 @@
         "4": "Всыпать в кастрюлю, равномерно размешать",
         "5": "Вывалить смесь в плотный пакет, завернуть и положить в холодильник на несколько часов"
       },
-      "imageLink": "https://sun9-59.userapi.com/impg/mmpCK2k9h5m_V7YyXTlP7RRv6KU2IE-QaUOsTg/k5Me8lK4lkk.jpg?size=893x918&quality=96&sign=d587da95cb64d06a6b4e24f8e27d1d04",
-      "originalLink": null,
       "staple": "dessert",
       "feature": "pot",
-      "season": "winter",
-      "isDiet": false
+      "season": "winter"
     },
     {
       "id": "Tomatnii-sup-s-frikadelkami",
@@ -1001,12 +847,9 @@
         "9": "Добавить в сковороду томатную пасту, пропущенный через пресс чеснок и тушить овощи ещё 3-4 минуты",
         "10": "Добавить готовые лук, морковь и томатную пасту. Положить лавровый лист и специи по вкусу. Варить суп до готовности картофеля - примерно 10-12 минут"
       },
-      "imageLink": "https://sun1-23.userapi.com/impg/Shqqc8_k2bAQGNaoWIX2k_wOAtVtMXHzBS06mg/iiWBiOFtH_U.jpg?size=893x998&quality=96&rotate=270&sign=2bae99aa5b2dca663592f1e7a4ee0253",
-      "originalLink": "https://menunedeli.ru/recipe/dieticheskij-tomatnyj-sup-s-frikadelkami/",
       "staple": "meat",
       "feature": "pot",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Salat-s-krabovimi-palochkami",
@@ -1028,23 +871,20 @@
         "5": "Добавить соль, майонез и перец",
         "6": "Перемешать"
       },
-      "imageLink": "https://sun9-73.userapi.com/impg/qhdsEyldAuqWFcy0JZ7Q01KAezvr3N1RR3dO_A/QeCTZsEZEXU.jpg?size=885x834&quality=96&sign=07f106bcbf15efc4a883d8d068f27daf",
-      "originalLink": "https://lifehacker.ru/salaty-s-krabovymi-palochkami-recepty/",
       "staple": "fish",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Ris-pripusknoi",
-      "title": "Рис припускной на гарнир",
+      "title": "Рис припускной",
       "servings": 4,
       "ingredients": {
         "Рис": "1 чашка",
         "Лук репчатый": "1/2 шт",
         "Морковь": "1/2 шт"
       },
-      "note": "",
+      "note": "Гарнир",
       "steps": {
         "1": "Промыть рис",
         "2": "Порезать мелко лук, морковь",
@@ -1055,12 +895,9 @@
         "7": "Влить V воды = 1.5 V риса",
         "8": "Накрыть крышкой и готовить на медленном огне 10 минут"
       },
-      "imageLink": "https://sun9-66.userapi.com/impg/ldiaNNUDH6BG7glsI4a4FCMAIJyp60ehJyXRyg/SYk140T4fbw.jpg?size=867x922&quality=96&rotate=270&sign=05e1c2c331132113519dc1af6a898503",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Riba-zapechennaya-v-folge-i-dukhovke",
@@ -1080,12 +917,9 @@
         "3": "Рыбу натереть приправой и солью, завернуть в 2 слоя фольги. По желанию к рыбе можно добавить лук и морковь",
         "4": "Запекать рыбу 20 минут. Затем развернуть фольгу и запекать ещё 5 минут"
       },
-      "imageLink": "https://sun9-20.userapi.com/impg/SYzEH7bYUPxGnOu4Dcxm-yI-qz85vltQyv4MIg/HoElg69DQEk.jpg?size=874x794&quality=96&sign=d37c340f20716fe533d487102fd2efc9",
-      "originalLink": null,
       "staple": "fish",
       "feature": "oven",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Salat-iz-kapusti-i-morkovi",
@@ -1103,12 +937,9 @@
         "3": "Морковь почистить и натереть на крупной терке",
         "4": "Сложить все ингредиенты для салата в миску, заправить уксусом. Перемешать."
       },
-      "imageLink": "https://sun1-90.userapi.com/impg/KD5wSYx45Uq9pzoh_uTrj7Vre3pnZwVGb0ffYw/ILQ4mVk80EI.jpg?size=652x747&quality=96&sign=a2c4f9f19499454fef2e2d277ce9fef2",
-      "originalLink": "https://art-lunch.ru/recipe/salat-iz-kapusty-i-morkovi_foto/",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Meksikanskii-mix-s-myasom",
@@ -1125,12 +956,9 @@
         "2": "Мясо нарезать на кусочки 1,5-2 см",
         "3": "Обжарить на растительном масле с двух сторон по 4 минуты. Добавить специи, посолить"
       },
-      "imageLink": "https://sun9-11.userapi.com/impg/dOoZOeKOQVl91ZpdxNwLEKuls6jOwCnZq6NbdA/LJh-Bp6R1us.jpg?size=891x920&quality=96&sign=9a71ab94eb49a9987cca2c33263b3e90",
-      "originalLink": "https://bonduelle.ru/recipes/hot/meksikanskiy-miks-s-govyadinoy/",
       "staple": "meat",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Sardelki-s-grechkoi",
@@ -1151,12 +979,9 @@
         "5": "Добавить сливочное масло, хмели-сунели, посолить",
         "6": "Перемешать"
       },
-      "imageLink": "https://sun9-83.userapi.com/impg/JkdEGwaldFGCbsQTkHV_ZMKmkTgEAw-APSFjyw/9U9_9-5pPPc.jpg?size=861x1080&quality=96&rotate=90&sign=71e6ca3c6cd6b6055d8ac019aa91489c",
-      "originalLink": null,
       "staple": "meat",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Morkovnii-salat-s-sirom-i-chesnokom",
@@ -1175,12 +1000,9 @@
         "3": "Чеснок раздавить через давилку",
         "4": "Все свалить в одну миску, заправить сметаной, перемешать"
       },
-      "imageLink": "https://sun9-19.userapi.com/impg/DAPcJypYGKnlniYvZamWa7fIZ6N83MJlDgvidg/9Y1j9PiOfTU.jpg?size=890x917&quality=96&sign=483335fad34e702b905b9c15ef0661d0",
-      "originalLink": "https://eda.ru/recepty/salaty/morkovnij-salat-s-sirom-i-chesnokom-48434",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Tushenaya-kartoshka-s-myasom",
@@ -1191,8 +1013,7 @@
         "Картофель": "1 кг",
         "Лук репчатый": "1 шт",
         "Морковь": "1 шт",
-        "Хмели-сунели": "По вкусу",
-        "Смесь перцев": "По вкусу"
+        "Приправа для мяса": "По вкусу"
       },
       "note": "",
       "steps": {
@@ -1202,12 +1023,9 @@
         "4": "Добавить к пассировке, накрыть крышкой, тушить 45 минут. Добавить немного воды",
         "5": "Добавить картошку и специи, тушить еще 30 минут"
       },
-      "imageLink": "https://sun9-74.userapi.com/impg/U9SGj6BalXJqp6uxmAuZEe2cqAl7FAQxDTdLvA/iMTM72CW1wo.jpg?size=1502x848&quality=96&sign=cb441a1d21c02bba580e687a63209d33&type=album",
-      "originalLink": null,
       "staple": "meat",
       "feature": "stewingdish",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Chevapchichi",
@@ -1223,12 +1041,9 @@
         "3": "Аккуратно перевернуть на другую сторону и жарить еще 3 минуты",
         "4": "Убрать колбаски со сковородки (иначе они продолжат жариться и получатся угольки). Подавать со свежими овощами"
       },
-      "imageLink": "https://sun9-29.userapi.com/impg/ZBd4wL4y4PXBeZJmLz__V4hSkXEnQAd3f7pBNw/pC4qZZ4Jcp8.jpg?size=709x866&quality=96&sign=b816bdce1b49e27a933f1daf98f50707",
-      "originalLink": null,
       "staple": "meat",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Salat-iz-chechevitsi-s-seldereem-i-fetoi",
@@ -1251,12 +1066,9 @@
         "3": "Приготовить заправку: смешать оливковое масло, горчицу, уксус, перец и соль",
         "4": "Добавить чечевицу, полить все заправкой и перемешать"
       },
-      "imageLink": "https://sun9-79.userapi.com/impg/ZD1vuKQ2LwK_4Tw9IkZyQg0JMf9QtXYOFKT0Jw/vSaUXsBkM7I.jpg?size=893x927&quality=96&sign=0191076f5802791d21d921eedf163f54",
-      "originalLink": "https://www.edimdoma.ru/retsepty/40621-salat-iz-chechevitsy-s-seldereem-i-fetoy",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Testo-dlya-blinov",
@@ -1273,12 +1085,9 @@
       "steps": {
         "1": "Все перемешать и в пластиковую 1,5-литровую бутылку залить"
       },
-      "imageLink": "https://sun9-78.userapi.com/impg/eHqy-oBLqqJ8Tjv3oxHnJF9tKAu_xSEYpn0rTg/5Xar2HiVvdY.jpg?size=525x505&quality=96&sign=6a07a6276b54c784d133ab384693bbdd",
-      "originalLink": null,
       "staple": "dessert",
       "feature": "pot",
-      "season": "winter",
-      "isDiet": false
+      "season": "winter"
     },
     {
       "id": "Zapechennie-kurinie-okorochka",
@@ -1299,12 +1108,9 @@
         "3": "Чеснок раздавить через давилку",
         "4": "Куриные окорочка натереть специями и завернуть в фольгу, запечь 1 час 20 минут"
       },
-      "imageLink": "https://sun9-88.userapi.com/impg/2Zby4VUL_aQHGtabXOaX2Krk0qE5pStuGeSkpA/a5v-ZCsTCUo.jpg?size=544x786&quality=96&sign=e4ef99ad9dad46436cc0e6166a39f5e3",
-      "originalLink": null,
       "staple": "bird",
       "feature": "oven",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Salat-iz-redki-morkovi-i-yaitsa",
@@ -1324,12 +1130,9 @@
         "5": "Добавить специи по вкусу",
         "6": "Заправить маслом и перемешать"
       },
-      "imageLink": "https://sun1-84.userapi.com/impf/XnoXqAoDonbjGrONQAHJStWjhs6VF_hGii0iww/1TPkmB4xIn0.jpg?size=519x575&quality=96&sign=339ffa84d05c516d0ea09c131385f40b",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Morkov-po-koreiski",
@@ -1358,12 +1161,9 @@
         "8": "100 мл растительного масла разогреть на сковороде до дыма (но не перегревать), влить в морковь",
         "9": "Выдержать в холодильнике от 12 часов"
       },
-      "imageLink": "https://sun9-47.userapi.com/impf/g7_exxcQhQtRvq89kQ7aqf0tt00LL_4QzprTJQ/r-7LOAECAZs.jpg?size=799x879&quality=96&sign=7d6b514e07d32188286c6347fcf27e16",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "pot",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Kroketi-kartofelnie",
@@ -1383,12 +1183,9 @@
         "4": "Налепить маленьких котлеток, обвалять в муке",
         "5": "Жарить на сковороде на растительном масле по 5-8 минут с каждой стороны"
       },
-      "imageLink": "https://sun9-39.userapi.com/impf/DxTKI0r2W4j2AOs3Ufpo6HDJce2w-BbT6uBNQQ/4XZ3vBxh19o.jpg?size=524x589&quality=96&sign=638a92aea09c23a466a9880bebeb4bb0",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "pot",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Sirnaya-lepeshka",
@@ -1408,12 +1205,9 @@
         "4": "Вылить смесь на сковороду, накрыть крышкой, жарить 7 минут с одной стороны на медленном огне",
         "5": "Аккуратно перевернуть и жарить 4 минуты с другой стороны"
       },
-      "imageLink": "https://sun9-59.userapi.com/s/v1/if2/3ovpcxfpS3jG20X2LgpH4vOmNF-7IBDosPd3gsTFGFZzz8IHfQEv3FMGtxkfM09Fv88JtxiKa-bB7Ihbru_txzfP.jpg?size=671x897&quality=96",
-      "originalLink": "https://www.povarenok.ru/recipes/show/91090/",
       "staple": "dairy",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Salat-letnii-s-redisom",
@@ -1431,12 +1225,9 @@
         "2": "Добавить соль и специи по вкусу",
         "3": "Добавить масло и перемешать"
       },
-      "imageLink": "https://sun1-97.userapi.com/s/v1/ig2/76ZML0q8YiUjWrApdN6_Tq1dw-9as-Ky8rZ-PJ_1yy5IxYU9Usci0x6LcKiASHirIgT4AKnP7SywRBFkXaZtZpYF.jpg?size=802x827&quality=96",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer",
-      "isDiet": true
+      "season": "summer"
     },
     {
       "id": "Salat-letnii-s-zelenyu",
@@ -1456,12 +1247,9 @@
         "2": "Добавить соль и специи по вкусу",
         "3": "Добавить масло и перемешать"
       },
-      "imageLink": "https://sun9-80.userapi.com/s/v1/ig2/hCImC_7aHCFMbyrDJ2VUIdgBIZ7gcDerJuMk7XDc16MsjTif52BaPL3dAOj5eZOxIU7Y7hoZiY2ywf4z_kUFOMXY.jpg?size=642x736&quality=96",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer",
-      "isDiet": true
+      "season": "summer"
     },
     {
       "id": "Grechnevaya-lapsha-s-kuritsei-i-ovoshchami",
@@ -1485,12 +1273,9 @@
         "7": "Обжарить до готовности курицы",
         "8": "Добавить специи и кунжут, посолить"
       },
-      "imageLink": "https://sun9-54.userapi.com/impg/eDGLIX_6qfnxms8J7TfKPFJRpIbgQ3Yj61E3Kg/q-sbFLg0qtU.jpg?size=716x706&quality=96&sign=e4221210c4bda9d55e5d513b7b30d7cb",
-      "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "summer",
-      "isDiet": true
+      "season": "summer"
     },
     {
       "id": "Okroshka",
@@ -1519,12 +1304,9 @@
         "6": "Поставить в холодильник на 2 часа",
         "7": "Сервировка. Положить заправленную настоявшуюся окрошку в глубокие тарелки. Залить квасом. Сверху ложку сметаны, посыпать мелко нарубленным белком и зеленью"
       },
-      "imageLink": "https://sun1-85.userapi.com/impg/5VATLieNbQmGkCYskaz2NAql9Ufv2Dg_Rsa35A/kkoBDKPS-kM.jpg?size=844x876&quality=96&sign=b42a82dfe210d93768297239e5292bbb",
-      "originalLink": null,
       "staple": "meat",
       "feature": "pot",
-      "season": "summer",
-      "isDiet": false
+      "season": "summer"
     },
     {
       "id": "Svinie-rebrishki-na-mangale",
@@ -1552,12 +1334,9 @@
         "5": "Жарить на решетке 15-20 минут",
         "6": "Подавать с лавашом и летним салатом"
       },
-      "imageLink": "https://sun9-85.userapi.com/impg/6Aysrnm0r2csr9AVCKcg_NET_fGq-nETsUeSiw/gzZPUiEqpbg.jpg?size=815x716&quality=96&sign=6ef5fbb116d1dbd48bc9ea262e44f2c8",
-      "originalLink": "https://lafoy.ru/svinye-rebryshki-na-mangale-recepty-1949",
       "staple": "meat",
       "feature": "grill",
-      "season": "summer",
-      "isDiet": false
+      "season": "summer"
     },
     {
       "id": "Gaspacho",
@@ -1579,12 +1358,9 @@
       "steps": {
         "1": "Порезать все и измельчить блендером"
       },
-      "imageLink": "https://sun9-42.userapi.com/impg/SuXFBwpIFZEaZfm9Mf4Dt1cu6cJrXS6B_RGZFw/_77EHFBfiD8.jpg?size=1167x742&quality=96&sign=c4afa6761e9046ccc9299d33cb1cca68",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer",
-      "isDiet": false
+      "season": "summer"
     },
     {
       "id": "Zharenaya-kartoshka-s-lukom",
@@ -1603,12 +1379,9 @@
         "4": "Все хорошо перемешать и готовить на среднем огне минут 15, периодически помешивая",
         "5": "Добавить специи и посолить"
       },
-      "imageLink": "https://sun9-14.userapi.com/impg/gED8Su6SEahgMCBEiJ8h-kOBQrje_da5ThQOWw/UgjPLjPjQoM.jpg?size=940x817&quality=96&sign=15e3bfa5dfda91277b497410717a6bd2",
-      "originalLink": "https://1000.menu/cooking/37550-jarenaya-kartoshka-s-lukom-na-skovorode",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Shashlik-iz-svinini",
@@ -1635,12 +1408,9 @@
         "5": "Жарить на шампурах 15-20 минут",
         "6": "Подавать с лавашом и летним салатом"
       },
-      "imageLink": "https://sun9-65.userapi.com/impg/rb4pOlyT0N4uMnxTJTkbMzeWTE8kzuBGGKsh9g/MSVrYbUQ9xU.jpg?size=796x772&quality=96&sign=cf2658aab85961f5f4adb463529f0ea3",
-      "originalLink": null,
       "staple": "meat",
       "feature": "grill",
-      "season": "summer",
-      "isDiet": false
+      "season": "summer"
     },
     {
       "id": "Shashlik-iz-govyadini",
@@ -1669,12 +1439,9 @@
         "6": "Жарить на шампурах 15-20 минут",
         "7": "Подавать с лавашом и летним салатом"
       },
-      "imageLink": "https://sun9-82.userapi.com/impg/-mQmvCfF-NI_8NQ_BILyCkv8jCfRbzFgujzJhA/83WzSK2jUVY.jpg?size=802x904&quality=96&sign=9b98a71d629b281985ce24a4a7b25f83",
-      "originalLink": null,
       "staple": "meat",
       "feature": "grill",
-      "season": "summer",
-      "isDiet": false
+      "season": "summer"
     },
     {
       "id": "Shashlik-iz-kuritsi",
@@ -1704,12 +1471,9 @@
         "6": "Жарить голени на шампурах 15-20 минут",
         "7": "Подавать с лавашом и летним салатом"
       },
-      "imageLink": "https://sun9-79.userapi.com/impg/6fyDeUu91uRPuq-qHXj6Nu9LAhwokbc3GOL9bg/ZffoTnzNgFY.jpg?size=1233x848&quality=96&sign=7953cd47532938109c6a869750af3ae1",
-      "originalLink": null,
       "staple": "meat",
       "feature": "grill",
-      "season": "summer",
-      "isDiet": false
+      "season": "summer"
     },
     {
       "id": "Sosiski-s-grechkoi",
@@ -1728,12 +1492,9 @@
         "4": "Варить 7 минут после закипания воды",
         "5": "Добавить сливочное масло, посолить, перемешать"
       },
-      "imageLink": "https://sun9-85.userapi.com/impg/EUHVIKxG4ojVQFtEkMRS3ZI6k_LDMGdVBX9hHQ/UIe3bBPUIvE.jpg?size=1192x695&quality=96&sign=e433b2b4690bc709ed40485b766222a0",
-      "originalLink": null,
       "staple": "meat",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Zharenie-kurinie-nozhki",
@@ -1752,12 +1513,9 @@
         "3": "Чеснок очистить, мелко нарезать и добавить на сковороду",
         "4": "Жарить на среднем огне под крышкой 15 минут, помешивая"
       },
-      "imageLink": "https://sun1-17.userapi.com/impg/vztyVQbpJciYY3D70iXA95ugxQuFIEsA0n98Sw/tV3CzzcGTB0.jpg?size=1252x850&quality=96&sign=3cbe46a08a11fa890a7e7e29f8a4a9b0",
-      "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Shashlik-na-kefire-iz-svinini",
@@ -1785,12 +1543,9 @@
         "5": "Жарить на шампурах 15-20 минут",
         "6": "Подавать с лавашом и летним салатом"
       },
-      "imageLink": "https://sun9-7.userapi.com/impg/c7QHWU8d4oHRwUEcJJ3Ai7R7awKLi-HPG-k_Lw/Pn_GTuOQHzk.jpg?size=1254x828&quality=96&sign=39014f11a7ec83b066e0c53fb4056252",
-      "originalLink": "https://www.chefmarket.ru/blog/shashlyk-na-kefire-iz-svininy-poshagovyj-recept/",
       "staple": "meat",
       "feature": "grill",
-      "season": "summer",
-      "isDiet": false
+      "season": "summer"
     },
     {
       "id": "Sendvich-s-vetchinoi-i-sirom",
@@ -1809,12 +1564,9 @@
         "4": "Когда загорится индикатор готовности к работе, открыть крышку и выложить сэндвичи. Жарить 2 минуты",
         "5": "Снять сэндвичи щипцами"
       },
-      "imageLink": "https://sun9-60.userapi.com/impg/AKndELhxibFMjYsieuq6koLIcjPO0II_OyiPlA/9aHiM6CiEMI.jpg?size=2560x1439&quality=95&sign=527c3d19c47ac8f397ccbf17711bcf57",
-      "originalLink": "https://redmond.company/ru/recipes/26/1292/",
       "staple": "meat",
       "feature": "toaster",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Lobio",
@@ -1826,7 +1578,7 @@
         "Лук репчатый": "1 шт",
         "Хмели-сунели": "По вкусу"
       },
-      "note": "Отношение фасоли к орехам 1 к 0,5-1",
+      "note": "TODO: сфоткать лобио и заменить фотку. Отношение фасоли к орехам 1 к 0,5-1",
       "steps": {
         "1": "Фасоль поставить замачивать на сутки",
         "2": "Фасоль сварить до готовности (20-30 минут)",
@@ -1834,23 +1586,20 @@
         "4": "Добавить к луку орехи, фасоль, специи. По желанию + чеснок и петрушка",
         "5": "Чуть-чуть обжарить и готово"
       },
-      "imageLink": null,
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "pot",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
-      "id": "Varenoe-kurinoe-file-s-burim-risom",
-      "title": "Вареное куриное филе с бурым рисом",
+      "id": "Varenoe-kurinoe-file-s-korichnevim-risom",
+      "title": "Вареное куриное филе с коричневым рисом",
       "servings": 4,
       "ingredients": {
         "Филе куриное охлажденное": "700 г",
         "Рис бурый": "1 чашка",
         "Лавровый лист": "1 шт"
       },
-      "note": "Вместо риса на гарнир подойдет гречка",
+      "note": "TODO: на фото бурый рис. Заменить на фото с коричневым рисом",
       "steps": {
         "1": "Поставить варить рис, 30 минут после закипания",
         "2": "Куриное филе промыть, положить в кастрюлю, добавить лавровый лист, залить водой",
@@ -1858,12 +1607,9 @@
         "4": "Извлечь куриное филе из бульона",
         "5": "Выложить рис на тарелку, нарезать филе ломтиками"
       },
-      "imageLink": "https://sun9-71.userapi.com/impg/pr3dBFRykNPl5Brs7ux5jgZhyv-LB7YBaq7E6g/60sSsjecb1E.jpg?size=1241x892&quality=96&sign=8664192b7541cbab0470f3e0220f05be",
-      "originalLink": "https://povar.ru/recipes/dieticheskaya_kurica_s_grechkoi-78327.html",
       "staple": "bird",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Kuritsa-po-stroganovski",
@@ -1887,12 +1633,9 @@
         "6": "Добавить соль и специи",
         "7": "Добавить сметану, перемешать, томить на медленном огне без кипения"
       },
-      "imageLink": "https://sun9-61.userapi.com/impg/UeSdXJZXrpf2I_8df3GZ7YWaC9mMntDNDCnCBg/Oy9rx7MvtHw.jpg?size=1076x723&quality=96&sign=278a9c401ed0eeb714c363c23d58d960",
-      "originalLink": null,
       "staple": "bird",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Salat-tsezar",
@@ -1918,12 +1661,9 @@
         "6": "Листья салата порвать руками",
         "7": "Все ингредиенты поместить в миску, заправить соусом, перемешать"
       },
-      "imageLink": "https://sun1-27.userapi.com/impg/Kz_obrBG0lNaDf70KCQRYyRnDkANc9uZT-pdXg/0KXSRfdOXBw.jpg?size=1270x865&quality=96&sign=9806c1080b6671a33528dd7e9fde968b&type=album",
-      "originalLink": "https://www.gastronom.ru/recipe/23698/salat-cezar-s-kuricej",
       "staple": "bird",
       "feature": "pot",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Kuritsa-po-frantsuzski-s-kartofelem",
@@ -1945,12 +1685,9 @@
         "4": "Полить помидоры майонезом, посыпать тертым сыром",
         "5": "Накрыть форму фольгой и поставить в духовку, разогретую до 180 градусов на 45 минут"
       },
-      "imageLink": "https://sun9-8.userapi.com/impg/fkcYefWXCLx4xhoL0rfPjHsmUNAGJZofkxysMQ/ju8M0_do0I8.jpg?size=1198x820&quality=96&sign=54c779d20f327c433c3595a6e8e91240",
-      "originalLink": "https://www.maggi.ru/recipe/kurica-po-francuzski-s-kartofelem",
       "staple": "bird",
       "feature": "oven",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Fruktovii-salat",
@@ -1969,12 +1706,9 @@
         "1": "Фрукты почистить, нарезать, сложить в миску",
         "2": "Заправить йогуртом, перемешать"
       },
-      "imageLink": "https://sun9-78.userapi.com/impf/O_BPhFJWNOfMPpSH9VvjdUPecEZF964P2fZDSA/G9A7uZd4SAQ.jpg?size=1352x743&quality=96&sign=12508f4131df6c0d9952d50555e04aca",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Ovsyanka-na-moloke",
@@ -1994,12 +1728,9 @@
         "4": "Добавить молоко, сахар, масло. Хорошо размешать",
         "5": "Томить на самом малом огне около 5 минут, помешивая"
       },
-      "imageLink": "https://sun9-45.userapi.com/impg/EsMXlUfbgFWghxnYSwmUUHShkz_QegkLqetm5g/-IMBzXdm_Wc.jpg?size=1090x621&quality=96&sign=ab2e69f25dc2deb78e3ff19fef750057&type=album",
-      "originalLink": null,
       "staple": "dairy",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Steik",
@@ -2024,12 +1755,9 @@
         "8": "Снять стейки с огня, положить на тарелки, поперчить, накрыть фольгой и дать отдохнуть 5 минут",
         "9": "Подавать с овощами"
       },
-      "imageLink": "https://sun9-3.userapi.com/impg/bw9bD_wZQpPITXpznC10GmMIieh8cCKJ4XWYCw/IvHcugA7Xio.jpg?size=1221x816&quality=96&sign=2bad4fc9eb7eb04e3de7e6e88870791e&type=album",
-      "originalLink": null,
       "staple": "meat",
       "feature": "grill",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Kurinoe-file-na-skovorode-gril",
@@ -2047,12 +1775,9 @@
         "5": "На разогретую сковороду-гриль брызнуть масло, положить стейки",
         "6": "Обжарить с обеих сторон по 2 минуты до образования небольшой корочки"
       },
-      "imageLink": "https://sun9-14.userapi.com/impg/jHk39KIhy_WagBDKZpQZIeHu55Epq9Q2VQt4pQ/dKiDEY6dGKA.jpg?size=1390x921&quality=96&sign=3c9a5c548cf58295b741da7b29f30f23&type=album",
-      "originalLink": "https://edanyam.ru/kurinaya-grudka-na-skovorode-gril/",
       "staple": "bird",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Indeika-s-chechevitsei-na-skovorode-gril",
@@ -2070,12 +1795,9 @@
         "4": "На разогретую сковороду-гриль брызнуть масло, положить стейки",
         "5": "Обжарить с обеих сторон по 3 минуты до образования небольшой корочки"
       },
-      "imageLink": "https://sun9-6.userapi.com/impg/2Bv63ZM9fgtYY-Gmn134aXRWodW039X6vqulQg/xKXjvkuM-K8.jpg?size=1193x802&quality=96&sign=1b0b2ac070fb47c5d08dd166dbe6ee89&type=album",
-      "originalLink": "",
       "staple": "bird",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Makaroni-s-tushenkoi",
@@ -2091,12 +1813,9 @@
         "2": "Консервы вскрыть и размять вилкой",
         "3": "Добавить тушенку к макаронам, перемешать"
       },
-      "imageLink": "https://sun1-19.userapi.com/impg/3hKG6qxsfmGEZd1BcVoNu9Yq8uHIgSSahFZuRg/amktHm3d5JU.jpg?size=2560x1442&quality=95&sign=7c889804c4063395f09df2b8399b8df1&type=album",
-      "originalLink": null,
       "staple": "meat",
       "feature": "fast",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Ovsyanka-so-sgushchenkoi",
@@ -2112,12 +1831,9 @@
         "2": "Слить воду",
         "3": "Добавить ложку сгущёнки, перемешать"
       },
-      "imageLink": "https://sun9-2.userapi.com/impg/sVKBVsF2yIiGtX00NbarcJlq9gxhELTPvAkQPQ/I2MXSWmQdb4.jpg?size=1595x896&quality=96&sign=8ad3124128d7839010519abec6a278e8&type=album",
-      "originalLink": null,
       "staple": "dairy",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Shashlik-iz-shampinonov",
@@ -2141,12 +1857,9 @@
         "4": "Жарить шампиньоны на шампурах 10-15 минут",
         "5": "Подавать с лавашом и летним салатом"
       },
-      "imageLink": "https://sun1-55.userapi.com/impg/5OZSHf26UGJeS3HZ85AyvvB4yoeKwXZRMXzEvw/RWANgkzsidw.jpg?size=1505x877&quality=96&sign=d7999becbdee11966d09604bffa6a62b&type=album",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "grill",
-      "season": "summer",
-      "isDiet": false
+      "season": "summer"
     },
     {
       "id": "Sup-iz-ribnikh-konservov",
@@ -2173,12 +1886,9 @@
         "9": "Посолить, поперчить и добавить приправ по вкусу",
         "10": "Выключить огонь, добавить и дать настояться под крышкой"
       },
-      "imageLink": "https://sun9-71.userapi.com/impg/PCoqIseX7FHZCqxhAI2OiA9ExIEYMUTQxZatNg/3kiC7_4vLoo.jpg?size=1649x906&quality=96&sign=bd67be28458ffcb373ff4265856f3743&type=album",
-      "originalLink": null,
       "staple": "fish",
       "feature": "pot",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Sup-rassolnik",
@@ -2200,12 +1910,9 @@
         "5": "Зажарка. Лук очистить и нарезать, морковь очистить и натереть на терке. Огурцы нарезать или натереть на терке. Разогреть сковороду, влить растительное масло и обжарить лук и морковь. Добавить огурцы и продолжать жарить около 10 минут. Закинуть зажарку в кастрюлю",
         "6": "Довести до кипения. Добавить лавровый лист, перец и соль. Через 10 минут рассольник готов"
       },
-      "imageLink": "https://sun9-31.userapi.com/impg/-1LRn98_CO2Sp63U_O7BCZwra8-zknMTQR7SkQ/cotEelLczuQ.jpg?size=1849x930&quality=96&sign=823634b28e50b7a7264206390428064c&type=album",
-      "originalLink": null,
       "staple": "meat",
       "feature": "pot",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Myatnyj-limonad",
@@ -2227,12 +1934,9 @@
         "6": "Остудить до тёплого состояния, процедить через сито",
         "7": "Добавить лимонный сок и убрать лимонад в холодильник до полного охлаждения"
       },
-      "imageLink": "https://sun9-54.userapi.com/impg/_WoVZSxP8ecBlA9XJcw-VlTGPV3YXDMw6PM7ZQ/qvyRY19Mrec.jpg?size=1642x926&quality=96&sign=77a5f22258814d4fd3a05a5ae33e924b&type=album",
-      "originalLink": "https://art-lunch.ru/recipe/myatnyj-limonad_foto/",
       "staple": "vegetable",
       "feature": "fast",
-      "season": "summer",
-      "isDiet": true
+      "season": "summer"
     },
     {
       "id": "File-kurinogo-bedra-na-skovorode-gril",
@@ -2251,12 +1955,9 @@
         "5": "На разогретую сковороду-гриль брызнуть масло, положить филе",
         "6": "Жарить 20 минут переворачивая каждые 2 минуты"
       },
-      "imageLink": "https://sun1-55.userapi.com/impg/HH9LvKplf_mjbMH5PTcEsfUXUDdloRviBAhpfw/bqkHLYo4zxc.jpg?size=1241x834&quality=96&sign=df5747fd1911eeb3b27a41de86f4ff3a&type=album",
-      "originalLink": "",
       "staple": "bird",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Sup-xarcho",
@@ -2279,12 +1980,9 @@
         "4": "Пока готовится зажарка, положить промытый рис и варить около 5 минут",
         "5": "Положить чеснок и приправу, варить 5 минут"
       },
-      "imageLink": "https://sun9-42.userapi.com/impg/OITxhI1Nkstc99AltOMEeK3iKHQz4q21xC1iGw/6GtgTT51V5M.jpg?size=957x785&quality=96&sign=b05bbee2eba06c4931bf528c0b8c589d&type=album",
-      "originalLink": "https://zefira.net/recipe/prostoj-recept-supa-xarcho/",
       "staple": "meat",
       "feature": "pot",
-      "season": "all",
-      "isDiet": false
+      "season": "all"
     },
     {
       "id": "Khushaf",
@@ -2303,12 +2001,9 @@
         "3": "Если время года холодное, то нагреть молоко в микроволновке 1 минуту",
         "4": "Финики, молоко и специи поместить в стакан для блендера и измельчить блендером"
       },
-      "imageLink": "https://sun1-84.userapi.com/impg/O1rAtOhYz5d6-nN0rrbJj1XJmC405mYx1VBfzg/xKWznZ1mGjo.jpg?size=1226x851&quality=96&sign=e6fe839ceb3fa71a02f5901189012bc0&type=album",
-      "originalLink": null,
       "staple": "dessert",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Smuzi-s-yablokom-bananom-i-petrushkoi",
@@ -2329,12 +2024,9 @@
         "4": "Добавить 1/2 стакана воды",
         "5": "Взбить в режиме турбо 30 секунд"
       },
-      "imageLink": "https://sun9-40.userapi.com/impg/mm_zaIETxVtqnuml9XVJKcp1bSOBG78e83V-CQ/jlb6dsnHq_k.jpg?size=1099x737&quality=96&sign=abd9f91dc1ab5cedda337a19a2038109&type=album",
-      "originalLink": null,
       "staple": "vegetable",
       "feature": "fast",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Sup-pyure-s-indeikoi",
@@ -2362,12 +2054,9 @@
         "9": "Хлеб нарезать кубиками и слегка подсушить на сковороде без масла",
         "10": "Взбить погружным блендером до однородной массы"
       },
-      "imageLink": "https://sun9-59.userapi.com/impg/BBz3gfPPMywdj7GFCSL6sOAIoEll-DzqqAckTQ/zK5AzzJt-so.jpg?size=1195x776&quality=96&sign=7839119a1c89ea755325d9a9d62d8fbb&type=album",
-      "originalLink": null,
       "staple": "bird",
       "feature": "pot",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Kartoshka-po-derevenski",
@@ -2391,12 +2080,9 @@
         "6": "Картошку выложить в 1 слой на противни, накрыть фольгой",
         "7": "Запекать в духовке 20 минут, затем снять фольгу и запекать еще 20 минут"
       },
-      "imageLink": "https://sun9-60.userapi.com/impg/RGWsBDULB98GY2ypsIn92VOxgHylfR4bN99Jlw/eAGQtPUYTKk.jpg?size=1441x900&quality=96&sign=1bd380e7f33f3d535780cc395a859dde&type=album",
-      "originalLink": "https://www.iamcook.ru/showrecipe/12922",
       "staple": "vegetable",
       "feature": "oven",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Venskie-vafli",
@@ -2420,12 +2106,9 @@
         "4": "Установить панели. Включить мультипекарь, закрыть крышку. Когда загорится индикатор готовности к работе, открыть крышку и выложить тесто в формы. Закрыть крышку",
         "5": "Выпекать в мультипекаре 15-18 минут"
       },
-      "imageLink": "https://sun9-72.userapi.com/impg/_VPg42vkQCDAXS82n65rS_Ugrw-QI1q9UwowPg/UzOhU5P531Y.jpg?size=1234x903&quality=96&sign=3d01a1fc22a45747f118c69d53053fa7&type=album",
-      "originalLink": null,
       "staple": "dairy",
       "feature": "toaster",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "Steik-lososya-na-skovorode-gril",
@@ -2445,12 +2128,9 @@
         "5": "Жарить стейки до побеления рыбы и образования румяной корочки (5-10 минут каждую сторону)",
         "6": "По желанию в процессе жарки досолить и добавить специи для рыбы"
       },
-      "imageLink": "https://sun9-10.userapi.com/impg/M-A6CoL-aMGnVBhwppoXvXqwQsLRAvyxRItgyA/9FUMwCr0CQI.jpg?size=1168x897&quality=96&sign=166f3aba8ed47ae21e279b9768bd2d2a&type=album",
-      "originalLink": null,
       "staple": "fish",
       "feature": "grill",
-      "season": "all",
-      "isDiet": true
+      "season": "all"
     },
     {
       "id": "template_id",
@@ -2472,12 +2152,9 @@
         "4": "",
         "5": ""
       },
-      "imageLink": null,
-      "originalLink": null,
       "staple": "vegetable | bird | meat | fish | dairy | dessert",
       "feature": "fast | oven | stewingdish | pot | grill | toaster",
-      "season": "all | winter | spring | summer | autumn",
-      "isDiet": false
+      "season": "all | winter | spring | summer | autumn"
     }
   ]
 }

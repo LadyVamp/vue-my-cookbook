@@ -10,18 +10,12 @@
         <v-row>
             <v-col cols="12" sm="6" md="4">
                 <v-img
-                    :src="
-                        recipe.imageLink
-                            ? recipe.imageLink
-                            : 'https://sun9-30.userapi.com/impg/Z6fkeDwvqVVJMW8lviOyW1XyryvE90wVDnSDqw/XJRUwyS8L2s.jpg?size=380x300&quality=96&sign=93e6cf0b8c57ca7ad2c2608c01b4377a'
-                    "
-                    height="250px"
-                >
-                </v-img>
+                    :src="'https://ladyvamp.github.io/vue-my-cookbook/recipe-images/' + recipe.id + '.jpg'"
+                    height="200px"
+                ></v-img>
                 <IconStaple :staple="recipe.staple" />
                 <IconFeature :feature="recipe.feature" />
                 <IconSeason :season="recipe.season" />
-                <v-icon v-if="recipe.isDiet" color="blue-grey darken-2" title="Диетическое"> mdi-dumbbell </v-icon>
             </v-col>
             <v-col sm="6" md="8">
                 <v-row>
