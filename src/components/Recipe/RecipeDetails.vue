@@ -22,7 +22,7 @@
                     <v-col v-if="!isMobile" md="6" lg="3">
                         <v-switch
                             v-model="isShowLinksSber"
-                            label="Показать ссылки на Сбермаркет"
+                            label="Ссылки на Сбермаркет"
                             :disabled="isShowLinksVprok || isShowLinksMetro || isShowLinksLenta"
                         >
                         </v-switch>
@@ -52,7 +52,7 @@
                     <v-col v-if="!isMobile" md="6" lg="3">
                         <v-switch
                             v-model="isShowLinksVprok"
-                            label="Показать ссылки на Впрок"
+                            label="Ссылки на Впрок"
                             :disabled="isShowLinksSber || isShowLinksMetro || isShowLinksLenta"
                         ></v-switch>
                         <v-icon
@@ -67,14 +67,14 @@
                     <v-col v-if="!isMobile" md="6" lg="3">
                         <v-switch
                             v-model="isShowLinksMetro"
-                            label="Показать ссылки на Метро"
+                            label="Ссылки на Метро"
                             :disabled="isShowLinksSber || isShowLinksVprok || isShowLinksLenta"
                         ></v-switch>
                     </v-col>
                     <v-col v-if="!isMobile" md="6" lg="3">
                         <v-switch
                             v-model="isShowLinksLenta"
-                            label="Показать ссылки на Ленту"
+                            label="Ссылки на Ленту"
                             :disabled="isShowLinksSber || isShowLinksVprok || isShowLinksMetro"
                         ></v-switch>
                     </v-col>
