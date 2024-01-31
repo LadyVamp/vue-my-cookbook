@@ -72,6 +72,9 @@
                             label="Ссылки на Перекресток"
                             :disabled="isShowLinksSber || isShowLinksVprok || isShowLinksMetro || isShowLinksLenta"
                         ></v-switch>
+                        <p v-if="isShowLinksPerekrestok">
+                            Кэшбэк от Тинькофф в январе и феврале 2024 на экспресс-доставку
+                        </p>
                     </v-col>
                     <v-col v-if="!isMobile" md="6" lg="3">
                         <v-switch
@@ -222,7 +225,7 @@
                             <span v-if="!isShowLinksPerekrestok">{{ name }}</span>
                             <span v-if="name.includes('||') && isShowLinksPerekrestok">
                                 <span v-for="(item, index) in name.split('||')" :key="index">
-                                    <BaseLink :link="linkToProductInLenta(item)" :label="item" />
+                                    <BaseLink :link="linkToProductInPerekrestok(item)" :label="item" />
                                 </span>
                             </span>
                             <BaseLink
