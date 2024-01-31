@@ -23,7 +23,9 @@
                         <v-switch
                             v-model="isShowLinksSber"
                             label="Ссылки на Сбермаркет"
-                            :disabled="isShowLinksVprok || isShowLinksMetro || isShowLinksLenta"
+                            :disabled="
+                                isShowLinksVprok || isShowLinksMetro || isShowLinksLenta || isShowLinksPerekrestok
+                            "
                         >
                         </v-switch>
                         <div v-if="isShowLinksSber && !isShowLinksVprok">
@@ -53,7 +55,9 @@
                         <v-switch
                             v-model="isShowLinksVprok"
                             label="Ссылки на Впрок"
-                            :disabled="isShowLinksSber || isShowLinksMetro || isShowLinksLenta"
+                            :disabled="
+                                isShowLinksSber || isShowLinksMetro || isShowLinksLenta || isShowLinksPerekrestok
+                            "
                         ></v-switch>
                         <v-icon
                             v-if="isShowLinksVprok"
@@ -63,19 +67,28 @@
                         >
                             mdi-biohazard
                         </v-icon>
+                        <v-switch
+                            v-model="isShowLinksPerekrestok"
+                            label="Ссылки на Перекресток"
+                            :disabled="isShowLinksSber || isShowLinksVprok || isShowLinksMetro || isShowLinksLenta"
+                        ></v-switch>
                     </v-col>
                     <v-col v-if="!isMobile" md="6" lg="3">
                         <v-switch
                             v-model="isShowLinksMetro"
                             label="Ссылки на Метро"
-                            :disabled="isShowLinksSber || isShowLinksVprok || isShowLinksLenta"
+                            :disabled="
+                                isShowLinksSber || isShowLinksVprok || isShowLinksLenta || isShowLinksPerekrestok
+                            "
                         ></v-switch>
                     </v-col>
                     <v-col v-if="!isMobile" md="6" lg="3">
                         <v-switch
                             v-model="isShowLinksLenta"
                             label="Ссылки на Ленту"
-                            :disabled="isShowLinksSber || isShowLinksVprok || isShowLinksMetro"
+                            :disabled="
+                                isShowLinksSber || isShowLinksVprok || isShowLinksMetro || isShowLinksPerekrestok
+                            "
                         ></v-switch>
                     </v-col>
                 </v-row>
@@ -98,7 +111,7 @@
                     {{ recipe.note }}
                 </p>
                 <p v-if="recipe.time" class="secondary--text">Время приготовления: {{ recipe.time }} минут</p>
-                <div v-if="!isShowLinksVprok && !isShowLinksMetro && !isShowLinksLenta">
+                <div v-if="!isShowLinksVprok && !isShowLinksMetro && !isShowLinksLenta && !isShowLinksPerekrestok">
                     <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
                         <li>
                             <span v-if="!isShowLinksSber">{{ name }}</span>
@@ -117,7 +130,15 @@
                         </li>
                     </ul>
                 </div>
-                <div v-if="isShowLinksVprok && !isShowLinksSber && !isShowLinksLenta && !isShowLinksMetro">
+                <div
+                    v-if="
+                        isShowLinksVprok &&
+                        !isShowLinksSber &&
+                        !isShowLinksLenta &&
+                        !isShowLinksMetro &&
+                        !isShowLinksPerekrestok
+                    "
+                >
                     <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
                         <li>
                             <span v-if="!isShowLinksVprok">{{ name }}</span>
@@ -135,7 +156,15 @@
                         </li>
                     </ul>
                 </div>
-                <div v-if="isShowLinksMetro && !isShowLinksSber && !isShowLinksVprok && !isShowLinksLenta">
+                <div
+                    v-if="
+                        isShowLinksMetro &&
+                        !isShowLinksSber &&
+                        !isShowLinksVprok &&
+                        !isShowLinksLenta &&
+                        !isShowLinksPerekrestok
+                    "
+                >
                     <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
                         <li>
                             <span v-if="!isShowLinksMetro">{{ name }}</span>
@@ -153,7 +182,15 @@
                         </li>
                     </ul>
                 </div>
-                <div v-if="isShowLinksLenta && !isShowLinksMetro && !isShowLinksSber && !isShowLinksVprok">
+                <div
+                    v-if="
+                        isShowLinksLenta &&
+                        !isShowLinksMetro &&
+                        !isShowLinksSber &&
+                        !isShowLinksVprok &&
+                        !isShowLinksPerekrestok
+                    "
+                >
                     <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
                         <li>
                             <span v-if="!isShowLinksLenta">{{ name }}</span>
@@ -165,6 +202,32 @@
                             <BaseLink
                                 v-if="!name.includes('||') && isShowLinksLenta"
                                 :link="linkToProductInLenta(name)"
+                                :label="name"
+                            />
+                            – {{ value }}
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    v-if="
+                        isShowLinksPerekrestok &&
+                        !isShowLinksLenta &&
+                        !isShowLinksMetro &&
+                        !isShowLinksSber &&
+                        !isShowLinksVprok
+                    "
+                >
+                    <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
+                        <li>
+                            <span v-if="!isShowLinksPerekrestok">{{ name }}</span>
+                            <span v-if="name.includes('||') && isShowLinksPerekrestok">
+                                <span v-for="(item, index) in name.split('||')" :key="index">
+                                    <BaseLink :link="linkToProductInLenta(item)" :label="item" />
+                                </span>
+                            </span>
+                            <BaseLink
+                                v-if="!name.includes('||') && isShowLinksPerekrestok"
+                                :link="linkToProductInPerekrestok(name)"
                                 :label="name"
                             />
                             – {{ value }}
@@ -230,6 +293,7 @@ export default {
             isShowLinksVprok: false,
             isShowLinksMetro: false,
             isShowLinksLenta: false,
+            isShowLinksPerekrestok: false,
             isDiscounted: false,
             isShowSnackbar: false,
             text: 'WakeLock активирован',
@@ -309,6 +373,10 @@ export default {
         },
         linkToProductInLenta(ingredient) {
             const url = 'https://moscow.online.lenta.com/search/' + `${ingredient.trim()}`;
+            return url;
+        },
+        linkToProductInPerekrestok(ingredient) {
+            const url = 'https://www.perekrestok.ru/cat/search?search=' + `${ingredient.trim()}`;
             return url;
         },
         copyToClipBoard(textToCopy) {
