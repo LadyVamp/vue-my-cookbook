@@ -24,7 +24,11 @@
                             v-model="isShowLinksSber"
                             label="Ссылки на Сбермаркет"
                             :disabled="
-                                isShowLinksVprok || isShowLinksMetro || isShowLinksLenta || isShowLinksPerekrestok
+                                isShowLinksVprok ||
+                                isShowLinksMetro ||
+                                isShowLinksLenta ||
+                                isShowLinksPerekrestok ||
+                                isShowLinksVprokMarket
                             "
                         >
                         </v-switch>
@@ -56,7 +60,11 @@
                             v-model="isShowLinksVprok"
                             label="Ссылки на Впрок"
                             :disabled="
-                                isShowLinksSber || isShowLinksMetro || isShowLinksLenta || isShowLinksPerekrestok
+                                isShowLinksSber ||
+                                isShowLinksMetro ||
+                                isShowLinksLenta ||
+                                isShowLinksPerekrestok ||
+                                isShowLinksVprokMarket
                             "
                         ></v-switch>
                         <v-icon
@@ -70,18 +78,38 @@
                         <v-switch
                             v-model="isShowLinksPerekrestok"
                             label="Ссылки на Перекресток"
-                            :disabled="isShowLinksSber || isShowLinksVprok || isShowLinksMetro || isShowLinksLenta"
+                            :disabled="
+                                isShowLinksSber ||
+                                isShowLinksVprok ||
+                                isShowLinksMetro ||
+                                isShowLinksLenta ||
+                                isShowLinksVprokMarket
+                            "
                         ></v-switch>
-                        <p v-if="isShowLinksPerekrestok">
-                            Кэшбэк от Тинькофф в январе и феврале 2024 на экспресс-доставку
-                        </p>
+                        <p v-if="isShowLinksPerekrestok">Кэшбэк от Тинькофф в феврале 2024 на экспресс-доставку</p>
+                        <v-switch
+                            :disabled="
+                                isShowLinksSber ||
+                                isShowLinksVprok ||
+                                isShowLinksMetro ||
+                                isShowLinksLenta ||
+                                isShowLinksPerekrestok
+                            "
+                            v-model="isShowLinksVprokMarket"
+                            label="Ссылки на Впрок Маркет"
+                        ></v-switch>
+                        <p v-if="isShowLinksVprokMarket">-20% Vprok Перекрёсток на Маркете в феврале 2024</p>
                     </v-col>
                     <v-col v-if="!isMobile" md="6" lg="3">
                         <v-switch
                             v-model="isShowLinksMetro"
                             label="Ссылки на Метро"
                             :disabled="
-                                isShowLinksSber || isShowLinksVprok || isShowLinksLenta || isShowLinksPerekrestok
+                                isShowLinksSber ||
+                                isShowLinksVprok ||
+                                isShowLinksLenta ||
+                                isShowLinksPerekrestok ||
+                                isShowLinksVprokMarket
                             "
                         ></v-switch>
                     </v-col>
@@ -90,7 +118,11 @@
                             v-model="isShowLinksLenta"
                             label="Ссылки на Ленту"
                             :disabled="
-                                isShowLinksSber || isShowLinksVprok || isShowLinksMetro || isShowLinksPerekrestok
+                                isShowLinksSber ||
+                                isShowLinksVprok ||
+                                isShowLinksMetro ||
+                                isShowLinksPerekrestok ||
+                                isShowLinksVprokMarket
                             "
                         ></v-switch>
                     </v-col>
@@ -114,7 +146,15 @@
                     {{ recipe.note }}
                 </p>
                 <p v-if="recipe.time" class="secondary--text">Время приготовления: {{ recipe.time }} минут</p>
-                <div v-if="!isShowLinksVprok && !isShowLinksMetro && !isShowLinksLenta && !isShowLinksPerekrestok">
+                <div
+                    v-if="
+                        !isShowLinksVprok &&
+                        !isShowLinksMetro &&
+                        !isShowLinksLenta &&
+                        !isShowLinksPerekrestok &&
+                        !isShowLinksVprokMarket
+                    "
+                >
                     <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
                         <li>
                             <span v-if="!isShowLinksSber">{{ name }}</span>
@@ -139,7 +179,8 @@
                         !isShowLinksSber &&
                         !isShowLinksLenta &&
                         !isShowLinksMetro &&
-                        !isShowLinksPerekrestok
+                        !isShowLinksPerekrestok &&
+                        !isShowLinksVprokMarket
                     "
                 >
                     <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
@@ -165,7 +206,8 @@
                         !isShowLinksSber &&
                         !isShowLinksVprok &&
                         !isShowLinksLenta &&
-                        !isShowLinksPerekrestok
+                        !isShowLinksPerekrestok &&
+                        !isShowLinksVprokMarket
                     "
                 >
                     <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
@@ -191,7 +233,8 @@
                         !isShowLinksMetro &&
                         !isShowLinksSber &&
                         !isShowLinksVprok &&
-                        !isShowLinksPerekrestok
+                        !isShowLinksPerekrestok &&
+                        !isShowLinksVprokMarket
                     "
                 >
                     <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
@@ -217,7 +260,8 @@
                         !isShowLinksLenta &&
                         !isShowLinksMetro &&
                         !isShowLinksSber &&
-                        !isShowLinksVprok
+                        !isShowLinksVprok &&
+                        !isShowLinksVprokMarket
                     "
                 >
                     <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
@@ -231,6 +275,33 @@
                             <BaseLink
                                 v-if="!name.includes('||') && isShowLinksPerekrestok"
                                 :link="linkToProductInPerekrestok(name)"
+                                :label="name"
+                            />
+                            – {{ value }}
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    v-if="
+                        isShowLinksVprokMarket &&
+                        !isShowLinksLenta &&
+                        !isShowLinksMetro &&
+                        !isShowLinksSber &&
+                        !isShowLinksVprok &&
+                        !isShowLinksPerekrestok
+                    "
+                >
+                    <ul v-for="(value, name, idx) in recipe.ingredients" :key="idx">
+                        <li>
+                            <span v-if="!isShowLinksVprokMarket">{{ name }}</span>
+                            <span v-if="name.includes('||') && isShowLinksVprokMarket">
+                                <span v-for="(item, index) in name.split('||')" :key="index">
+                                    <BaseLink :link="linkToProductInVprokMarket(item)" :label="item" />
+                                </span>
+                            </span>
+                            <BaseLink
+                                v-if="!name.includes('||') && isShowLinksVprokMarket"
+                                :link="linkToProductInVprokMarket(name)"
                                 :label="name"
                             />
                             – {{ value }}
@@ -297,6 +368,7 @@ export default {
             isShowLinksMetro: false,
             isShowLinksLenta: false,
             isShowLinksPerekrestok: false,
+            isShowLinksVprokMarket: false,
             isDiscounted: false,
             isShowSnackbar: false,
             text: 'WakeLock активирован',
@@ -380,6 +452,13 @@ export default {
         },
         linkToProductInPerekrestok(ingredient) {
             const url = 'https://www.perekrestok.ru/cat/search?search=' + `${ingredient.trim()}`;
+            return url;
+        },
+        linkToProductInVprokMarket(ingredient) {
+            const url =
+                'https://shop.market.yandex.ru/retail/vprok_ru?placeSlug=vprokru_rmlhi&query=' +
+                `${ingredient.trim()}` +
+                '&shippingType=delivery&standaloneType=shop';
             return url;
         },
         copyToClipBoard(textToCopy) {
