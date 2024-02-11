@@ -13,7 +13,7 @@
                     :src="'https://ladyvamp.github.io/vue-my-cookbook/recipe-images/' + recipe.id + '.jpg'"
                     height="200px"
                 ></v-img>
-                <IconStaple :staple="recipe.staple" />
+                <IconNature :nature="recipe.nature" />
                 <IconFeature :feature="recipe.feature" />
                 <IconSeason :season="recipe.season" />
             </v-col>
@@ -353,13 +353,13 @@ import { mapActions } from 'vuex';
 import shopList from '/src/assets/shops.js';
 import BaseLink from '@/components/ui-components/BaseLink.vue';
 import BackButton from '@/components/ui-components/BackButton.vue';
-import IconStaple from '@/components/Recipe/Icons/IconStaple.vue';
+import IconNature from '@/components/Recipe/Icons/IconNature.vue';
 import IconFeature from '@/components/Recipe/Icons/IconFeature.vue';
 import IconSeason from '@/components/Recipe/Icons/IconSeason.vue';
 
 export default {
     name: 'RecipeDetails',
-    components: { BackButton, BaseLink, IconStaple, IconFeature, IconSeason },
+    components: { BackButton, BaseLink, IconNature, IconFeature, IconSeason },
     data() {
         return {
             title: 'Default Title',

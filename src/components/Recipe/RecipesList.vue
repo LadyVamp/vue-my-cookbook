@@ -24,7 +24,7 @@
                 </div>
             </v-col>
         </v-row>
-        <FilterByStaple @filterByStaple="onFilterByStaple" />
+        <FilterByNature @filterByNature="onFilterByNature" />
         <FilterByFeature @filterByFeature="onFilterByFeature" />
         <FilterBySeason @filterBySeason="onFilterBySeason" />
         <div class="d-flex justify-space-between">
@@ -62,7 +62,7 @@
                         <v-card-title>{{ item.title }}</v-card-title>
                     </router-link>
                     <v-card-text>
-                        <IconStaple :staple="item.staple" />
+                        <IconNature :nature="item.nature" />
                         <IconFeature :feature="item.feature" />
                         <IconSeason :season="item.season" />
                     </v-card-text>
@@ -76,17 +76,17 @@
 </template>
 
 <script>
-import IconStaple from '@/components/Recipe/Icons/IconStaple.vue';
+import IconNature from '@/components/Recipe/Icons/IconNature.vue';
 import IconFeature from '@/components/Recipe/Icons/IconFeature.vue';
 import IconSeason from '@/components/Recipe/Icons/IconSeason.vue';
 import { mapActions, mapGetters } from 'vuex';
-import FilterByStaple from '@/components/Recipe/Filters/FilterByStaple.vue';
+import FilterByNature from '@/components/Recipe/Filters/FilterByNature.vue';
 import FilterByFeature from '@/components/Recipe/Filters/FilterByFeature.vue';
 import FilterBySeason from '@/components/Recipe/Filters/FilterBySeason.vue';
 
 export default {
     name: 'RecipesList',
-    components: { IconStaple, IconFeature, IconSeason, FilterByStaple, FilterByFeature, FilterBySeason },
+    components: { IconNature, IconFeature, IconSeason, FilterByNature, FilterByFeature, FilterBySeason },
     data() {
         return {
             filteredList: [],
@@ -122,11 +122,11 @@ export default {
         showAllRecipes() {
             this.filteredList = this.getAllRecipes();
         },
-        onFilterByStaple(selectedStaple) {
-            if (selectedStaple === 'all') {
+        onFilterByNature(selectedNature) {
+            if (selectedNature === 'all') {
                 this.showAllRecipes();
             } else {
-                this.filteredList = this.getAllRecipes().filter((recipe) => recipe.staple === selectedStaple);
+                this.filteredList = this.getAllRecipes().filter((recipe) => recipe.nature === selectedNature);
             }
         },
         onFilterByFeature(selectedFeature) {

@@ -1,5 +1,5 @@
 <template>
-    <router-link :class="getRecipeBackground(item.staple)" :to="`/recipe/${item.id}`">
+    <router-link :class="getRecipeBackground(item.nature)" :to="`/recipe/${item.id}`">
         {{ item.title }}
     </router-link>
 </template>
@@ -15,7 +15,7 @@ export default {
     },
     data() {
         return {
-            bgStaples: [
+            bgNatures: [
                 {
                     key: 'all',
                     bg: 'accent lighten-2',
@@ -48,9 +48,9 @@ export default {
         };
     },
     methods: {
-        getRecipeBackground(staple) {
-            if (staple) {
-                return this.bgStaples.find((item) => item.key === staple).bg;
+        getRecipeBackground(nature) {
+            if (nature) {
+                return this.bgNatures.find((item) => item.key === nature).bg;
             }
         },
     },

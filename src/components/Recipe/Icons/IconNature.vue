@@ -1,14 +1,14 @@
 <template>
-    <v-icon :color="getIconColor(staple)" :title="getIconLabel(staple)">
-        {{ getIcon(staple) }}
+    <v-icon :color="getIconColor(nature)" :title="getIconLabel(nature)">
+        {{ getIcon(nature) }}
     </v-icon>
 </template>
 
 <script>
 export default {
-    name: 'IconStaple',
+    name: 'IconNature',
     props: {
-        staple: {
+        nature: {
             type: String,
             required: true,
             default: 'all',
@@ -16,7 +16,7 @@ export default {
     },
     data() {
         return {
-            iconStaples: [
+            iconNatures: [
                 {
                     key: 'all',
                     label: 'Все категории продуктов',
@@ -63,14 +63,14 @@ export default {
         };
     },
     methods: {
-        getIcon(staple) {
-            return this.iconStaples.find((item) => item.key === staple).icon;
+        getIcon(nature) {
+            return this.iconNatures.find((item) => item.key === nature).icon;
         },
-        getIconLabel(staple) {
-            return this.iconStaples.find((item) => item.key === staple).label;
+        getIconLabel(nature) {
+            return this.iconNatures.find((item) => item.key === nature).label;
         },
-        getIconColor(staple) {
-            return this.iconStaples.find((item) => item.key === staple).color;
+        getIconColor(nature) {
+            return this.iconNatures.find((item) => item.key === nature).color;
         },
     },
 };
