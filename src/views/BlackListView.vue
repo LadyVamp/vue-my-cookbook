@@ -48,12 +48,20 @@ export default {
                     description: 'Невкусный',
                 },
                 {
+                    name: 'Чай черный Greenfield Festive Grape',
+                    description: 'Невкусный',
+                },
+                {
                     name: 'Чай ройбуш без ароматизаторов',
                     description: 'Невкусный',
                 },
                 {
                     name: 'Швейцарский сыр с рынка',
                     description: 'Невкусный',
+                },
+                {
+                    name: 'Краснокочанная капуста',
+                    description: 'Сырая жесткая, тушеная - несъедобная',
                 },
             ],
         };
