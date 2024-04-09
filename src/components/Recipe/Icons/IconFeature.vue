@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'Iconfeature',
+    name: 'IconFeature',
     props: {
         feature: {
             type: String,
@@ -51,6 +51,11 @@ export default {
                     key: 'toaster',
                     label: 'Мультипекарь',
                     icon: 'mdi-toaster',
+                },
+                {
+                    key: 'afghan_cauldron',
+                    label: 'Афганский казан',
+                    icon: 'mdi-kettlebell',
                 },
             ],
         };
