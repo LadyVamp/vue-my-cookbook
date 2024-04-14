@@ -14,7 +14,7 @@ export default {
     components: { IconSeason },
     data() {
         return {
-            seasons: ['all', 'winter', 'spring', 'summer', 'autumn'],
+            seasons: ['all', 'summer'],
         };
     },
 

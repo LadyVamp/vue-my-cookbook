@@ -94,7 +94,7 @@
       },
       "nature": "vegetable",
       "feature": "fast",
-      "season": "autumn"
+      "season": "all"
     },
     {
       "id": "Salat-s-kuritsei-i-seldereem",
@@ -813,7 +813,7 @@
       },
       "nature": "dessert",
       "feature": "pot",
-      "season": "winter"
+      "season": "all"
     },
     {
       "id": "Tomatnii-sup-s-frikadelkami",
@@ -1082,7 +1082,7 @@
       },
       "nature": "dessert",
       "feature": "pot",
-      "season": "winter"
+      "season": "all"
     },
     {
       "id": "Zapechennie-kurinie-okorochka",
@@ -1636,7 +1636,7 @@
       },
       "nature": "bird",
       "feature": "pot",
-      "season": "all"
+      "season": "summer"
     },
     {
       "id": "Kuritsa-po-frantsuzski-s-kartofelem",
@@ -1660,7 +1660,7 @@
       },
       "nature": "bird",
       "feature": "oven",
-      "season": "all"
+      "season": "summer"
     },
     {
       "id": "Fruktovii-salat",
@@ -2199,7 +2199,7 @@
       },
       "nature": "vegetable",
       "feature": "fast",
-      "season": "winter"
+      "season": "all"
     },
     {
       "id": "Zapekanka-iz-tsvetnoi-kapusti-i-kuritsi",
@@ -2422,7 +2422,7 @@
       },
       "nature": "vegetable | bird | meat | fish | dairy | dessert",
       "feature": "fast | oven | stewingdish | pot | grill | toaster",
-      "season": "all | winter | spring | summer | autumn"
+      "season": "all | summer"
     }
   ]
 }
