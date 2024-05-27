@@ -2545,6 +2545,30 @@
       "nature": "meat",
       "feature": "afghan_cauldron",
       "season": "summer"
+    },
+    {
+      "id": "template_id",
+      "title": "template_title",
+      "servings": 4,
+      "ingredients": {
+        "item1": "",
+        "item2": "",
+        "item3": "",
+        "item4": "",
+        "item5": ""
+      },
+      "note": "",
+      "time": 0,
+      "steps": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "nature": "vegetable | bird | meat | fish | dairy | dessert",
+      "feature": "fast | oven | stewingdish | pot | grill | toaster | afghan_cauldron",
+      "season": "all | summer"
     }
   ]
 }
